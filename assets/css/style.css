@@ -1,0 +1,110 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+}
+
+/* ----------------------------------------------Header */
+
+.navbar-brand{
+    font-size: 34px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.bg-dark {
+    background-color: #000000!important;
+    padding-left: 30px;
+}
+
+.no-margin{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* .navbar-brand a{
+    color: #313131;
+}  */
+
+/* .navbar-expand-lg{
+    padding-left: 0;
+    padding-right: 0;
+} */
+
+/* @media (min-width: 992px) and (max-width: 1020px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .2rem;
+        padding-left: .3rem;
+    }
+} */
+
+@media screen and (max-width: 340px){
+    .navbar-brand{
+            font-size: 28px;
+    }
+}
+
+/* The styling of the hero image was inspired by the Code Institute tutorial lesson on "Love running project" */
+
+#image-outer{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#moscow-image{
+    height: 600px;
+    width: 100%;
+    background: url("../images/moscow-view.jpg") no-repeat center center;
+    background-size: cover;
+
+    animation-name: image-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image-zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+#cover-text{
+    font-size: 130%;
+    letter-spacing: 2px;
+    font-weight: 200;
+    width:400px;
+    height:200px;
+    padding-top: 35px;
+    padding-left: 30px;
+    background-color: rgba(12, 12, 12, 0.555);
+    bottom: 30px;
+    right: 50px;
+    position: absolute;
+    color: #ffffff;
+}
+
+#cover-text h2{
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.hero-image-margin-right{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.hero-image-padding-right {
+    padding-right: 0;
+    padding-left: 0;
+}
