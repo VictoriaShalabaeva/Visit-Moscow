@@ -12,43 +12,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container-fluid no-padding">
-                           
-                <div class="col no-padding">
-                    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-                        <a href="index.html" class="navbar-brand">Visit Moscow</a>
-                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="active nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>                               
-                                <li class="nav-item mr-2"><a class="nav-link" href="index.html#about">About</a></li>                                
-                                <li class="nav-item mr-2"><a class="nav-link" href="index.html#things-to-do">Things to do</a></li>
-                                <li class="nav-item mr-2"><a class="nav-link" href="index.html#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>                
-            
+        <div class="container-fluid no-padding">                           
+            <div class="col no-padding">
+                <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+                    <a href="index.html" class="navbar-brand">Visit Moscow</a>
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="active nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>                               
+                            <li class="nav-item mr-2"><a class="nav-link" href="index.html#about">About</a></li>                                
+                            <li class="nav-item mr-2"><a class="nav-link" href="index.html#things-to-do">Things to do</a></li>
+                            <li class="nav-item mr-2"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>                            
         </div>  
-        <div class="container-fluid no-padding">            
-            
-                <div id="image-outer">
-                    <div id="moscow-image"></div>
-                    <div id="cover-text">
-                        <h2>Visit Moscow</h2>
-                        <button>Discover now</button>
+        
+        <div class="container-fluid no-padding" id="image-outer">                     
+            <!-- <div class="opaque-overlay">&nbsp</div> -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="callout jumbotron text-center">
+                        <h1 class="jumbotron-header">One of the most breathtaking capitals in the world</h1>
+                        <hr class="block-divider block-divider--orange">
+                        <p class="lead">Contact us today to start planning your trip to Moscow. 
+                            <span class="d-inline d-sm-none"><br></span></p>
+                        <p><button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Contact Us!</button></p>
                     </div>
                 </div>
-                        
+            </div>
+                                                
         </div>      
     </header>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <p>The capital of Russia is an incredible place to explore. Visitors to Moscow come away spellbound at all the amazing sights, impressed at the sheer size and grandeur of the city. Lying at the heart of Moscow, the Red Square and the Kremlin are just two of the must-see tourist attractions; they are the historical, political and spiritual heart of the city – and indeed Russia itself.
+
+                        A fascinating city to wander around, stunning cathedrals, churches, and palaces lie side-by-side with bleak grey monuments and remains from the Soviet state. In addition to its plethora of historical and cultural tourist attractions, Moscow is home to world-class museums, theaters and art galleries.
+                        
+                        Renowned for its performing arts, fantastic ballets and amazing circus acts, catching a show while in Moscow is a must. The wealth of brilliant restaurants, trendy bars, and lively nightlife means there is something for everyone to enjoy.</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
