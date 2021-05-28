@@ -29,48 +29,29 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ml-auto">
-                            <li class="active nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>                               
+                            <li class="nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>                               
                             <li class="nav-item mr-2"><a class="nav-link" href="index.html#about">About</a></li>                                
                             <li class="nav-item mr-2"><a class="nav-link" href="index.html#things-to-do">Things to do</a></li>
-                            <li class="nav-item mr-2"><a class="nav-link" href="/contact.html">Contact</a></li>
+                            <li class="active nav-item mr-2"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>                            
-        </div>  
-        
-        <div class="container-fluid no-padding" id="image-outer-1">                     
-            <!-- <div class="opaque-overlay">&nbsp</div> -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="callout jumbotron text-center">
-                        <h1 class="jumbotron-header">One of the most breathtaking capitals in the world</h1>
-                        <hr class="block-divider block-divider--orange">
-                        <p class="lead">Contact us today to start planning your trip to Moscow. 
-                            <span class="d-inline d-sm-none"><br></span></p>
-                        <p><a class="btn btn-lg btn--cta btn--red" href="/contact.html" role="button">Contact Us!</a></p>
-                    </div>
-                </div>
-            </div>
-                                                
-        </div>      
+        </div>                     
     </header>
 
     <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <p>The capital of Russia is an incredible place to explore. Visitors to Moscow come away spellbound at all the amazing sights, impressed at the sheer size and grandeur of the city. Lying at the heart of Moscow, the Red Square and the Kremlin are just two of the must-see tourist attractions; they are the historical, political and spiritual heart of the city – and indeed Russia itself.
-
-                        A fascinating city to wander around, stunning cathedrals, churches, and palaces lie side-by-side with bleak grey monuments and remains from the Soviet state. In addition to its plethora of historical and cultural tourist attractions, Moscow is home to world-class museums, theaters and art galleries.
-                        
-                        Renowned for its performing arts, fantastic ballets and amazing circus acts, catching a show while in Moscow is a must. The wealth of brilliant restaurants, trendy bars, and lively nightlife means there is something for everyone to enjoy.</p>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-        </div>
+        <div class="container-fluid no-padding" id="image-outer-2">                     
+            <!-- <div class="opaque-overlay">&nbsp</div> -->            
+            <form onsubmit="return sendMail(this);" class="contact-form">
+                <input type="text" name="name" class="form-control text-input" id="fullname" placeholder="Name" required/>
+                <input type="text" name="emailaddress" class="form-control text-input" id="emailaddress" placeholder="Email" required/>
+                <textarea rows="5" name="your-message" class="form-control text-input" id="your-message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-lg btn--cta btn--red join-button" style="width: 210px;">Send Your Message</button>
+            </form>                                                                  
+        </div>          
     </section>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
