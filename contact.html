@@ -16,7 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_VimnFNd4Y0o0iZ5peZTU6");
+        })();
+    </script>
 </head>
 <body>
     <header>
@@ -30,7 +36,6 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>                               
-                            <li class="nav-item mr-2"><a class="nav-link" href="index.html#about">About</a></li>                                
                             <li class="nav-item mr-2"><a class="nav-link" href="index.html#things-to-do">Things to do</a></li>
                             <li class="active nav-item mr-2"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
@@ -45,16 +50,22 @@
             <!-- <div class="opaque-overlay">&nbsp</div> -->            
             <form onsubmit="return sendMail(this);" class="contact-form">
                 <input type="text" name="name" class="form-control text-input" id="fullname" placeholder="Name" required/>
-                <input type="text" name="emailaddress" class="form-control text-input" id="emailaddress" placeholder="Email" required/>
+                <input type="text" name="email_address" class="form-control text-input" id="emailaddress" placeholder="Email" required/>
                 <textarea rows="5" name="your-message" class="form-control text-input" id="your-message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn btn-lg btn--cta btn--red join-button" style="width: 210px;">Send Your Message</button>
+                <button type="submit" class="btn btn-lg btn--yellow join-button" style="width: 210px;">Send Your Message</button>
             </form>                                                                  
         </div>          
     </section>
 
+    <footer class="container-fluid footer" style="background-color: black; color: white;">
+        <div>
+            <p>Visit Moscow 2021</p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/js/send_email.js"></script>
 </body>
 </html>
