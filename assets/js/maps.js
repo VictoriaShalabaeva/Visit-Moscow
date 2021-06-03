@@ -21,6 +21,7 @@ function initMap() {
     });
 
     // Create a label for Moscow
+
     let infoWindow = new google.maps.InfoWindow({
         content:'<h3>Moscow</h3>',
     });
@@ -30,8 +31,10 @@ function initMap() {
     });
 }  
 
-//Create location markerss of the sightseeings when pressed on the button 'Sightseeings'
+//Create location markers of the sightseeings when pressed on the button 'Sightseeings'
+
 document.getElementById("sightseeings").addEventListener("click",initMapSightseeings);
+
 function initMapSightseeings() {
     let mapSightseeings = new google.maps.Map(document.getElementById("map"), {
         zoom: 14,
@@ -47,7 +50,10 @@ function initMapSightseeings() {
     const markerSightseeings = [
         {
             location: {lat:55.7539, lng:37.6208}, 
-            info:"<h5>Red square</h5><p>Red Square is the largest and most famous square in Russia.</p>"
+            info:`
+            <h5>Red square</h5>
+            <p>Red Square is the largest and most famous square in Russia.</p>
+            <img src="../../assets/images/red-square.jpg" style="width: 100%;">`
         },
         {
             location: {lat:55.7525, lng:37.6231}, 
@@ -62,13 +68,17 @@ function initMapSightseeings() {
     let infoWindow = new google.maps.InfoWindow();
 
     let markers = markerSightseeings.map(function (markerSightseeings, i) {
-    let marker = new google.maps.Marker({
-        position:markerSightseeings.location,
-        label: labels[i % labels.length]
-    });
-    google.maps.event.addListener(marker, 'click', function() {
-        infoWindow.setContent(markerSightseeings.info);
-        infoWindow.open(mapSightseeings, marker);
+
+        let marker = new google.maps.Marker({
+
+            position:markerSightseeings.location,
+            label: labels[i % labels.length]
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+
+            $("#info-window").html(markerSightseeings.info)
+                
     });
     return marker;
 
