@@ -232,3 +232,11 @@ body{
   #map {
       min-height: 360px;
     }
+
+    .image{
+        width: 100%;
+    }
+
+    .info-text{
+        text-align: justify;
+    }
