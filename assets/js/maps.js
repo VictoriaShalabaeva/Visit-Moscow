@@ -1,4 +1,87 @@
-// The code was written with the aid of Code institute tutorials and Google map documentation
+// The code was written with the aid of Code institute tutorials and Google mapы documentation
+
+// Define a map style
+// Code credit: Google maps documentation (https://developers.google.com/maps/documentation/javascript/examples/style-array)
+
+const dark_style = [
+    { elementType: "geometry", stylers: [{ color: "#2f3338" }] },
+    { elementType: "labels.text.stroke", stylers: [{ color: "#2f3338" }] },
+    { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+    {
+      featureType: "administrative.locality",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#d59563" }],
+    },
+    {
+      featureType: "poi",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#d59563" }],
+    },
+    {
+      featureType: "poi.park",
+      elementType: "geometry",
+      stylers: [{ color: "#263c3f" }],
+    },
+    {
+      featureType: "poi.park",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#6b9a76" }],
+    },
+    {
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [{ color: "#38414e" }],
+    },
+    {
+      featureType: "road",
+      elementType: "geometry.stroke",
+      stylers: [{ color: "#212a37" }],
+    },
+    {
+      featureType: "road",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#9ca5b3" }],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry",
+      stylers: [{ color: "#746855" }],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry.stroke",
+      stylers: [{ color: "#1f2835" }],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#f3d19c" }],
+    },
+    {
+      featureType: "transit",
+      elementType: "geometry",
+      stylers: [{ color: "#2f3948" }],
+    },
+    {
+      featureType: "transit.station",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#d59563" }],
+    },
+    {
+      featureType: "water",
+      elementType: "geometry",
+      stylers: [{ color: "#17263c" }],
+    },
+    {
+      featureType: "water",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#515c6d" }],
+    },
+    {
+      featureType: "water",
+      elementType: "labels.text.stroke",
+      stylers: [{ color: "#17263c" }],
+    },]
 
 // Create a map of Moscow
 
@@ -9,167 +92,122 @@ function initMap() {
             lat: 55.7558,
             lng: 37.6173
         },
-
-        // From Google maps documentation: https://developers.google.com/maps/documentation/javascript/examples/style-array
-        styles: [
-            { elementType: "geometry", stylers: [{ color: "#2f3338" }] },
-            { elementType: "labels.text.stroke", stylers: [{ color: "#2f3338" }] },
-            { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-            {
-              featureType: "administrative.locality",
-              elementType: "labels.text.fill",
-              stylers: [{ color: "#d59563" }],
-            },
-            {
-              featureType: "poi",
-              elementType: "labels.text.fill",
-              stylers: [{ color: "#d59563" }],
-            },
-            {
-              featureType: "poi.park",
-              elementType: "geometry",
-              stylers: [{ color: "#263c3f" }],
-            },
-            {
-              featureType: "poi.park",
-              elementType: "labels.text.fill",
-              stylers: [{ color: "#6b9a76" }],
-            },
-            {
-              featureType: "road",
-              elementType: "geometry",
-              stylers: [{ color: "#38414e" }],
-            },
-            {
-              featureType: "road",
-              elementType: "geometry.stroke",
-              stylers: [{ color: "#212a37" }],
-            },
-            {
-              featureType: "road",
-              elementType: "labels.text.fill",
-              stylers: [{ color: "#9ca5b3" }],
-            },
-            {
-              featureType: "road.highway",
-              elementType: "geometry",
-              stylers: [{ color: "#746855" }],
-            },
-            {
-              featureType: "road.highway",
-              elementType: "geometry.stroke",
-              stylers: [{ color: "#1f2835" }],
-            },
-            {
-              featureType: "road.highway",
-              elementType: "labels.text.fill",
-              stylers: [{ color: "#f3d19c" }],
-            },
-            {
-              featureType: "transit",
-              elementType: "geometry",
-              stylers: [{ color: "#2f3948" }],
-            },
-            {
-              featureType: "transit.station",
-              elementType: "labels.text.fill",
-              stylers: [{ color: "#d59563" }],
-            },
-            {
-              featureType: "water",
-              elementType: "geometry",
-              stylers: [{ color: "#17263c" }],
-            },
-            {
-              featureType: "water",
-              elementType: "labels.text.fill",
-              stylers: [{ color: "#515c6d" }],
-            },
-            {
-              featureType: "water",
-              elementType: "labels.text.stroke",
-              stylers: [{ color: "#17263c" }],
-            },]
-    });
-
-    // Create a marker for Moscow
-
-    let marker = new google.maps.Marker({
-    position: {
-        lat: 55.7558, 
-        lng: 37.6173},
-    map:map
-    });
-
-    // Create a label for Moscow
-
-    let infoWindow = new google.maps.InfoWindow({
-        content:'<h3>Moscow</h3>',
-    });
-
-    marker.addListener('click', () => {
-        infoWindow.open(map, marker);
+        styles: dark_style,
     });
 }  
 
-//Create location markers of the sightseeings when pressed on the button 'Sightseeings'
+// Create location markers when pressed on the button 'Historic Sites'
 
-document.getElementById("sightseeings").addEventListener("click",initMapSightseeings);
+document.getElementById("historic-sites").addEventListener("click",initMapHistoricSites);
 
-function initMapSightseeings() {
-    let mapSightseeings = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
+function initMapHistoricSites() {
+    let mapHistoricSites = new google.maps.Map(document.getElementById("map"), {
+        zoom: 13,
         center: {
-            lat:55.7558, 
-            lng:37.6173
+            lat:55.7539, 
+            lng:37.6208
         },
+        styles: dark_style,
     });
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-//Create markers for Sightseeings locations
-// Credit: Info text is taken from https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
-    const markerSightseeings = [
+// Create markers for Historic Sites locations
+
+    const markerHistoricSites = [
+        
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+        // Photo Credit: https://www.goodfon.com/wallpaper/moskva-rossiia-krasnaia-ploshchad-ploshchad-tsvety-nebo.html
+
         {
             location: {lat:55.7539, lng:37.6208}, 
+
             info:`
-            <h5>Red square</h5>
+            <h5><span>A</span>&nbsp; Red square</h5>
             <img src="../../assets/images/red-square.jpg" class="image">
-            <p class="info-text">The heart of Russia’s capital, Red Square is arguably Moscow’s most visited attraction. The cobblestone square is surrounded by beautiful architecture, and is the place where most of the city’s (and country’s) history unfolded. What was once a market square where traders would sell their goods is now a key location in the city, surrounded by unforgettable sites such as the Kremlin, St.Basil’s Cathedral, Lenin’s Mausoleum and other celebrated attractions.</p>`
+            <p class="info-text">The heart of Russia’s capital, Red Square is arguably Moscow’s most visited attraction. 
+            The cobblestone square is surrounded by beautiful architecture, and is the place where most of the city’s 
+            (and country’s) history unfolded. What was once a market square where traders would sell their goods is now 
+            a key location in the city, surrounded by unforgettable sites such as the Kremlin, St.Basil’s Cathedral, Lenin’s 
+            Mausoleum and other celebrated attractions.</p>`
         },
+
+        // Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
+        // Photo Credit: https://www.goodfon.com/wallpaper/st-basil-s-cathedral-red.html
+
         {
             location: {lat:55.7525, lng:37.6231}, 
+
             info:`
-            <h5>St Basil&#8217;s Cathedral</h5>
+            <h5><span>B</span>&nbsp; Saint Basil's Cathedral</h5>
             <img src="../../assets/images/st-basil-s-cathedral.jpg" class="image">
-            <p>Soak up the archetypal image of Russia’s capital with the glistening rainbow domes of St Basil’s cathedral. The onion-shaped domes were designed to make the building look like the shape of a flame on a bonfire. The cathedral was commissioned in the 1500s by Ivan the Terrible and according to legend, the Tsar thought it so beautiful he ordered that the architect be blinded so that he would never surpass this creation.</p>`
+            <p>The most recognizable building in the country, the cathedral is very much a symbol of Russia. Ivan the Terrible 
+            ordered the cathedral’s construction in the mid-16th century, and legend holds that Ivan put out the architect’s 
+            eyes so that he would be unable to build another cathedral more glorious than St. Basil’s. Designed to resemble 
+            the shape of a bonfire in full flame, the architecture is not only unique to the period in which it was built but 
+            to any subsequent period. For various reasons, both Napoleon and Stalin wanted to destroy the cathedral but 
+            fortunately did not succeed. <a rel="noopener" target="_blank" href="https://en.shm.ru/museum/hvb/">Official website
+            </a></p>`
         },
         
+        // Text Credit: https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm
+        // Photo Credit: https://www.wallpaperflare.com/bolshoi-theatre-moscow-russia-fountain-illumination-wallpaper-tcgfl
+    
+        {
+            location: {lat:55.7601, lng:37.6186}, 
+            
+            info:`
+            <h5><span>C</span>&nbsp; Bolshoi Theatre</h5>
+            <img src="../../assets/images/bolshoi-theatre.jpg" class="image">
+            <p class="info-text">The Bolshoi Theater is home to the largest and one of the oldest ballet and opera companies 
+            in the world. The Bolshoi Theater you see today opened in 1824, after several older versions burned down. Inside, 
+            red velvet, a three-tiered crystal chandelier, and gilt moldings give the place a Byzantine-Renassaince grandiose 
+            feel like no other. Catching a show from the resident ballet and opera troupes is a treat, as the theater often 
+            presents a number of classic performances, such as Tchaikovsky's Mazeppa and Rachmaninoff's Francesca da Rimini, 
+            both of which originally premiered here. <a rel="noopener" target="_blank" href="https://www.bolshoi.ru/en/">Official 
+            website</a></p>`
+        },
+
+        // Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
+        // Photo Credit: https://wall.alphacoders.com/big.php?i=672508
+    
+        {
+            location: {lat:55.7446, lng:37.6055}, 
+            
+            info:`
+            <h5><span>D</span>&nbsp; Cathedral of Christ the Saviour</h5>
+            <img src="../../assets/images/cathedral-christ-saviour.jpg" class="image">
+            <p class="info-text">This gorgeous Russian Orthodox cathedral is located on the banks of the Moskva River, just a 
+            stone’s throw away from the Kremlin. The church as it stands today was consecrated in 2000, as the original church 
+            that stood here was destroyed on the command of Josef Stalin in 1931 due to the anti-religious campaign. With its 
+            delightful golden dome, spires and dazzling white facades, the Christ the Savior Cathedral is stunning. 
+            The interior is just as captivating to wander around, with its beautifully tiled floors and impressive altar.</p>`
+        },
     ];
     
-    // Add click listener to each marker that opens the InfoWindow with the sightseeing info
+    // Add click listener to each marker that opens the InfoWindow with the historic sites info
     //<!--CREDIT: solution for Integrate Google Maps MarkerClusterer with infowindow from stackoverflow (переделать)
     
     let infoWindow = new google.maps.InfoWindow();
 
-    let markers = markerSightseeings.map(function (markerSightseeings, i) {
+    let markers = markerHistoricSites.map(function (markerHistoricSites, i) {
 
         let marker = new google.maps.Marker({
 
-            position:markerSightseeings.location,
+            position:markerHistoricSites.location,
             label: labels[i % labels.length]
         });
 
         google.maps.event.addListener(marker, 'click', function() {
 
-            $("#info-window").html(markerSightseeings.info)
+            $("#info-window").html(markerHistoricSites.info)
                 
     });
     return marker;
 
     });
 
-    let markerCluster = new MarkerClusterer(mapSightseeings, markers, {
+    let markerCluster = new MarkerClusterer(mapHistoricSites, markers, {
     imagePath:
             "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
@@ -186,6 +224,7 @@ function initMapMuseums() {
             lat:55.7558, 
             lng:37.6173
         },
+        styles: dark_style,
     });
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -223,7 +262,7 @@ function initMapMuseums() {
         },
     ];
     
-    // Add click listener to each marker that opens the InfoWindow with the sightseeing info
+    // Add click listener to each marker that opens the InfoWindow with the museums info
     //<!--CREDIT: solution for Integrate Google Maps MarkerClusterer with infowindow from stackoverflow (переделать)
     
     let infoWindow = new google.maps.InfoWindow();
@@ -262,6 +301,7 @@ function initMapParks() {
             lat:55.7558, 
             lng:37.6173
         },
+        styles: dark_style,
     });
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -338,22 +378,23 @@ function initMapParks() {
 
 //Create location markers of the museums when pressed on the button 'Museums'
 
-document.getElementById("theatres").addEventListener("click",initMapTheatres);
+document.getElementById("shopping").addEventListener("click",initMapShopping);
 
-function initMapTheatres() {
-    let mapTheatres = new google.maps.Map(document.getElementById("map"), {
+function initMapShopping() {
+    let mapShopping = new google.maps.Map(document.getElementById("map"), {
         zoom: 14,
         center: {
             lat:55.7558, 
             lng:37.6173
         },
+        styles: dark_style,
     });
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-//Create markers for Theatres locations
+// Create markers for Shopping locations
 // Credit: Info text is taken from https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
-    const markerTheatres = [
+    const markerShopping = [
         {
             location: {lat:55.7601, lng:37.6186}, 
             info:`
@@ -364,29 +405,29 @@ function initMapTheatres() {
         
     ];
     
-    // Add click listener to each marker that opens the InfoWindow with the Theatres info
+    // Add click listener to each marker that opens the InfoWindow with the Shopping info
     //<!--CREDIT: solution for Integrate Google Maps MarkerClusterer with infowindow from stackoverflow (переделать)
     
     let infoWindow = new google.maps.InfoWindow();
 
-    let markers = markerTheatres.map(function (markerTheatres, i) {
+    let markers = markerShopping.map(function (markerShopping, i) {
 
         let marker = new google.maps.Marker({
 
-            position:markerTheatres.location,
+            position:markerShopping.location,
             label: labels[i % labels.length]
         });
 
         google.maps.event.addListener(marker, 'click', function() {
 
-            $("#info-window").html(markerTheatres.info)
+            $("#info-window").html(markerShopping.info)
                 
     });
     return marker;
 
     });
 
-    let markerCluster = new MarkerClusterer(mapTheatres, markers, {
+    let markerCluster = new MarkerClusterer(mapShopping, markers, {
     imagePath:
             "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
