@@ -88,10 +88,7 @@ const dark_style = [
 function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
-        center: {
-            lat: 55.7558,
-            lng: 37.6173
-        },
+        center: {lat: 55.7558, lng: 37.6173},
         styles: dark_style,
     });
 }  
@@ -102,11 +99,8 @@ document.getElementById("historic-sites").addEventListener("click",initMapHistor
 
 function initMapHistoricSites() {
     let mapHistoricSites = new google.maps.Map(document.getElementById("map"), {
-        zoom: 13,
-        center: {
-            lat:55.7539, 
-            lng:37.6208
-        },
+        zoom: 12,
+        center: {lat:55.7539, lng:37.6208},
         styles: dark_style,
     });
 
@@ -183,6 +177,75 @@ function initMapHistoricSites() {
             delightful golden dome, spires and dazzling white facades, the Christ the Savior Cathedral is stunning. 
             The interior is just as captivating to wander around, with its beautifully tiled floors and impressive altar.</p>`
         },
+
+        // Text Credit: https://weheart.moscow/toptenattractions/ and https://www.rbth.com/arts/2017/08/17/5-treasures-of-moscows-metro-check-out-these-stunning-blue-line-stations_824162
+        // Photo Credit: https://russianmetro.ru/metro/arbatsin.html
+    
+        {
+            location: {lat:55.7518, lng:37.6009}, 
+            
+            info:`
+            <h5><span>E</span>&nbsp; Moscow Metro</h5>
+            <img src="../../assets/images/metro.jpg" class="image">
+            <p class="info-text">The Moscow Metro has its own unforgettable charm. It was opened in 1935 and became one 
+            of the USSR’s most extravagant architectural projects. That is why most of the central underground stations 
+            look like a museum. Every station has its own mood, different decorations and fascinating story. With 223 
+            stations and 12 metro lines crosscutting through Moscow, however, this can be tricky, so visiting at least 
+            a few of the most impressive ones is a good start. <strong>Arbatskaya station</strong> was designed by a 
+            skyscraper architect, so it's no surprise that it features multicolored granite slabs that form a distinctive 
+            carpet pattern while its pillars are decorated with white ceramic bouquets. The station’s chandeliers are made 
+            of gilded bronze.</p>`
+        },
+
+        // Text Credit: https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm
+        // Photo Credit: https://planeta.turtella.ru/russia/moscow/p1192783
+    
+        {
+            location: {lat:55.751339, lng:37.596398}, 
+            
+            info:`
+            <h5><span>F</span>&nbsp; Arbat Street</h5>
+            <img src="../../assets/images/arbat.jpg" class="image">
+            <p class="info-text">Moscow's one-kilometer-long pedestrian street has been around since the 15th century. 
+            Originally a trade route in the outskirts of the city, Arbat Street is now very centrally located, home to 
+            posh buildings and lots of places to eat and shop. Beautiful street lamps and two significant statues-one 
+            of Princess Turandot (from Puccini's last opera) and one of Soviet-era poet Bulat Okudzhava-adorn the street, 
+            which fills up with both locals and tourists on evenings and weekends. A great place to pick up souvenirs or 
+            sit down at an outdoor café, Arbat Street also offers a chance to visit the former home of poet Alexander 
+            Pushkin and the café both Anton Chekhov and Leo Tolstoy used to visit.</p>`
+        },
+
+        // Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
+        // Photo Credit: http://novodev.ru/
+    
+        {
+            location: {lat:55.7262, lng:37.5564}, 
+            
+            info:`
+            <h5><span>G</span>&nbsp; Novodevichy Convent</h5>
+            <img src="../../assets/images/novodevichy-convent.jpg" class="image">
+            <p class="info-text">Drenched in history, the Novodevichy Convent is located in a striking building 
+            that was once a fortress. This captivating place is well worth visiting when in Moscow. Founded in 1524, 
+            the convent houses four cathedrals; Smolensk Cathedral is the undoubted highlight due to its delightful 
+            16th-century frescoes. Wandering around the grounds is like stepping back in time. The Novodevichy Cemetery 
+            is where many famous leaders of the Soviet Union are buried, such as Yeltsin and Khrushchev.</p>`
+        },
+
+        // Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
+        // Photo Credit: http://novodev.ru/
+    
+        {
+            location: {lat:55.7262, lng:37.5564}, 
+            
+            info:`
+            <h5><span>G</span>&nbsp; Novodevichy Convent</h5>
+            <img src="../../assets/images/novodevichy-convent.jpg" class="image">
+            <p class="info-text">Drenched in history, the Novodevichy Convent is located in a striking building 
+            that was once a fortress. This captivating place is well worth visiting when in Moscow. Founded in 1524, 
+            the convent houses four cathedrals; Smolensk Cathedral is the undoubted highlight due to its delightful 
+            16th-century frescoes. Wandering around the grounds is like stepping back in time. The Novodevichy Cemetery 
+            is where many famous leaders of the Soviet Union are buried, such as Yeltsin and Khrushchev.</p>`
+        },
     ];
     
     // Add click listener to each marker that opens the InfoWindow with the historic sites info
@@ -219,46 +282,97 @@ document.getElementById("museums").addEventListener("click",initMapMuseums);
 
 function initMapMuseums() {
     let mapMuseums = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
-        center: {
-            lat:55.7558, 
-            lng:37.6173
-        },
+        zoom: 13,
+        center: {lat:55.7558, lng:37.6173},
         styles: dark_style,
     });
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 //Create markers for Museums locations
-// Credit: Info text is taken from https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
-    const markerMuseums = [       
+
+    const markerMuseums = [     
+        
+        // Text Credit: https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm
+        // Photo Credit: https://wallpapersden.com/city-moscow-night-wallpaper/2560x1080/
+
         {
             location: {lat:55.7520, lng:37.6175}, 
             info:`
-            <h5>Moscow Kremlin</h5>
+            <h5><span>A</span>&nbsp; Moscow Kremlin</h5>
             <img src="../../assets/images/moscow-kremlin.jpg" class="image">
-            <p class="info-text">The biggest active fortress in Europe, Moscow’s Kremlin offers a week’s worth of attractions. Once you get behind the 2,235 metre-long kremlin walls, there are five squares to wander around, various buildings to explore, 20 towers to learn the names of, and the world’s largest bell and cannon to see.</p>`
+            <p class="info-text">A 15th-century fortified complex that covers an area of 275,000 square meters surrounded 
+            by walls built in the 1400s. The Grand Kremlin 
+            Palace, which has over 700 rooms, was once home to the Tsar family and is now the official residence of the 
+            president of the Russian Federation. The massive complex also includes many other buildings, some of which 
+            are open to the public and can be visited regularly. Aside from 
+            three cathedrals (including one where the Tsars were once crowned) and a number of towers, the Kremlin is also 
+            home to the Armory building, a museum holding everything from the royal crown and imperial carriages to the ivory 
+            throne of Ivan the Terrible and Fabergé eggs. <a rel="noopener" target="_blank" 
+            href="https://www.kreml.ru/en-Us/museums-moscow-kremlin/">Official website</a></p>`
         },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+        // Photo Credit: https://trymoscow.ru/gosudarstvennyj-istoricheskij-muzej/
+
         {
             location: {lat:55.7553, lng:37.6178}, 
             info:`
-            <h5>State Historical Museum</h5>
+            <h5><span>B</span>&nbsp; State Historical Museum</h5>
             <img src="../../assets/images/state-historical-museum.jpg" class="image">
-            <p class="info-text">An attraction in its own right, the State Historical Museum, sheltered in a neo-Russian style building, was founded in 1872 by Ivan Zabelin and Aleksey Uvarov. What once was the Principal Medicine Store now houses an impressive collection, which includes relics of prehistoric tribes that once inhabited the territory of present-day Russia, the country’s largest coin collection, as well as 6th-century manuscripts and artworks collected by the Romanov dynasty among other treasures.</p>`
+            <p class="info-text">An attraction in its own right, the State Historical Museum, sheltered in a neo-Russian 
+            style building, was founded in 1872 by Ivan Zabelin and Aleksey Uvarov. What once was the Principal Medicine 
+            Store now houses an impressive collection, which includes relics of prehistoric tribes that once inhabited 
+            the territory of present-day Russia, the country’s largest coin collection, as well as 6th-century manuscripts 
+            and artworks collected by the Romanov dynasty among other treasures. <a rel="noopener" target="_blank" 
+            href="https://en.shm.ru/">Official website</a></p>`
         },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+        // Photo Credit: https://wanderings.online/virtualnye-progulki-po-tretyakovskoj-galeree/
+
         {
             location: {lat:55.7414, lng:37.6209}, 
             info:`
-            <h5>Tretyakov Gallery</h5>
-            <img src="../../assets/images/state-historical-museum.jpg" class="image">
-            <p class="info-text">Built between 1900 and 1905, Tretyakov Gallery started as the private collection of the Tretyakov brothers, who were 19th-century philanthropists. Designed by Viktor Vasnetsov, the gallery is a home to one of the largest collections of Russian art in the world. Here you can see icons including Rublev’s Trinity, and pre-revolutionary masterpieces such as Girl with Peaches by Valentin Serov, Demon by Mikhail Vrubel and Rooks have Come Backby Alexei Savrasov.</p>`
+            <h5><span>C</span>&nbsp; Tretyakov Gallery</h5>
+            <img src="../../assets/images/tretyakov-gallery.jpg" class="image">
+            <p class="info-text">Built between 1900 and 1905, Tretyakov Gallery started as the private collection of the 
+            Tretyakov brothers, who were 19th-century philanthropists. Designed by Viktor Vasnetsov, the gallery is a home 
+            to one of the largest collections of Russian art in the world. Here you can see icons including Rublev’s Trinity, 
+            and pre-revolutionary masterpieces such as Girl with Peaches by Valentin Serov, Demon by Mikhail Vrubel and Rooks 
+            have Come Backby Alexei Savrasov. <a rel="noopener" target="_blank" 
+            href="https://www.tretyakovgallery.ru/info/en">Official website</a></p>`
         },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+        // Photo Credit: https://pushkinmuseum.art/
+        
         {
             location: {lat:55.7473, lng:37.6051}, 
             info:`
-            <h5>Pushkin State Museum of Fine Arts</h5>
+            <h5><span>D</span>&nbsp; Pushkin Museum</h5>
             <img src="../../assets/images/pushkin-museum.jpg" class="image">
-            <p class="info-text">The largest foreign art museum in Moscow comprises three branches housing a collection of incredible works by masters of ancient civilisations, the Italian Renaissance and the Dutch Golden Age. The main building contains masterpieces by Botticelli, Tiepolo, Veronese and Rembrandt, some of which have never been displayed before. The Gallery of European & American Art, located next door, stores an incredible collection of Impressionist and post-Impressionist paintings.</p>`
+            <p class="info-text">The largest foreign art museum in Moscow comprises three branches housing a collection 
+            of incredible works by masters of ancient civilisations, the Italian Renaissance and the Dutch Golden Age. 
+            The main building contains masterpieces by Botticelli, Tiepolo, Veronese and Rembrandt, some of which have 
+            never been displayed before. The Gallery of European & American Art, located next door, stores an incredible 
+            collection of Impressionist and post-Impressionist paintings. <a rel="noopener" target="_blank" 
+            href="https://pushkinmuseum.art/index.php?lang=en">Official website</a></p>`
+        },
+
+        // Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
+        // Photo Credit: https://theculturetrip.com/europe/russia/articles/a-guide-to-visiting-lenins-mausoleum/
+        
+        {
+            location: {lat:55.7537, lng:37.6199}, 
+            info:`
+            <h5><span>E</span>&nbsp; Lenin Mausoleum</h5>
+            <img src="../../assets/images/lenin-mausoleum.jpg" class="image">
+            <p class="info-text">Opened to the public in 1924, Lenin’s Mausoleum is one of the most popular tourist attractions 
+            in Moscow. The red granite structure is located at the heart of the city in Red Square. Lenin’s embalmed body lies 
+            in a glass sarcophagus; it is a somewhat eerie experience walking past the former leader of the Soviet Union 
+            but is well worth doing as you understandably can’t do it anywhere else in the world. After visiting the mausoleum, 
+            head to the Kremlin wall right next to it for more graves of important communist figures such as Stalin and Brezhnev.</p>`
         },
     ];
     
