@@ -282,8 +282,8 @@ document.getElementById("museums").addEventListener("click",initMapMuseums);
 
 function initMapMuseums() {
     let mapMuseums = new google.maps.Map(document.getElementById("map"), {
-        zoom: 13,
-        center: {lat:55.7558, lng:37.6173},
+        zoom: 11,
+        center: {lat:55.791278, lng:37.63261},
         styles: dark_style,
     });
 
@@ -374,6 +374,23 @@ function initMapMuseums() {
             but is well worth doing as you understandably can’t do it anywhere else in the world. After visiting the mausoleum, 
             head to the Kremlin wall right next to it for more graves of important communist figures such as Stalin and Brezhnev.</p>`
         },
+
+        // Text Credit: https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm
+        // Photo Credit: https://www.lottehotelmagazine.com/en/travel_detail?no=295
+        
+        {
+            location: {lat:55.8230, lng:37.6398}, 
+            info:`
+            <h5><span>F</span>&nbsp; Museum of Cosmonautics</h5>
+            <img src="../../assets/images/museum-cosmonautics.jpg" class="image">
+            <p class="info-text">At one point, Russia and the US were toe-to-toe when it came to space exploration. 
+            While that might no longer be the case, the museum's amazing collection-which includes over 85,000 items-is 
+            still awe-inspiring. Main exhibits include the space capsule used by Yuri Gagarin, the first human to travel 
+            into outer space; a USSR flag with moon fragments; a Soviet spacesuit; and a rocket propulsion unit from the 
+            1960s. A special two-story hall showcases sections of the Mir space station interior, and there are also models 
+            of the first sputniks and a replica miniature spaceship. <a rel="noopener" target="_blank" 
+            href="https://kosmo-museum.ru/?locale=en">Official website</a></p>`
+        },
     ];
     
     // Add click listener to each marker that opens the InfoWindow with the museums info
@@ -421,45 +438,105 @@ function initMapParks() {
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // Create markers for Parks locations
-// Credit: Info text is taken from https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+
     const markerParks = [
+
+        // Text Credit: https://bridgetomoscow.com/sparrow-hills_2
+        // Photo Credit: https://www.hellotravel.com/russia/moscow-state-university
+
         {
             location: {lat:55.7094, lng:37.5423}, 
             info:`
-            <h5>Sparrow Hills</h5>
+            <h5><span>A</span>&nbsp; Sparrow Hills</h5>
             <img src="../../assets/images/sparrow-hills.jpg" class="image">
-            <p class="info-text">f you to take a walk from Gorky Park along the Moscow river embankment, you’ll end up in the city’s other legendary park, Sparrow Hills. Although the park doesn’t offer as many activities as its hip neighbour, here you can take a closer look at the tallest of the seven Stalinist skyscrapers (the Moscow State University), admire the view from the observation deck or get a cable car ride.</p>`
+            <p class="info-text">Sparrow Hills is a hill on the right bank of the Moskva River and one of the highest points 
+            in Moscow. On top of the hill, 85m above the river, is the observation platform which gives a beautiful panoramic 
+            view of the city. Here you can also take a closer look at the tallest of the seven Stalinist skyscrapers, 
+            the Moscow State University. It looks spectacular at the top of the hill and thanks to its location the University 
+            can be seen from afar.</p>`
         },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+        // Photo Credit: https://en.wikipedia.org/wiki/Tsaritsyno_Palace
+
+
         {
             location: {lat:55.6117, lng:37.6861}, 
             info:`
-            <h5>Tsaritsyno Museum-Reserve</h5>
+            <h5><span>B</span>&nbsp; Tsaritsyno Museum-Reserve</h5>
             <img src="../../assets/images/tsaritsino.jpg" class="image">
-            <p class="info-text">The former summer residence of Empress Catherine the Great was commissioned in 1775, and succumbed to deterioration during the Soviet era. The whole of Tsaritsyno Museum-Reserve has been fundamentally renovated since 1980s to look even brighter than the original. With its opulently decorated buildings, gardens, meadows and forests, Tsaritsyno Park is the perfect place for a green respite in Moscow.</p>`
+            <p class="info-text">The former summer residence of Empress Catherine the Great was commissioned in 1775, 
+            and succumbed to deterioration during the Soviet era. The whole of Tsaritsyno Museum-Reserve has been 
+            fundamentally renovated since 1980s to look even brighter than the original. With its opulently decorated 
+            buildings, gardens, meadows and forests, Tsaritsyno Park is the perfect place for a green respite in Moscow. 
+            <a rel="noopener" target="_blank" href="https://en.tsaritsyno-museum.ru/">Official website</a></p>`
         },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+        // Photo Credit: https://putidorogi-nn.ru/evropa/839-usadba-kolomenskoe-v-moskve
+
         {
             location: {lat:55.6704, lng:37.6695}, 
             info:`
-            <h5>Kolomenskoye</h5>
+            <h5><span>С</span>&nbsp; Kolomenskoye</h5>
             <img src="../../assets/images/kolomenskoe.jpg" class="image">
-            <p class="info-text">A 10-minute metro ride from the city centre will take you to Kolomenskoe Museum-Reserve, where you can get an idea of what Medieval Moscow looked like. Here you’ll find ancient churches (one dating back to the 16th century), the oldest garden in Moscow and a favourite estate of Tsar Alexey Mikhailovich, father of Peter the Great.</p>`
+            <p class="info-text">A 10-minute metro ride from the city centre will take you to Kolomenskoe Museum-Reserve, 
+            where you can get an idea of what Medieval Moscow looked like. Here you’ll find ancient churches (one dating 
+            back to the 16th century), the oldest garden in Moscow and a favourite estate of Tsar Alexey Mikhailovich, 
+            father of Peter the Great. <a rel="noopener" target="_blank" href="http://mgomz.com/">Official 
+            website</a></p>`
         },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+        // Photo Credit: https://www.sputnik8.com/ru/moscow/sights/vdnh/info
+
         {
             location: {lat:55.8310, lng:37.6298}, 
             info:`
-            <h5>VDNKh All-Russian Exhibition Centre</h5>
+            <h5><span>D</span>&nbsp; VDNKh All-Russian Exhibition Centre</h5>
             <img src="../../assets/images/vdnh.jpg" class="image">
-            <p class="info-text">The enormous VDNKh (short for All-Russian Exhibition Centre) recently went through an extensive renovation and now looks better than ever. The centre started as the all-Soviet agricultural exhibition in 1935, and now serves as an open-air museum of Soviet architecture. With the iconic fountain at its entrance, the park complex is home to a number of museums, shopping pavilions, multiple eateries, a massive oceanarium, a zip-line, and a horse-riding rink. In winter a skating rink opens – the largest in Europe.</p>`
+            <p class="info-text">The enormous VDNKh (short for All-Russian Exhibition Centre) recently went through an 
+            extensive renovation and now looks better than ever. The centre started as the all-Soviet agricultural 
+            exhibition in 1935, and now serves as an open-air museum of Soviet architecture. With the iconic fountain 
+            at its entrance, the park complex is home to a number of museums, shopping pavilions, multiple eateries, 
+            a massive oceanarium, a zip-line, and a horse-riding rink. In winter a skating rink opens – the largest 
+            in Europe. <a rel="noopener" target="_blank" href="https://vdnh.ru/en/">Official 
+            website</a></p>`
         },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+        // Photo Credit: https://en.wikipedia.org/wiki/Gorky_Park_(Moscow)
+
         {
             location: {lat:55.7284, lng:37.6013}, 
             info:`
-            <h5>Gorky Park</h5>
+            <h5><span>E</span>&nbsp; Gorky Park</h5>
             <img src="../../assets/images/gorky-park.jpg" class="image">
-            <p class="info-text">Moscow’s premier green space, Gorky Park, offers entertainment for every taste: outdoor dancing sessions, yoga and fitness classes all summer, as well as beach volleyball and ping-pong, rollerblading, skateboarding and cycling opportunities, along with segway and boat-rentals. In winter, half of the park turns into one of the city’s biggest skating rinks. The park is also home to an open-air movie theatre and the Garage Museum of Contemporary Art.</p>`
+            <p class="info-text">Moscow’s premier green space, Gorky Park, offers entertainment for every taste: outdoor 
+            dancing sessions, yoga and fitness classes all summer, as well as beach volleyball and ping-pong, rollerblading, 
+            skateboarding and cycling opportunities, along with segway and boat-rentals. In winter, half of the park turns 
+            into one of the city’s biggest skating rinks. The park is also home to an open-air movie theatre and the Garage 
+            Museum of Contemporary Art. <a rel="noopener" target="_blank" href="https://www.park-gorkogo.com/en/">Official 
+            website</a></p>`
         },
         
-        
+        // Text Credit: https://www.moscovery.com/moscow-zoo/
+        // Photo Credit: https://rusunion.com/moskovskiy-zoopark-otsrochil-nastuplenie-oseni/
+
+        {
+            location: {lat:55.7632, lng:37.5766}, 
+            info:`
+            <h5><span>F</span>&nbsp; Moscow Zoo</h5>
+            <img src="../../assets/images/moscow-zoo.jpg" class="image">
+            <p class="info-text">The Moscow Zoo is one of the oldest zoos in Europe, dating back to 1864. Located in the 
+            city centre, the zoo is a favourite place for families with children and a popular tourist attraction. The zoo is 
+            home to about 1,100 species, second only to the Berlin Zoological Garden in the European rankings. Primates, elephants, 
+            giraffes, tigers, lions, brown bears and polar bears, penguins, rare birds, and seals are kept on a 22-ha plot 
+            of land. The zoo contains a number of rare species of wild fauna, such as the Amur tiger, Pallas’s cat, snow 
+            leopard, vicuña, white-tailed gnu, guanaco, takin, and so on. 
+            <a rel="noopener" target="_blank" href="https://moscowzoo.su/">Official 
+            website</a></p>`
+        },
     ];
     
     // Add click listener to each marker that opens the InfoWindow with the parks info
@@ -496,7 +573,7 @@ document.getElementById("shopping").addEventListener("click",initMapShopping);
 
 function initMapShopping() {
     let mapShopping = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
+        zoom: 11,
         center: {
             lat:55.7558, 
             lng:37.6173
@@ -507,16 +584,120 @@ function initMapShopping() {
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // Create markers for Shopping locations
-// Credit: Info text is taken from https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+
     const markerShopping = [
+
+        // Text Credit: https://www.lonelyplanet.com/articles/a-guide-to-shopping-in-moscow
+        // Photo Credit: https://gum.ru/history/
+
         {
-            location: {lat:55.7601, lng:37.6186}, 
+            location: {lat:55.7547, lng:37.6215}, 
             info:`
-            <h5>Bolshoi Theatre</h5>
-            <img src="../../assets/images/bolshoi-theatre.jpg" class="image">
-            <p class="info-text">Opened in 1856, the legendary Bolshoi Theatre is one of the pest places in Moscow for an evening of entertainment. The building houses two stages, hosting both ballet and opera performances.</p>`
+            <h5><span>A</span>&nbsp; GUM</h5>
+            <img src="../../assets/images/gum.jpg" class="image">
+            <p class="info-text">GUM is one of the oldest department stores in the country. It’s famous for the glass roof 
+            designed by one of Russia’s most celebrated architects, Vladimir Shukhov. Today it serves as a high-class shopping 
+            mall. There are plenty of luxury shops, a supermarket that sells lots of signature Russian goods and several places 
+            to eat. Head to the more expensive <a rel="noopener" target="_blank" 
+            href="https://gumrussia.com/cafe/bosco-cafe/">Bosco Cafe</a> with a Kremlin view or, for a budget option, 
+            try the Soviet-style cafeteria <a rel="noopener" target="_blank" 
+            href="https://gumrussia.com/shops/stolovaya-57/">Stolovaya No 57</a>. GUM also occasionally hosts contemporary art exhibitions in one of its three main aisles. 
+            <a rel="noopener" target="_blank" href="https://gumrussia.com/?_ga=2.5870197.735455364.1623700250-201588925.1623700250">Official 
+            website</a></p>`
         },
         
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+        // Photo Credit: https://planeta.turtella.ru/russia/moscow/p1156840
+
+        {
+            location: {lat:55.79565812194224, lng:37.782535146553634},
+            info:`
+            <h5><span>B</span>&nbsp; Izmailovsky Market</h5>
+            <img src="../../assets/images/izmailovsky-market.jpg" class="image">
+            <p class="info-text">For those on a slightly more limited budget, ditch window shopping at the exclusive GUM and 
+            take a foray into the madly bustling world of Izmailovsky, Russia’s best flea market. Delve into the bargains, 
+            rifle through the artisan crafts, admire the local handiwork and be tempted by the silky smooth traditional fur hats. 
+            Expect walls of matryoshka dolls, fascinating Soviet memorabilia, and glittering hand-crafted jewellery. Head up to 
+            one of Izmailovsky market‘s cafés for a warming mulled wine before continuing your shopping spree.</p>`
+        },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/the-best-shopping-malls-in-moscow/
+        // Photo Credit: https://kudago.com/msk/place/cum/
+
+        {
+            location: {lat:55.761208008956295, lng:37.6193057},
+            info:`
+            <h5><span>C</span>&nbsp; TSUM</h5>
+            <img src="../../assets/images/tsum.jpg" class="image">
+            <p class="info-text">Beautifully located in the historic centre of Moscow, the TSUM Department Store is mere 
+            steps from the city’s important tourist attractions, including Red Square. Built in 1908, the Gothic style store 
+            sells over 1000 famous brands, including Alexander McQueen, Lanvin and Carolina Herrera. Much like its cousin GUM, 
+            the TSUM Department Store is known for its luxury boutiques, stunning architecture and great eateries. 
+            <a rel="noopener" target="_blank" href="https://www.tsum.ru/english/">Official website</a></p>`
+        },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/the-best-shopping-malls-in-moscow/
+        // Photo Credit: https://kudago.com/msk/place/cum/
+
+        {
+            location: {lat:55.761208008956295, lng:37.6193057},
+            info:`
+            <h5><span>C</span>&nbsp; TSUM</h5>
+            <img src="../../assets/images/tsum.jpg" class="image">
+            <p class="info-text">Beautifully located in the historic centre of Moscow, the TSUM Department Store is mere 
+            steps from the city’s important tourist attractions, including Red Square. Built in 1908, the Gothic style store 
+            sells over 1000 famous brands, including Alexander McQueen, Lanvin and Carolina Herrera. Much like its cousin GUM, 
+            the TSUM Department Store is known for its luxury boutiques, stunning architecture and great eateries. 
+            <a rel="noopener" target="_blank" href="https://www.tsum.ru/english/">Official website</a></p>`
+        },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/the-best-shopping-malls-in-moscow/
+        // Photo Credit: https://horosho-tam.ru/rossiya/moskva/aviapark
+
+        {
+            location: {lat:55.790337356003484, lng:37.5308876},
+            info:`
+            <h5><span>D</span>&nbsp; Aviapark Shopping Centre</h5>
+            <img src="../../assets/images/aviapark.jpg" class="image">
+            <p class="info-text">Of all the malls on the list, Aviapark takes the most time to get to, but Europe’s biggest 
+            mall is definitely worth the free shuttle bus ride. With over 500 stores, 80 eateries and a 17-screen cinema, 
+            all spread across the equivalent of 36 football pitches, Aviapark is officially the most popular shopping mall 
+            in Moscow. However, the major draw of the glass-roofed shopping centre is the 24-meter-tall pillar aquarium, 
+            filled with tropical fish. 
+            <a rel="noopener" target="_blank" href="https://aviapark.com/en/">Official website</a></p>`
+        },
+
+        // Text Credit: https://theculturetrip.com/europe/russia/articles/the-best-shopping-malls-in-moscow/
+        // Photo Credit: https://trcmoscow.ru/trc/tc-metropolis.html
+
+        {
+            location: {lat:55.790337356003484, lng:37.5308876},
+            info:`
+            <h5><span>D</span>&nbsp; Aviapark Shopping Centre</h5>
+            <img src="../../assets/images/metropolis.jpg" class="image">
+            <p class="info-text">Metropolis is where you should go for high-street retail if you don’t feel like traveling 
+            too far from the city centre. Home to boutiques like Zara, Marks & Spencer, H&M, New Yorker, GAP and River Island, 
+            Metropolis also houses a huge supermarket, bowling alley, swimming pool and a cinema. 
+            <a rel="noopener" target="_blank" href="https://metropolis.moscow/en/">Official website</a></p>`
+        },
+
+        // Text Credit: https://lidenz.ru/danilovsky-moscow-market/
+        // Photo Credit: https://daily.afisha.ru/archive/gorod/eating/chto-novye-hozyain-hochet-pochemu-zakryvaetsya-danilovskiy-rynok/
+
+        {
+            location: {lat:55.71158082026265, lng:37.61903272734157},
+            info:`
+            <h5><span>E</span>&nbsp; Danilovsky Market</h5>
+            <img src="../../assets/images/danilovsky-market.jpg" class="image">
+            <p class="info-text">Danilovsky market is a marketplace where fresh and varied products are sold. 
+            It is complemented by a sophisticated bistro concept, seasonal fairs and gastronomic festivals. Today, the market 
+            has around 30 restaurant concepts from different countries and cultures, based on 
+            the motto “Around the world in 80 minutes”. You can even find restaurants of famous personalities in the 
+            gastronomy industry. Do you want Peking duck or rather cravings for falafel? Have you always wanted to try Armenian 
+            dolma or Moroccan tazhin? The Danilovsky Moscow market makes it possible – from luxury burgers to Dagistan 
+            cuisine everything can be found there. 
+            <a rel="noopener" target="_blank" href="https://danilovskymarket.ru/en">Official website</a></p>`
+        },
     ];
     
     // Add click listener to each marker that opens the InfoWindow with the Shopping info
