@@ -573,7 +573,7 @@ document.getElementById("shopping").addEventListener("click",initMapShopping);
 
 function initMapShopping() {
     let mapShopping = new google.maps.Map(document.getElementById("map"), {
-        zoom: 11,
+        zoom: 10,
         center: {
             lat:55.7558, 
             lng:37.6173
@@ -637,25 +637,10 @@ function initMapShopping() {
         },
 
         // Text Credit: https://theculturetrip.com/europe/russia/articles/the-best-shopping-malls-in-moscow/
-        // Photo Credit: https://kudago.com/msk/place/cum/
-
-        {
-            location: {lat:55.761208008956295, lng:37.6193057},
-            info:`
-            <h5><span>C</span>&nbsp; TSUM</h5>
-            <img src="../../assets/images/tsum.jpg" class="image">
-            <p class="info-text">Beautifully located in the historic centre of Moscow, the TSUM Department Store is mere 
-            steps from the city’s important tourist attractions, including Red Square. Built in 1908, the Gothic style store 
-            sells over 1000 famous brands, including Alexander McQueen, Lanvin and Carolina Herrera. Much like its cousin GUM, 
-            the TSUM Department Store is known for its luxury boutiques, stunning architecture and great eateries. 
-            <a rel="noopener" target="_blank" href="https://www.tsum.ru/english/">Official website</a></p>`
-        },
-
-        // Text Credit: https://theculturetrip.com/europe/russia/articles/the-best-shopping-malls-in-moscow/
         // Photo Credit: https://horosho-tam.ru/rossiya/moskva/aviapark
 
         {
-            location: {lat:55.790337356003484, lng:37.5308876},
+            location: {lat:55.790476072244026, lng:37.53131675179403},
             info:`
             <h5><span>D</span>&nbsp; Aviapark Shopping Centre</h5>
             <img src="../../assets/images/aviapark.jpg" class="image">
@@ -671,9 +656,9 @@ function initMapShopping() {
         // Photo Credit: https://trcmoscow.ru/trc/tc-metropolis.html
 
         {
-            location: {lat:55.790337356003484, lng:37.5308876},
+            location: {lat:55.823595805738755, lng:37.49774188619093},
             info:`
-            <h5><span>D</span>&nbsp; Aviapark Shopping Centre</h5>
+            <h5><span>E</span>&nbsp; Metropolis Shopping Centre</h5>
             <img src="../../assets/images/metropolis.jpg" class="image">
             <p class="info-text">Metropolis is where you should go for high-street retail if you don’t feel like traveling 
             too far from the city centre. Home to boutiques like Zara, Marks & Spencer, H&M, New Yorker, GAP and River Island, 
@@ -687,7 +672,7 @@ function initMapShopping() {
         {
             location: {lat:55.71158082026265, lng:37.61903272734157},
             info:`
-            <h5><span>E</span>&nbsp; Danilovsky Market</h5>
+            <h5><span>F</span>&nbsp; Danilovsky Market</h5>
             <img src="../../assets/images/danilovsky-market.jpg" class="image">
             <p class="info-text">Danilovsky market is a marketplace where fresh and varied products are sold. 
             It is complemented by a sophisticated bistro concept, seasonal fairs and gastronomic festivals. Today, the market 
