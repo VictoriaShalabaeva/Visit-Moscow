@@ -429,8 +429,8 @@ function initMapParks() {
     let mapParks = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
         center: {
-            lat:55.7558, 
-            lng:37.6173
+            lat:55.73402612486688, 
+            lng:37.63365561837892
         },
         styles: dark_style,
     });
@@ -573,10 +573,10 @@ document.getElementById("shopping").addEventListener("click",initMapShopping);
 
 function initMapShopping() {
     let mapShopping = new google.maps.Map(document.getElementById("map"), {
-        zoom: 10,
+        zoom: 10.5,
         center: {
-            lat:55.7558, 
-            lng:37.6173
+            lat:55.77427567683743, 
+            lng:37.632019544817204
         },
         styles: dark_style,
     });
