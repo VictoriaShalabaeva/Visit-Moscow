@@ -1,87 +1,118 @@
 // The code was written with the aid of Code institute tutorials and Google mapы documentation
 
 // Define a map style
-// Code credit: Google maps documentation (https://developers.google.com/maps/documentation/javascript/examples/style-array)
+// Code credit: Google maps documentation (https://developers.google.com/maps/documentation/javascript/examples/maptype-styled-simple)
 
-const dark_style = [
-    { elementType: "geometry", stylers: [{ color: "#2f3338" }] },
-    { elementType: "labels.text.stroke", stylers: [{ color: "#2f3338" }] },
-    { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+const yellow_style = [
+    { elementType: "geometry", stylers: [{ color: "#ebe3cd" }] },
+    { elementType: "labels.text.fill", stylers: [{ color: "#523735" }] },
+    { elementType: "labels.text.stroke", stylers: [{ color: "#f5f1e6" }] },
     {
-      featureType: "administrative.locality",
+      featureType: "administrative",
+      elementType: "geometry.stroke",
+      stylers: [{ color: "#c9b2a6" }],
+    },
+    {
+      featureType: "administrative.land_parcel",
+      elementType: "geometry.stroke",
+      stylers: [{ color: "#dcd2be" }],
+    },
+    {
+      featureType: "administrative.land_parcel",
       elementType: "labels.text.fill",
-      stylers: [{ color: "#d59563" }],
+      stylers: [{ color: "#ae9e90" }],
+    },
+    {
+      featureType: "landscape.natural",
+      elementType: "geometry",
+      stylers: [{ color: "#dfd2ae" }],
+    },
+    {
+      featureType: "poi",
+      elementType: "geometry",
+      stylers: [{ color: "#dfd2ae" }],
     },
     {
       featureType: "poi",
       elementType: "labels.text.fill",
-      stylers: [{ color: "#d59563" }],
+      stylers: [{ color: "#93817c" }],
     },
     {
       featureType: "poi.park",
-      elementType: "geometry",
-      stylers: [{ color: "#263c3f" }],
+      elementType: "geometry.fill",
+      stylers: [{ color: "#a5b076" }],
     },
     {
       featureType: "poi.park",
       elementType: "labels.text.fill",
-      stylers: [{ color: "#6b9a76" }],
+      stylers: [{ color: "#447530" }],
     },
     {
       featureType: "road",
       elementType: "geometry",
-      stylers: [{ color: "#38414e" }],
+      stylers: [{ color: "#f5f1e6" }],
     },
     {
-      featureType: "road",
-      elementType: "geometry.stroke",
-      stylers: [{ color: "#212a37" }],
-    },
-    {
-      featureType: "road",
-      elementType: "labels.text.fill",
-      stylers: [{ color: "#9ca5b3" }],
+      featureType: "road.arterial",
+      elementType: "geometry",
+      stylers: [{ color: "#fdfcf8" }],
     },
     {
       featureType: "road.highway",
       elementType: "geometry",
-      stylers: [{ color: "#746855" }],
+      stylers: [{ color: "#f8c967" }],
     },
     {
       featureType: "road.highway",
       elementType: "geometry.stroke",
-      stylers: [{ color: "#1f2835" }],
+      stylers: [{ color: "#e9bc62" }],
     },
     {
-      featureType: "road.highway",
-      elementType: "labels.text.fill",
-      stylers: [{ color: "#f3d19c" }],
-    },
-    {
-      featureType: "transit",
+      featureType: "road.highway.controlled_access",
       elementType: "geometry",
-      stylers: [{ color: "#2f3948" }],
+      stylers: [{ color: "#e98d58" }],
+    },
+    {
+      featureType: "road.highway.controlled_access",
+      elementType: "geometry.stroke",
+      stylers: [{ color: "#db8555" }],
+    },
+    {
+      featureType: "road.local",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#806b63" }],
+    },
+    {
+      featureType: "transit.line",
+      elementType: "geometry",
+      stylers: [{ color: "#dfd2ae" }],
+    },
+    {
+      featureType: "transit.line",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#8f7d77" }],
+    },
+    {
+      featureType: "transit.line",
+      elementType: "labels.text.stroke",
+      stylers: [{ color: "#ebe3cd" }],
     },
     {
       featureType: "transit.station",
-      elementType: "labels.text.fill",
-      stylers: [{ color: "#d59563" }],
-    },
-    {
-      featureType: "water",
       elementType: "geometry",
-      stylers: [{ color: "#17263c" }],
+      stylers: [{ color: "#dfd2ae" }],
+    },
+    {
+      featureType: "water",
+      elementType: "geometry.fill",
+      stylers: [{ color: "#b9d3c2" }],
     },
     {
       featureType: "water",
       elementType: "labels.text.fill",
-      stylers: [{ color: "#515c6d" }],
+      stylers: [{ color: "#92998d" }],
     },
-    {
-      featureType: "water",
-      elementType: "labels.text.stroke",
-      stylers: [{ color: "#17263c" }],
-    },]
+  ]
 
 // Create a map of Moscow
 
@@ -89,7 +120,7 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
         center: {lat: 55.7558, lng: 37.6173},
-        styles: dark_style,
+        styles: yellow_style,
     });
 }  
 
@@ -101,7 +132,7 @@ function initMapHistoricSites() {
     let mapHistoricSites = new google.maps.Map(document.getElementById("map"), {
         zoom: 12,
         center: {lat:55.7539, lng:37.6208},
-        styles: dark_style,
+        styles: yellow_style,
     });
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -284,7 +315,7 @@ function initMapMuseums() {
     let mapMuseums = new google.maps.Map(document.getElementById("map"), {
         zoom: 11,
         center: {lat:55.791278, lng:37.63261},
-        styles: dark_style,
+        styles: yellow_style,
     });
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -432,7 +463,7 @@ function initMapParks() {
             lat:55.73402612486688, 
             lng:37.63365561837892
         },
-        styles: dark_style,
+        styles: yellow_style,
     });
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -578,7 +609,7 @@ function initMapShopping() {
             lat:55.77427567683743, 
             lng:37.632019544817204
         },
-        styles: dark_style,
+        styles: yellow_style,
     });
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
