@@ -3,21 +3,23 @@
 //The code is written following the Code Institute tutorials and EmailJS documentation
 
 function sendMail(contactForm) {
-    emailjs.send("service_jr9gthn","template_id_contact_form",{
+
+    emailjs.send("service_jr9gthn", "template_id_contact_form", {
+        
         "from_name": contactForm.name.value,
-        "from_email": contactForm.email_address.value,
-        "message": contactForm.your-message.value,
+        "from_email": contactForm.emailaddress.value,
+        "message": contactForm.yourmessage.value
     })
+
     .then(
-        function(response) {
-            document.getElementById('contact-form').innerHTML = `<p>Your message has been sent successfully, we will be in touch with you within two working days.</p>`;
+
+        function(response) {document.getElementById('contact-form').innerHTML = `
+            <p class="response">Your message has been sent successfully!</p>
+            <p class="response">We will be in touch with you within two working days.</p>`;
         },
-        function(error) {
-            document.getElementById('contact-form').innerHTML = `<p>Your message was not sent, please try again.</p>`;
+        function(error) {document.getElementById('contact-form').innerHTML = `
+            <p class="response">Your message was not sent, please try again.</p>`;
         }
     );
-    
     return false;  // To block from loading a new page
-
-    console.log("hello");
 }

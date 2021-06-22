@@ -262,7 +262,7 @@ body{
 
     margin-top: 50px;
     color: #fff;
-    background-color: rgba(60, 60, 60, 0.6);
+    background-color: rgba(60, 60, 60, 0.8);
     width: 450px;
     position: absolute;
     left: 10%;
@@ -316,6 +316,13 @@ body{
 .text-input:hover{
 
     border-color:#e3952a;
+}
+
+.response{
+
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #f4c483;
 }
 
 /* ----------------------------------------------Footer */
