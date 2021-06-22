@@ -488,6 +488,14 @@ body{
     }
 }
 
+@media (min-width: 530px) and (max-width: 550px){
+
+    .row-buttons{
+
+        margin-left: 10px;
+    }
+}
+
 @media screen and (max-width: 300px){
 
     .row-buttons {
