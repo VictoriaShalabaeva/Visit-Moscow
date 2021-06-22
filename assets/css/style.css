@@ -134,6 +134,13 @@ body{
 
 /* ----------------------------------------------Home Page */
 
+#weather{
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 .jumbotron{
 
     background-color: rgba(12, 12, 12, 0.7);
@@ -330,8 +337,8 @@ body{
 .footer{
 
     text-align: center;
-    padding-top: 17px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 13px;
     background-color: #494947;
     color: #ffffff;
     display: block;
@@ -490,8 +497,16 @@ body{
     .row-buttons{
 
         margin-left: 30px;
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 590px){
+
+    .row-buttons {
+
+        margin-left: 43px;
     }
 }
 
@@ -519,6 +534,11 @@ a:not([href]):not([tabindex]):hover{
 .btn--yellow:hover{
 
     color: #0056b3;
+}
+
+.btn:focus {
+
+    box-shadow: 0 0 0 0.2rem #e3952a;
 }
 
 .things-to-do{
@@ -572,6 +592,13 @@ h5 span{
     }
 }
 
+@media screen and (max-width: 390px){
+
+    .list-inline-item a{
+
+        width: 130px;
+    }
+}
 
 @media screen and (max-width: 600px){
 
