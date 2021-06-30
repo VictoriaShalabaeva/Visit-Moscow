@@ -31,7 +31,7 @@
 
 		/* Set the matchMedia */
 
-		if (window.matchMedia("(max-width: 750px)").matches) {
+		if (window.matchMedia("(max-width: 600px)").matches) {
 
 			/* Changes when we reach the min-width  */
 

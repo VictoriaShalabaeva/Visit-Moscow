@@ -23,6 +23,7 @@ body{
 @media screen and (max-width: 400px){
 
     .navbar-brand{
+
         font-size: 28px;
     }
 }
@@ -30,6 +31,14 @@ body{
 .navbar-nav{
 
     font-size: 20px;
+}
+
+@media screen and (max-width: 400px){
+
+    .navbar-nav{
+
+        font-size: 18px;
+    }
 }
 
 .navbar-dark .navbar-toggler {
@@ -70,7 +79,7 @@ body{
 
     /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
 
-    background: url(../images/moscow-view-1.jpg) no-repeat top center fixed; 
+    background: url(../images/moscow-view-1.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -87,7 +96,7 @@ body{
 
     /*Photo credit: https://wallpaperaccess.com/moscow */
 
-    background: url(../images/moscow-view-4.jpg) no-repeat top center fixed; 
+    background: url(../images/moscow-view-4.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -121,7 +130,7 @@ body{
 
     /*Photo credit: https://wallpaperaccess.com/moscow-city */
 
-    background: url(../images/moscow-view-3.jpg) no-repeat top center fixed; 
+    background: url(../images/moscow-view-3.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -139,6 +148,60 @@ body{
     position: absolute;
     top: 20px;
     left: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border-radius: 3%;
+    background-color: rgba(12, 12, 12, 0.6);
+}
+
+@media screen and (max-width: 415px){
+
+    #weather{
+        
+        top: auto;
+        left: auto;
+        bottom: 10px;
+        right: 10px;
+    }   
+}
+
+.weather-header{
+
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 541px){
+
+    .weather-header{
+
+        font-size: 16px;
+        font-weight: 400;
+    }   
+}
+
+#temperature{
+
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 541px){
+
+    #temperature h2{
+
+        font-size: 24px;
+        margin-bottom: 0;
+    }  
+}
+
+@media screen and (max-width: 325px){
+
+    #temperature h2{
+
+        font-size: 20px;
+    }  
 }
 
 .jumbotron{
@@ -148,11 +211,20 @@ body{
     padding-top: 30px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
 
     .jumbotron{
 
         border-radius: 0;
+    }    
+}
+
+@media screen and (max-width: 541px){
+
+    .jumbotron{
+
+        padding-bottom: 5px;
+        padding-top: 25px;
     }    
 }
 
@@ -163,10 +235,46 @@ body{
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 541px){
+
+    .jumbotron-header{
+
+        font-size: 28px;
+        margin-bottom: 20px;
+    }    
+}
+
+@media screen and (max-width: 541px){
+
+    .jumbotron-header{
+
+        font-size: 24px;
+        margin-bottom: 15px;
+    }    
+}
+
 .jumbotron .lead{
 
     margin: 25px 0;
     color: #ffffff;
+}
+
+@media screen and (max-width: 541px){
+
+    .jumbotron .lead{
+
+        font-size: 18px;
+        margin: 12px 0;
+    }    
+}
+
+@media screen and (max-width: 325px){
+
+    .jumbotron .lead{
+
+        font-size: 16px;
+        margin: 8px 0;
+    }    
 }
 
 .jumbotron small{
@@ -187,6 +295,15 @@ body{
 .block-divider--orange{
     
     background-color: #e3952a;
+}
+
+@media screen and (max-width: 325px){
+
+    .block-divider--orange{
+
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }    
 }
 
 .btn--yellow{
@@ -247,6 +364,22 @@ body{
     }
 }
 
+@media screen and (max-width: 390px){
+
+    #main-text p{
+
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 325px){
+
+    #main-text p{
+
+        font-size: 16px;
+    }
+}
+
 @media screen and (min-width: 1800px){
 
     #main-text p{
@@ -272,7 +405,6 @@ body{
     background-color: rgba(60, 60, 60, 0.8);
     width: 450px;
     position: absolute;
-    left: 10%;
     padding: 30px;
     border-radius: 1%;
 }
@@ -281,10 +413,8 @@ body{
 
     #contact-form{
         width: 350px;
-        left: auto;
         margin-top: 20px;
         position: absolute;
-        top: auto;
     }
 }
 
@@ -332,6 +462,33 @@ body{
     color: #f4c483;
 }
 
+/* Code credit to change placeholder color: https://www.w3schools.com/howto/howto_css_placeholder.asp */
+
+#image-outer-3 input::placeholder, 
+#image-outer-3 textarea::placeholder{ 
+    
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+    color: rgb(241, 241, 241);
+    opacity: 1; /* Firefox */
+}
+  
+#image-outer-3 input:-ms-input-placeholder,
+#image-outer-3 textarea:-ms-input-placeholder{ 
+    
+    /* Internet Explorer 10-11 */
+
+    color: rgb(241, 241, 241);
+}
+
+#image-outer-3 input::-ms-input-placeholder,
+#image-outer-3 textarea::-ms-input-placeholder{ 
+    
+    /* Microsoft Edge */
+
+    color: rgb(241, 241, 241);
+}
+
 /* ----------------------------------------------Footer */
 
 .footer{
@@ -372,7 +529,7 @@ body{
     border-radius: 1%;
 }
 
-@media (min-width: 700px) and (max-width: 800px){
+@media (min-width: 576px) and (max-width: 993px){
 
     .map-margin{
         margin-right: 30px;
@@ -411,13 +568,14 @@ body{
     color: rgb(0, 0, 0);
     padding-top: 30px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 40px;
     border-radius: 5%;
 }
 
 @media screen and (max-width: 600px){
 
     #info-window{
+
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 50px;
@@ -459,7 +617,8 @@ body{
     margin-top: 30px;
     text-align: justify;
     padding-left: 23px;
-    font-weight: 500;
+    font-weight: 400;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 600px){
@@ -492,11 +651,19 @@ body{
     color: black;
 }
 
+@media screen and (max-width: 801px){
+
+    .row-buttons{
+
+        margin-left: 10px;
+    }
+}
+
 @media screen and (max-width: 600px){
 
     .row-buttons{
 
-        margin-left: 30px;
+        margin-left: 37px;
         margin-top: 20px;
         margin-bottom: 5px;
     }
@@ -515,6 +682,46 @@ body{
     .row-buttons{
 
         margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 485px){
+
+    .row-buttons{
+
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 415px){
+
+    .row-buttons{
+
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 390px){
+
+    .row-buttons {
+
+        margin-left: 43px;
+    }
+}
+
+@media screen and (max-width: 370px){
+
+    .row-buttons {
+
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 355px){
+
+    .row-buttons {
+
+        margin-left: 24px;
     }
 }
 
@@ -565,9 +772,9 @@ h5 span{
 
 .things-to-do-window{
 
-    background-color: rgb(207 199 163 / 90%);
+    background-color: rgb(239 233 205 / 90%);
     color: white;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
     border-radius: 1%;
 }
 
@@ -592,6 +799,30 @@ h5 span{
     }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1350px){
+
+    .list-inline-item a{
+
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 486px){
+
+    .list-inline-item a{
+
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 445px){
+
+    .list-inline-item a{
+
+        width: 150px;
+    }
+}
+
 @media screen and (max-width: 390px){
 
     .list-inline-item a{
@@ -600,9 +831,18 @@ h5 span{
     }
 }
 
+@media screen and (max-width: 310px){
+
+    .list-inline-item a{
+
+        width: 120px;
+    }
+}
+
 @media screen and (max-width: 600px){
 
     .list-inline-item:not(:last-child) {
+
         margin-right: 10px;
     }
     
@@ -615,11 +855,12 @@ h5 span{
 @media screen and (max-width: 500px){
 
     .list-inline-item:not(:last-child) {
+
         margin-right: 30px;
     }
 }
 
-@media screen and (max-width: 330px){
+@media screen and (max-width: 348px){
 
     .list-inline-item:not(:last-child) {
 
