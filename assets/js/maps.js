@@ -137,7 +137,7 @@ function initMapHistoricSites() {
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-// Create markers for Historic Sites locations
+    // Create markers for Historic Sites locations
 
     const markerHistoricSites = [
         
@@ -294,16 +294,20 @@ function initMapHistoricSites() {
 
         google.maps.event.addListener(marker, 'click', function() {
 
-            $("#info-window").html(markerHistoricSites.info)
-                
-    });
-    return marker;
+            $("#info-window").html(markerHistoricSites.info);
 
+            if (window.matchMedia("(max-width: 600px)").matches){
+
+                document.querySelector('#info-window').scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            };                
+        });
+        return marker;
     });
 
     let markerCluster = new MarkerClusterer(mapHistoricSites, markers, {
-    imagePath:
-            "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 }
 
@@ -320,7 +324,7 @@ function initMapMuseums() {
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-//Create markers for Museums locations
+    //Create markers for Museums locations
 
     const markerMuseums = [     
         
@@ -439,16 +443,20 @@ function initMapMuseums() {
 
         google.maps.event.addListener(marker, 'click', function() {
 
-            $("#info-window").html(markerMuseums.info)
-                
-    });
-    return marker;
+            $("#info-window").html(markerMuseums.info);
 
+            if (window.matchMedia("(max-width: 600px)").matches){
+
+                document.querySelector('#info-window').scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            };                   
+        });
+        return marker;
     });
 
     let markerCluster = new MarkerClusterer(mapMuseums, markers, {
-    imagePath:
-            "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 }
 
@@ -585,16 +593,20 @@ function initMapParks() {
 
         google.maps.event.addListener(marker, 'click', function() {
 
-            $("#info-window").html(markerParks.info)
-                
-    });
-    return marker;
+            $("#info-window").html(markerParks.info);
 
+            if (window.matchMedia("(max-width: 600px)").matches){
+
+                document.querySelector('#info-window').scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            };                   
+        });
+        return marker;
     });
 
     let markerCluster = new MarkerClusterer(mapParks, markers, {
-    imagePath:
-            "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 }
 
@@ -614,7 +626,7 @@ function initMapShopping() {
 
     let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-// Create markers for Shopping locations
+    // Create markers for Shopping locations
 
     const markerShopping = [
 
@@ -731,16 +743,20 @@ function initMapShopping() {
 
         google.maps.event.addListener(marker, 'click', function() {
 
-            $("#info-window").html(markerShopping.info)
-                
-    });
-    return marker;
+            $("#info-window").html(markerShopping.info);
 
+            if (window.matchMedia("(max-width: 600px)").matches){
+
+                document.querySelector('#info-window').scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            };                  
+        });
+        return marker;
     });
 
     let markerCluster = new MarkerClusterer(mapShopping, markers, {
-    imagePath:
-            "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 }
 
