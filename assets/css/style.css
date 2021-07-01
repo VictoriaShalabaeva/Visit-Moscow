@@ -551,6 +551,13 @@ body{
     border-radius: 1%;
 }
 
+.map-margin{
+
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 @media (min-width: 576px) and (max-width: 993px){
 
     .map-margin{
@@ -670,6 +677,7 @@ body{
 
     margin-bottom: 20px;
     margin-top: 40px;
+    margin-left: 0;
     color: black;
 }
 
@@ -800,6 +808,11 @@ h5 span{
     border-radius: 1%;
 }
 
+.padding-map{
+
+    padding-right: 0;
+}
+
 @media screen and (max-width: 600px){
 
     .things-to-do-window{
@@ -810,7 +823,7 @@ h5 span{
 
 .padding-left-map{
 
-    padding-left: 60px;
+    padding-left: 50px;
 }
 
 @media screen and (max-width: 600px){
