@@ -838,6 +838,8 @@ a:not([href]):not([tabindex]):hover{
     width: 100%;
     position: absolute;
     top: 40px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 @media screen and (max-width: 600px){
@@ -860,6 +862,14 @@ h5 span{
     color: white;
     padding-bottom: 45px;
     border-radius: 1%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-margin{
+
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .padding-map{
