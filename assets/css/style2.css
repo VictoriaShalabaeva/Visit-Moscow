@@ -730,6 +730,7 @@ body{
     margin-top: 40px;
     margin-left: 0;
     color: black;
+    margin-right: 0;
 }
 
 @media screen and (max-width: 801px){
