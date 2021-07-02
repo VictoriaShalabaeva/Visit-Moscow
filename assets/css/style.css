@@ -95,7 +95,9 @@ body{
 
 #image-outer-1{   
 
-    height: 100vh;
+    height: 100vh;  
+    
+    max-height: -webkit-fill-available;
 
     /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
 
