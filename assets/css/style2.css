@@ -108,7 +108,7 @@ body{
 
     /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
 
-    background: url(../images/moscow-view-1.jpg) no-repeat center center fixed;
+    background: url(../images/moscow-view-1.jpg) no-repeat center center scroll;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
