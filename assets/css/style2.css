@@ -103,29 +103,13 @@ body{
 #image-outer-1{   
 
     height: 100vh;  
-    width: 100%;
+    
     max-height: -webkit-fill-available;
 
     /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
 
-    /* background: url(../images/moscow-view-1.jpg) no-repeat center center fixed;
-    background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; */
-    position: relative;
-}
-
-#image-1{
-
-    height: 100%;
-    background: url(../images/moscow-view-1.jpg) no-repeat center center fixed;
+    background: url(../images/moscow-view-1.jpg) no-repeat center center;
+    background-attachment: scroll;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -136,6 +120,7 @@ body{
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    position: relative;
 }
 
 /* @media screen and (max-width: 600px){
