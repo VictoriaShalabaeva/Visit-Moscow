@@ -1,19 +1,9 @@
-// Code credit: https://forums.mobirise.com/discussion/26407/iphone-and-background-size-cover
-
-
-(function($) {
-
-function iOSDetect() {
-
-    $browser = strtolower($_SERVER['HTTP_USER_AGENT']); // Checks the user agent
-
-    if(strstr($browser, 'iphone') || strstr($browser, 'ipad')) {
-
-        $('#moscow-view').removeClass('image-outer-1').addClass('image-outer-1-ios');
-    }
-}
-
-iOSDetect();
-
-})(jQuery);
+// Code credit: https://racase.com.np/javascript-how-to-detect-if-device-is-ios/
    
+var isIOS = /iPad|iPhone/.test(navigator.userAgent) && !window.MSStream;
+
+if (isIOS) {
+
+    $('#moscow-view').removeClass('image-outer-1').addClass('image-outer-1-ios');
+
+} 
