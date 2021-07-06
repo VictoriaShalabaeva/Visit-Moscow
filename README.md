@@ -2,7 +2,7 @@
 
 # Visit Moscow Website
 
-[View the live project here.]()
+[View the live project here.](https://victoriashalabaeva.github.io/Visit-Moscow/)
 
 *Visit Moscow* is an interective website that guides through the most popular sightseeings of Moscow. The website is aimed for tourists who plan to visit the capital of Russia and look for a consize summery on the locations worth to see first.
 

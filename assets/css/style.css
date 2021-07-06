@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body{
 
     font-family: 'Roboto', sans-serif;
@@ -101,15 +108,44 @@ body{
 
     /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
 
-    background: url(../images/moscow-view-1.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(../images/moscow-view-1.jpg) no-repeat center center fixed;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
+}
+
+@media screen and (max-width: 600px){
+
+    #image-outer-1{   
+   
+        height: 100vh;  
+    
+        max-height: -webkit-fill-available;
+    
+        /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
+    
+        background: url(../images/moscow-view-1-small.jpg) no-repeat center center;
+        background-attachment: scroll;
+        background-size: cover;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: relative;       
+    }    
 }
 
 #image-outer-2{ 
@@ -118,14 +154,17 @@ body{
 
     /*Photo credit: https://wallpaperaccess.com/moscow */
 
-    background: url(../images/moscow-view-4.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(../images/moscow-view-4.jpg) no-repeat center center fixed;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -152,14 +191,17 @@ body{
 
     /*Photo credit: https://www.wallpaperflare.com/saint-basil-s-cathedral-russia-moscow-rain-water-drops-church-wallpaper-phrrk */
 
-    background: url(../images/moscow-view-5.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(../images/moscow-view-5.jpg) no-repeat center center fixed;
+    background-size: auto 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -263,15 +305,6 @@ body{
 
     .jumbotron-header{
 
-        font-size: 28px;
-        margin-bottom: 20px;
-    }    
-}
-
-@media screen and (max-width: 541px){
-
-    .jumbotron-header{
-
         font-size: 24px;
         margin-bottom: 15px;
     }    
@@ -306,6 +339,35 @@ body{
     font-size: 60%;
     font-style: italic;
     color: #d0d0d0;
+}
+
+@media screen and (max-height: 550px){
+
+    .jumbotron {
+
+        padding-top: 15px;
+    } 
+
+    .jumbotron p{
+
+        margin-bottom: 0.5rem;
+    }
+
+    .jumbotron-header {
+
+        margin-bottom: 5px;
+    }
+
+    .weather-header {
+
+        margin-bottom: 10px;
+    }
+
+    #weather{
+
+        bottom: 5px;
+        right: 5px;
+    }
 }
 
 .block-divider{
@@ -488,6 +550,38 @@ body{
 
 /* Code credit to change placeholder color: https://www.w3schools.com/howto/howto_css_placeholder.asp */
 
+#image-outer-3 input::-webkit-input-placeholder, #image-outer-3 textarea::-webkit-input-placeholder{ 
+    
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+    color: rgb(241, 241, 241);
+    opacity: 1; /* Firefox */
+}
+
+#image-outer-3 input::-moz-placeholder, #image-outer-3 textarea::-moz-placeholder{ 
+    
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+    color: rgb(241, 241, 241);
+    opacity: 1; /* Firefox */
+}
+
+#image-outer-3 input:-ms-input-placeholder, #image-outer-3 textarea:-ms-input-placeholder{ 
+    
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+    color: rgb(241, 241, 241);
+    opacity: 1; /* Firefox */
+}
+
+#image-outer-3 input::-ms-input-placeholder, #image-outer-3 textarea::-ms-input-placeholder{ 
+    
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+    color: rgb(241, 241, 241);
+    opacity: 1; /* Firefox */
+}
+
 #image-outer-3 input::placeholder, 
 #image-outer-3 textarea::placeholder{ 
     
@@ -583,7 +677,8 @@ body{
     width: 100%;
     height: 250px;
     padding-left: 23px;
-    object-fit: cover; 
+    -o-object-fit: cover;
+       object-fit: cover; 
     display: block;
 }
 
@@ -681,6 +776,7 @@ body{
     margin-top: 40px;
     margin-left: 0;
     color: black;
+    margin-right: 0;
 }
 
 @media screen and (max-width: 801px){
@@ -777,7 +873,9 @@ a:not([href]):not([tabindex]):hover{
 
 .btn:focus {
 
-    box-shadow: 0 0 0 0.2rem #e3952a;
+    -webkit-box-shadow: 0 0 0 0.2rem #e3952a;
+
+            box-shadow: 0 0 0 0.2rem #e3952a;
 }
 
 .things-to-do{
@@ -786,6 +884,8 @@ a:not([href]):not([tabindex]):hover{
     width: 100%;
     position: absolute;
     top: 40px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 @media screen and (max-width: 600px){
@@ -808,6 +908,14 @@ h5 span{
     color: white;
     padding-bottom: 45px;
     border-radius: 1%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-margin{
+
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .padding-map{
@@ -911,7 +1019,6 @@ h5 span{
         margin-bottom: 5px;
     }
 }
-
 
 
 
