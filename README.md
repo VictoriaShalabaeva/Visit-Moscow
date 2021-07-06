@@ -8,7 +8,7 @@
 
 The website is designed to be responsive and accessible on a range of devices, making it easy to navigate through.
 
-![Responsive Design](assets/images/xxx.jpg)
+![Responsive Design](assets/images/responsive-design.jpg)
 
 ## User Experience (UX)
 
@@ -30,29 +30,23 @@ The website is designed to be responsive and accessible on a range of devices, m
 
   - **Colour Scheme**
 
-    The three main colours used are dark grey (#494949), light grey (#f8f9fa) and white.
+    The main colours used are dark grey (#2d2f31), light grey (#494947), light yellow (#e8e3c9) and orange (#e3952a).
 
   - **Typography**
 
-    The Roboto (main text body) and Raleway (headings) fonts are the main fonts used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Roboto and Raleway are clean fonts used frequently in programming, so they are both attractive and appropriate.
+    The Roboto and Yanone Kaffeesatz (Navbar heading) fonts are the main fonts used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Roboto is a clean font used frequently in programming, so it is both attractive and appropriate.
 
   - **Imagery**
      
-    The large background hero images are designed to be striking and catch the user's attention. They are also informative and demonstrate the scientific results of the group.
+    The large background images are designed to be striking and catch the user's attention demonstrating Moscow views.
 
 ### Wireframes
 
-  - *Home* page - [View](assets/pdf/home_page.pdf)
+  - *Home* page - [View](assets/pdf/home-page.pdf)
 
-  - *Research* page - [View](assets/pdf/research_page.pdf)
+  - *Things to do* page - [View](assets/pdf/things-to-do-page.pdf)
 
-  - *Publications* page - [View](assets/pdf/publications_page.pdf)
-
-  - *People* page - [View](assets/pdf/people_page.pdf)
-
-  - *Come join us* page - [View](assets/pdf/come_join_us_page.pdf)
-
-  - *Contact* page - [View](assets/pdf/contact_page.pdf)
+  - *Contact* page - [View](assets/pdf/contact-page.pdf)
 
 ## Features
 
@@ -62,44 +56,27 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - The website contains a Bootstrap responsive navigation header; a collapse plugin groups and hides navbar content.
 
-- The website contains six pages including *Home*, *Research*, *Publications*, *People*, *Come join us* and *Contact* pages. This thematic division facilitates the website navigation.
+- The website contains three pages including *Home*, *Things to do* and *Contact* pages. This thematic division facilitates the website navigation.
 
 - The *Home* page:
 
-  - contains an appealing hero image (with animation) that immediately catches the user's attention and gives a flavour of the main activities and results of the group. 
-  - contains a Bootstrap carousel that summarizes the latest news of the group in a concise manner and allows to keep the page length short.
+  - contains an appealing background image and a Bootstap jumbotron-style component that catches the user's attention. 
+  - shows an actual Moscow weather.
+  - Bootstrap buttons linking to *Things to do* and *Contact* pages.
 
-- The *Research* page:
+- The *Things to do* page:
 
-  - describes the main lines of research developed in the group. 
-  - contains a video where one of the PhD students tells about his research project. 
-  - contains a Bootstrap carousel that shows instruments available in the group laboratory.
-
-- The *Publications* page:
-
-  - contains a full list of publications. 
-  - each article has a DOI link which significantly saves user's time (no need to google each article).
-
-- The *People* page:
-
-  - contains photos and contact information of all group members.
-
-- The *Come join us* page:
-
-  - contains information on currently available Master thesis projects and PhD/Postdoc openings.
+  - contains an interective google map interface to discover the most popular touristic attractions. By clicking on one of the four buttons (*Historic Sites*, *Museums*, *Parks* and *Shopping*), the corresponding marker distribution shows up. Further, by clicking on each marcker, the info window with a photo and description appear.
 
 - The *Contact* page:
 
-  - contains contact and address information. 
-  - contains a Google map that facilitates trip planning for visitors.
+  - contains a contact form to submit a message. 
 
 ### Features Left to Implement
 
-- a *Scroll Back To Top Button*. This feature would be particularly useful on the *Publications* page as a publication list makes the page long.
-
 - a *Search Bar* through which a user can search content of their concern within the website.
 
-- an automatically adjustable font-size in the *News* section or a Modal function. The cards containers have the same size but the text content is different in lenght. An automatically adjustable font-size or a Modal function could allow to keep a shorter cards height.
+- a weather info in real time (currently weather info updates only the *Home* page is refreshed)
 
 ## Technologies Used
 
@@ -109,6 +86,8 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - CSS3
 
+- JS
+
 ### Frameworks, Libraries & Programs Used
 
 1. [Bootstrap 4.1.3:](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
@@ -117,39 +96,33 @@ The website is designed to be responsive and accessible on a range of devices, m
 
    - Navbar to make a responsive navigation header,
 
-   - Cards to make flexible and extensible content containers,
-
-   - Carousel to make a slideshow for cycling through a series of content.
+   - Jumbotron-style component for calling extra attention to featured content or information.
    
 2. [Google Fonts:](https://fonts.google.com/)
 
-   Google fonts Roboto and Raleway were used on all pages throughout the project.
+   Google fonts Roboto and Yanone Kaffeesatz were used on all pages throughout the project.
 
-3. [Font Awesome:](https://fontawesome.com/)
+3. [jQuery:](https://jquery.com/)
 
-   Font Awesome was used in the footer throughout the website to add icons for social links.
+   jQuery was used in javascript codes for the media query and detection of iOS devices; within Bootstrap to make the navbar responsive.
 
-4. [jQuery:](https://jquery.com/)
-
-   jQuery came with Bootstrap to support Carousel for all slide behaviors, controls, and indicators; to make the navbar responsive.
-
-5. [Git:](https://git-scm.com/)
+4. [Git:](https://git-scm.com/)
 
    Git was used for version control. 
 
-6. [GitPod:](https://www.gitpod.io/)
+5. [GitPod:](https://www.gitpod.io/)
 
    GitPod was used as an IDE platform for website realization.
 
-7. [GitHub:](https://github.com/)
+6. [GitHub:](https://github.com/)
 
    GitHub is used to store the project code after being pushed from GitPod.
 
-8. [Balsamiq:](https://balsamiq.com/)
+7. [Balsamiq:](https://balsamiq.com/)
 
    Balsamiq was used to create wireframes during the design process.
 
-9. [Google Map Generator:](https://google-map-generator.com/)
+10. [Google Map API:](https://google-map-generator.com/)
 
    Google Map Generator was used for the Google map integration. 
 
