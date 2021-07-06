@@ -66,7 +66,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - The *Things to do* page:
 
-  - contains an interective google map interface to discover the most popular touristic attractions. By clicking on one of the four buttons (*Historic Sites*, *Museums*, *Parks* and *Shopping*), the corresponding marker distribution shows up. Further, by clicking on each marcker, the info window with a photo and description appear.
+  - contains an interective google map interface to discover the most popular touristic attractions. By clicking on one of the four buttons (*Historic Sites*, *Museums*, *Parks* and *Shopping*), the corresponding marker distribution shows up. Further, by clicking on each marker, the info window with a photo and description appears. 
 
 - The *Contact* page:
 
@@ -86,7 +86,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - CSS3
 
-- JS
+- JavaScript
 
 ### Frameworks, Libraries & Programs Used
 
@@ -97,34 +97,78 @@ The website is designed to be responsive and accessible on a range of devices, m
    - Navbar to make a responsive navigation header,
 
    - Jumbotron-style component for calling extra attention to featured content or information.
+
+2. [Google Maps JavaScript API:](https://developers.google.com/maps/documentation/javascript/overview)   
+
+   Google Maps JavaScript API was used to integrate an interactive Google map with built in features such as markers and info windows to provide additional information.
+
+3. [EmailJS:](https://www.emailjs.com/)
+
+   EmailJS was used to connects the contact form to an email service.
+
+4. [OpenWeather API:](https://openweathermap.org/api)
+
+   OpenWeather API was used to display a current weather in Moscow.
    
-2. [Google Fonts:](https://fonts.google.com/)
+5. [Google Fonts:](https://fonts.google.com/)
 
    Google fonts Roboto and Yanone Kaffeesatz were used on all pages throughout the project.
 
-3. [jQuery:](https://jquery.com/)
+6. [jQuery:](https://jquery.com/)
 
    jQuery was used in javascript codes for the media query and detection of iOS devices; within Bootstrap to make the navbar responsive.
 
-4. [Git:](https://git-scm.com/)
+7. [Git:](https://git-scm.com/)
 
    Git was used for version control. 
 
-5. [GitPod:](https://www.gitpod.io/)
+8. [GitPod:](https://www.gitpod.io/)
 
    GitPod was used as an IDE platform for website realization.
 
-6. [GitHub:](https://github.com/)
+9. [GitHub:](https://github.com/)
 
    GitHub is used to store the project code after being pushed from GitPod.
 
-7. [Balsamiq:](https://balsamiq.com/)
+10. [Balsamiq:](https://balsamiq.com/)
 
    Balsamiq was used to create wireframes during the design process.
 
-10. [Google Map API:](https://google-map-generator.com/)
+11. [Squoosh:](https://squoosh.app/editor)
 
-   Google Map Generator was used for the Google map integration. 
+   Squoosh image editor was used to reduces file size of the images.
+
+12. [Am I responsive?](http://ami.responsivedesign.is/)
+
+    Am I responsive? was used to show how the website looks on different devices.
+
+13. [AutoPrefixer:](https://autoprefixer.github.io/)
+
+   AutoPrefixer was used to add vendor prefixes to a CSS code.
+
+14. [Beautifier:](https://beautifier.io/) 
+
+   Beautifier was used to format code in a consistent and readable way.
+
+15. [W3C Markup Validator](https://validator.w3.org/)
+
+   W3C Markup Validator was used to check the markup validity of Web documents in HTML.
+
+16. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+ 
+   W3C CSS Validator was used to check the markup validity of Web documents in CSS.
+
+17. [JSHint](https://jshint.com/)
+
+   JSHint was used to detect errors and potential problems in JavaScript code.
+
+18. [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+
+   Chrome DevTools was used to inspect and modify the website code.
+
+19. [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+
+   Lighthouse was used to assess performance, accessibility, SEO and best practices.
 
 ## Testing
 
@@ -276,7 +320,11 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content
 
-- All content was provided by Angelo Accardo.
+#### Images
+
+- *Home* page:
+
+https://wall.alphacoders.com/big.php?i=1117417
 
 - The present README file was written following the [template](https://github.com/Code-Institute-Solutions/SampleREADME) provided by Code Institute. Some parts (like Deployment section) were copied and pasted as they describe exactly the same procedure that was employed for the realization of this project.
 

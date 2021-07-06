@@ -1,70 +1,48 @@
-// 1st option
-
-// if (window.matchMedia('(max-width: 600px)').matches)
-// {
-//     $('#hero-image-outer').css({
-//         "height": "35vh", 
-//         "width": "100%", 
-//         "overflow": "hidden",
-//         "position": "relative" 
-//     });
-
-//     $('#hero-image').css({
-//         "height": "35vh", 
-//         "width": "100%", 
-//         "background": "url('assets/images/moscow-view-4.jpg') no-repeat center center",
-//         "background-size": "cover" 
-//     });
-// }
-
-
-// 2nd option
+// The following code applies media query
 // Code credit: https://codepen.io/Midos/pen/LYVpMBP
 
 (function($) {
-	/*
-	 * We need to turn it into a function.
-	 * To apply the changes both on document ready and when we resize the browser.
-	 */
 
-	function mediaSize() {
+    // Applies changes both on document ready and when we resize the browser.
 
-		/* Set the matchMedia */
+    function mediaSize() {
 
-		if (window.matchMedia("(max-width: 600px)").matches) {
+        /* Set the matchMedia */
 
-			/* Changes when we reach the min-width  */
+        if (window.matchMedia("(max-width: 600px)").matches) {
 
-			$('#hero-image-outer').css({
-                "height": "35vh", 
-                "width": "100%", 
+            /* Changes when we reach the min-width  */
+
+            $('#hero-image-outer').css({
+                "height": "35vh",
+                "width": "100%",
                 "overflow": "hidden",
                 "position": "relative",
-				"padding-left": "0",
-				"padding-right": "0" 
+                "padding-left": "0",
+                "padding-right": "0"
             });
-        
+
             $('#hero-image').css({
-                "height": "35vh", 
-                "width": "100%", 
+                "height": "35vh",
+                "width": "100%",
                 "background": "url('assets/images/moscow-view-4.jpg') no-repeat center center",
-                "background-size": "cover" 
+                "background-size": "cover"
             });
 
-		} else {
+        } else {
 
-			/* Reset for CSS changes – Still need a better way to do this! */
+            /* Reset for CSS changes */
 
-			$('#hero-image-outer, #hero-image').removeAttr("style");
-		}
-	}
+            $('#hero-image-outer, #hero-image').removeAttr("style");
+        }
+    }
 
-	/* Call the function */
+    /* Call the function */
 
-	mediaSize();
+    mediaSize();
 
-	/* Attach the function to the resize event listener */
+    /* Attach the function to the resize event listener */
 
-	window.addEventListener("resize", mediaSize, false);
+    window.addEventListener("resize", mediaSize, false);
 
 })(jQuery);
