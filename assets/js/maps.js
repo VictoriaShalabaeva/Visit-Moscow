@@ -345,25 +345,6 @@ const markerHistoricSites = [
         16th-century frescoes. Wandering around the grounds is like stepping back in time. The Novodevichy Cemetery 
         is where many famous leaders of the Soviet Union are buried, such as Yeltsin and Khrushchev.</p>`
     },
-
-    // Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
-    // Photo Credit: http://novodev.ru/
-
-    {
-        location: {
-            lat: 55.7262,
-            lng: 37.5564
-        },
-
-        info: `
-        <h5><span>G</span>&nbsp; Novodevichy Convent</h5>
-        <img src="assets/images/novodevichy-convent.jpg" class="image">
-        <p class="info-text">Drenched in history, the Novodevichy Convent is located in a striking building 
-        that was once a fortress. This captivating place is well worth visiting when in Moscow. Founded in 1524, 
-        the convent houses four cathedrals; Smolensk Cathedral is the undoubted highlight due to its delightful 
-        16th-century frescoes. Wandering around the grounds is like stepping back in time. The Novodevichy Cemetery 
-        is where many famous leaders of the Soviet Union are buried, such as Yeltsin and Khrushchev.</p>`
-    },
 ];
 
 // Add click listener to each marker that opens the InfoWindow with the historic sites info

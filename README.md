@@ -322,9 +322,80 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 #### Images
 
-- *Home* page:
+- Favicon image from [Iconduck](https://iconduck.com/icons/114143/moscow)
 
-https://wall.alphacoders.com/big.php?i=1117417
+- Background image on *Home* page from [Wallpaper](https://wall.alphacoders.com/big.php?i=1117417)
+
+- Background image on *Things to do* page from [WallpaperAccess](https://wallpaperaccess.com/moscow)
+
+- Background image on *Contact* page from [Wallpaper Flare](https://www.wallpaperflare.com/saint-basil-s-cathedral-russia-moscow-rain-water-drops-church-wallpaper-phrrk)
+
+- Red square image from [GoodFon](https://www.goodfon.com/wallpaper/moskva-rossiia-krasnaia-ploshchad-ploshchad-tsvety-nebo.html)
+
+- Saint Basil's Cathedral image from [GoodFon](https://www.goodfon.com/wallpaper/st-basil-s-cathedral-red.html)
+
+- Bolshoi Theatre image from [Wallpaper Flare](https://www.wallpaperflare.com/bolshoi-theatre-moscow-russia-fountain-illumination-wallpaper-tcgfl)
+
+- Cathedral of Christ the Saviour image from [Wallpaper](https://wall.alphacoders.com/big.php?i=672508)
+
+- Moscow Metro image from [russianmetro.ru](https://russianmetro.ru/metro/arbatsin.html)
+
+- Arbat Street image from [Turtella](https://planeta.turtella.ru/russia/moscow/p1192783)
+
+- Novodevichy Convent image from [novodev.ru](http://novodev.ru/)
+
+- Moscow Kremlin image from [Wallpapersden](https://wallpapersden.com/city-moscow-night-wallpaper/2560x1080/)
+
+- State Historical Museum image from [Try Moscow](https://trymoscow.ru/gosudarstvennyj-istoricheskij-muzej/)
+
+- Tretyakov Gallery image from [Wanderings Online](https://wanderings.online/virtualnye-progulki-po-tretyakovskoj-galeree/)
+
+- Pushkin Museum image from [pushkinmuseum.art](https://pushkinmuseum.art/)
+
+- Lenin Mausoleum image from [Culture Trip](https://theculturetrip.com/europe/russia/articles/a-guide-to-visiting-lenins-mausoleum/)
+
+- Museum of Cosmonautics image from [LHM](https://www.lottehotelmagazine.com/en/travel_detail?no=295)
+
+- Sparrow Hills image from [hellotravel](https://www.hellotravel.com/russia/moscow-state-university)
+
+- Tsaritsyno Museum-Reserve image from [Wikipedia](https://en.wikipedia.org/wiki/Tsaritsyno_Palace)
+
+- Kolomenskoye image from [putidorogi-nn.ru](https://putidorogi-nn.ru/evropa/839-usadba-kolomenskoe-v-moskve)
+
+- VDNKh All-Russian Exhibition Centre image from [SPUTNIK](https://www.sputnik8.com/ru/moscow/sights/vdnh/info)
+
+- Gorky Park image from [Wikipedia](https://en.wikipedia.org/wiki/Gorky_Park_(Moscow))
+
+- Moscow Zoo image from [rusunion.com](https://rusunion.com/moskovskiy-zoopark-otsrochil-nastuplenie-oseni/)
+
+- GUM image from [GUM](https://gum.ru/history/)
+
+- Izmailovsky Market image from [Turtella](https://planeta.turtella.ru/russia/moscow/p1156840)
+
+- TSUM image from [KUDAGO](https://kudago.com/msk/place/cum/)
+
+- Aviapark Shopping Centre image from [horosho-tam.ru](https://horosho-tam.ru/rossiya/moskva/aviapark)
+
+- Metropolis Shopping Centre image from [trcmoscow.ru](https://trcmoscow.ru/trc/tc-metropolis.html)
+
+- Danilovsky Market image from [daily.afisha.ru](https://daily.afisha.ru/archive/gorod/eating/chto-novye-hozyain-hochet-pochemu-zakryvaetsya-danilovskiy-rynok/)
+
+#### Text
+
+- Text content on *Home* page was taken from [Touropia](https://www.touropia.com/tourist-attractions-in-moscow/)
+
+- Text content on *Things to do* page was taken from 
+  
+  [Culture Trip](https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/)
+  [Touropia](https://www.touropia.com/tourist-attractions-in-moscow/)
+  [PlanetWare](https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm)
+  [WeHeart](https://weheart.moscow/toptenattractions/)
+  [Bridgetomoscow](https://bridgetomoscow.com/sparrow-hills_2)
+  [Moscovery](https://www.moscovery.com/moscow-zoo/)
+  
+
+
+
 
 - The present README file was written following the [template](https://github.com/Code-Institute-Solutions/SampleREADME) provided by Code Institute. Some parts (like Deployment section) were copied and pasted as they describe exactly the same procedure that was employed for the realization of this project.
 
