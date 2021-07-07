@@ -1,4 +1,4 @@
-// The following code applies media query
+// The following code applies media query to add css styling to the div on Things to do page
 // Code credit: https://codepen.io/Midos/pen/LYVpMBP
 
 (function($) {

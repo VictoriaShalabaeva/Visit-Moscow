@@ -1,5 +1,7 @@
 // Google Maps JavaScript API
-// The code was written with the aid of Code institute tutorials and Google maps documentation
+
+// Code credit: the code was written with the aid of Code institute tutorials, Google maps documentation, YouTube Google Maps JavaScript API Tutorial (https://www.youtube.com/watch?v=Zxf1mnP5zcw).
+// Code credit: Integration of Google Maps MarkerClusterer with infowindow from Stackoverflow (https://stackoverflow.com/questions/40047210/integrate-google-maps-markerclusterer-with-infowindow).
 
 // Define a map style
 // Code credit: Google maps documentation (https://developers.google.com/maps/documentation/javascript/examples/maptype-styled-simple)
@@ -348,7 +350,6 @@ const markerHistoricSites = [
 ];
 
 // Add click listener to each marker that opens the InfoWindow with the historic sites info
-//<!--CREDIT: solution for Integrate Google Maps MarkerClusterer with infowindow from stackoverflow (переделать)
 
 let infoWindow = new google.maps.InfoWindow();
 
@@ -518,7 +519,6 @@ const markerMuseums = [
 ];
 
 // Add click listener to each marker that opens the InfoWindow with the museums info
-//<!--CREDIT: solution for Integrate Google Maps MarkerClusterer with infowindow from stackoverflow (переделать)
 
 let infoWindow = new google.maps.InfoWindow();
 
@@ -686,7 +686,6 @@ const markerParks = [
 ];
 
 // Add click listener to each marker that opens the InfoWindow with the parks info
-//<!--CREDIT: solution for Integrate Google Maps MarkerClusterer with infowindow from stackoverflow (переделать)
 
 let infoWindow = new google.maps.InfoWindow();
 
@@ -854,7 +853,6 @@ const markerShopping = [
 ];
 
 // Add click listener to each marker that opens the InfoWindow with the Shopping info
-//<!--CREDIT: solution for Integrate Google Maps MarkerClusterer with infowindow from stackoverflow (переделать)
 
 let infoWindow = new google.maps.InfoWindow();
 

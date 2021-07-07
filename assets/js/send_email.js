@@ -1,6 +1,6 @@
 //The following code sends emails from the form
 
-//The code is written following the Code Institute tutorials and EmailJS documentation
+//Code credit: the code is written following the Code Institute tutorials and EmailJS documentation (https://www.emailjs.com/docs/)
 
 function sendMail(contactForm) {
 

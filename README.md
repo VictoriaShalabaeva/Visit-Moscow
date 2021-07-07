@@ -92,11 +92,11 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 1. [Bootstrap 4.1.3:](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
-   - Grid System to make the site responsive,
+   Grid System to make the site responsive,
 
-   - Navbar to make a responsive navigation header,
+   Navbar to make a responsive navigation header,
 
-   - Jumbotron-style component for calling extra attention to featured content or information.
+   Jumbotron-style component for calling extra attention to featured content or information.
 
 2. [Google Maps JavaScript API:](https://developers.google.com/maps/documentation/javascript/overview)   
 
@@ -172,7 +172,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors.
+The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to validate HTML, CSS and JS code, respectively, to ensure no syntax error.
 
 - [W3C Markup Validator](https://validator.w3.org/). Please see Figure S1 in [Supp Info](supp-info.md) for the result.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Please see Figure S2 in [Supp Info](supp-info.md) for the result.
@@ -386,31 +386,37 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 - Text content on *Things to do* page was taken from 
   
-  [Culture Trip](https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/)
-  [Touropia](https://www.touropia.com/tourist-attractions-in-moscow/)
-  [PlanetWare](https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm)
-  [WeHeart](https://weheart.moscow/toptenattractions/)
-  [Bridgetomoscow](https://bridgetomoscow.com/sparrow-hills_2)
-  [Moscovery](https://www.moscovery.com/moscow-zoo/)
-  
-
-
-
+   - [Culture Trip](https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/)
+   - [Touropia](https://www.touropia.com/tourist-attractions-in-moscow/)
+   - [PlanetWare](https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm)
+   - [WeHeart](https://weheart.moscow/toptenattractions/)
+   - [Bridgetomoscow](https://bridgetomoscow.com/sparrow-hills_2)
+   - [Moscovery](https://www.moscovery.com/moscow-zoo/)
 
 - The present README file was written following the [template](https://github.com/Code-Institute-Solutions/SampleREADME) provided by Code Institute. Some parts (like Deployment section) were copied and pasted as they describe exactly the same procedure that was employed for the realization of this project.
 
-### Media
+### Code
 
-- The hero image on the *Come Join Us* page was downloaded from [Here](https://www.pexels.com/photo/adult-biology-chemical-chemist-356040/).
+- [EmailJS](https://www.emailjs.com/docs/) documentation and Code Institute tutorials were used to link the contact form to the EmailJS service.
 
-- The hero image on the *Contact* page was downloaded from [TU Delft website](https://www.tudelft.nl/en/education/programmes/masters/cosem/msc-complex-systems-engineering-and-management/studying-at-tu-delft).
+- Weather API integration code is written following the [tutorial by George Martsoukos](https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893).
 
-- All other images were provided by Angelo Accardo.
+- The code to apply media for css styling of the div on *Things to do* page was taken from [here](https://codepen.io/Midos/pen/LYVpMBP).
+
+- Google Maps JavaScript API was integrated following the Code institute tutorials, [Google maps documentation](https://developers.google.com/maps/documentation/javascript/overview), [YouTube Google Maps JavaScript API Tutorial](https://www.youtube.com/watch?v=Zxf1mnP5zcw) and [Stackoverflow](https://stackoverflow.com/questions/40047210/integrate-google-maps-markerclusterer-with-infowindow).
+
+- Approach to identify iPhone/iPad device was taken from [here](https://racase.com.np/javascript-how-to-detect-if-device-is-ios/).
+
+- Approach to change a placeholder color was taken from [here](https://www.w3schools.com/howto/howto_css_placeholder.asp)
+
+- Approach to align text inside a div was taken from [here](https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div/13515693#13515693)
+
+- Trick to make 100vh constant in mobile browsers was taken from [here](https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser).
+
+- Solution how to make *background-size:cover* work on iOS was taken from [here](https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios).
 
 ### Acknowledgements
 
-- The styling of the hero image was inspired by the Code Institute tutorial lesson on "Love running project".
+- My mentor Sandeep Aggarwal for continuous helpful feedback.
 
-- My mentor for continuous helpful feedback.
-
-- My husband (Angelo Accardo) for all provided content material.
+- Tutor support at Code Institute for their help and support.

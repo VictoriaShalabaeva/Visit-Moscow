@@ -95,6 +95,8 @@ body {
 
 .image-outer-1 {
 
+    /* Code credit: the trick to make 100vh constant in mobile browsers was taken from here (https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser) */
+
     height: 100vh;
 
     max-height: -webkit-fill-available;
@@ -141,6 +143,9 @@ body {
 }
 
 .image-outer-1-ios {
+
+    /* Code credit: the solution how to make "background-size: cover" work on iOS was taken from https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
+
 
     height: 100vh;
 
@@ -747,7 +752,7 @@ p#btn-main-text {
     }
 }
 
-/* Credit: the approach to align text inside a div was taken from here: https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div/13515693#13515693 */
+/* Code credit: the approach to align text inside a div was taken from here: https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div/13515693#13515693 */
 
 #info-window h4 {
 
