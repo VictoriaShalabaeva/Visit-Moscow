@@ -15,9 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <!-- The code is written following the Code Institute tutorials and EmailJS documentation -->
-    <script type="text/javascript">
+    <script>
         (function() {
             emailjs.init("user_VimnFNd4Y0o0iZ5peZTU6");
         })();
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <header>
+    <header> 
         <div class="container-fluid no-padding">
             <div class="col no-padding fixed">
                 <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -48,9 +48,11 @@
     <section>
         <div class="container-fluid no-padding" id="image-outer-3">
             <form onsubmit="return sendMail(this);" id="contact-form" aria-label="Contact form">
+                <h5>Would you like to get more information or need help in organizing a trip to Moscow?</h5> 
+                <h5>We will be happy to help, contact us!</h5>
                 <input type="text" name="name" class="form-control text-input" id="fullname" placeholder="Name" aria-label="Put your name" required />
                 <input type="email" name="emailaddress" class="form-control text-input" id="emailaddress" placeholder="Email" aria-label="Put your email address" required />
-                <textarea rows="5" name="yourmessage" class="form-control text-input" id="yourmessage" placeholder="Your Message" aria-label="Leave your message" required></textarea>
+                <textarea rows="4" name="yourmessage" class="form-control text-input" id="yourmessage" placeholder="Your Message" aria-label="Leave your message" required></textarea>
                 <button type="submit" class="btn btn-lg btn--yellow">Send Your Message</button>
             </form>
         </div>

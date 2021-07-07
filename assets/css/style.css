@@ -504,6 +504,31 @@ p#btn-main-text {
 
 /* The styling of the contact form was inspired by the Code Institute tutorial lesson on "Love Running" project */
 
+form h5{
+
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    letter-spacing: 0.6px;
+}
+
+@media screen and (max-width: 500px) {
+
+    form h5 {
+
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    form h5 {
+
+        font-size: 0.8rem;
+    }
+}
+
 #contact-form {
 
     margin-top: 50px;
@@ -521,6 +546,8 @@ p#btn-main-text {
         width: 350px;
         margin-top: 20px;
         position: absolute;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
@@ -570,70 +597,65 @@ p#btn-main-text {
 
 /* Code credit to change placeholder color: https://www.w3schools.com/howto/howto_css_placeholder.asp */
 
-#image-outer-3 input::-webkit-input-placeholder,
-#image-outer-3 textarea::-webkit-input-placeholder {
-
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-
-    color: rgb(241, 241, 241);
-    opacity: 1;
-    /* Firefox */
-}
-
-#image-outer-3 input::-moz-placeholder,
-#image-outer-3 textarea::-moz-placeholder {
-
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-
-    color: rgb(241, 241, 241);
-    opacity: 1;
-    /* Firefox */
-}
-
-#image-outer-3 input:-ms-input-placeholder,
-#image-outer-3 textarea:-ms-input-placeholder {
-
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-
-    color: rgb(241, 241, 241);
-    opacity: 1;
-    /* Firefox */
-}
-
-#image-outer-3 input::-ms-input-placeholder,
-#image-outer-3 textarea::-ms-input-placeholder {
-
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-
-    color: rgb(241, 241, 241);
-    opacity: 1;
-    /* Firefox */
-}
-
 #image-outer-3 input::placeholder,
-#image-outer-3 textarea::placeholder {
-
+#image-outer-3 textarea::placeholder { 
+    
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-
     color: rgb(241, 241, 241);
     opacity: 1;
-    /* Firefox */
 }
-
+  
 #image-outer-3 input:-ms-input-placeholder,
-#image-outer-3 textarea:-ms-input-placeholder {
-
-    /* Internet Explorer 10-11 */
-
+#image-outer-3 textarea:-ms-input-placeholder,
+#image-outer-3 input::-ms-input-placeholder,
+#image-outer-3 textarea::-ms-input-placeholder { 
+    
+    /* Internet Explorer 10-11,  Microsoft Edge */
     color: rgb(241, 241, 241);
 }
 
-#image-outer-3 input::-ms-input-placeholder,
-#image-outer-3 textarea::-ms-input-placeholder {
+@media screen and (max-width: 360px) {
 
-    /* Microsoft Edge */
+    #image-outer-3 input::placeholder,
+    #image-outer-3 textarea::placeholder { 
+    
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(241, 241, 241);
+        opacity: 1;
+        font-size: 14px;
+    }
+  
+    #image-outer-3 input:-ms-input-placeholder,
+    #image-outer-3 textarea:-ms-input-placeholder,
+    #image-outer-3 input::-ms-input-placeholder,
+    #image-outer-3 textarea::-ms-input-placeholder { 
+        
+        /* Internet Explorer 10-11,  Microsoft Edge */
+        color: rgb(241, 241, 241);
+        font-size: 14px;
+    }
+}
 
-    color: rgb(241, 241, 241);
+@media screen and (max-width: 330px) {
+
+    #image-outer-3 input::placeholder,
+    #image-outer-3 textarea::placeholder { 
+    
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(241, 241, 241);
+        opacity: 1;
+        font-size: 12px;
+    }
+  
+    #image-outer-3 input:-ms-input-placeholder,
+    #image-outer-3 textarea:-ms-input-placeholder,
+    #image-outer-3 input::-ms-input-placeholder,
+    #image-outer-3 textarea::-ms-input-placeholder { 
+        
+        /* Internet Explorer 10-11,  Microsoft Edge */
+        color: rgb(241, 241, 241);
+        font-size: 12px;
+    }
 }
 
 /* ----------------------------------------------Footer */
@@ -665,6 +687,14 @@ p#btn-main-text {
     .footer {
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .footer {
+        padding-top: 5px;
+        padding-bottom: 9px;
     }
 }
 

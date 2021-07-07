@@ -25,7 +25,7 @@
             $('#hero-image').css({
                 "height": "35vh",
                 "width": "100%",
-                "background": "url('assets/images/moscow-view-4.jpg') no-repeat center center",
+                "background": "url('assets/images/moscow-view-4-small.jpg') no-repeat center center",
                 "background-size": "cover"
             });
 

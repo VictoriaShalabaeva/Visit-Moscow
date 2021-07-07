@@ -217,7 +217,7 @@ const markerHistoricSites = [
 
         info: `
         <h5><span>A</span>&nbsp; Red square</h5>
-        <img src="assets/images/red-square.jpg" class="image">
+        <img src="assets/images/red-square.jpg" class="image" alt="Red square photo">
         <p class="info-text">The heart of Russia’s capital, Red Square is arguably Moscow’s most visited attraction. 
         The cobblestone square is surrounded by beautiful architecture, and is the place where most of the city’s 
         (and country’s) history unfolded. What was once a market square where traders would sell their goods is now 
@@ -236,7 +236,7 @@ const markerHistoricSites = [
 
         info: `
         <h5><span>B</span>&nbsp; Saint Basil's Cathedral</h5>
-        <img src="assets/images/st-basil-s-cathedral.jpg" class="image">
+        <img src="assets/images/st-basil-s-cathedral.jpg" class="image" alt="Saint Basil's Cathedral photo">
         <p>The most recognizable building in the country, the cathedral is very much a symbol of Russia. Ivan the Terrible 
         ordered the cathedral’s construction in the mid-16th century, and legend holds that Ivan put out the architect’s 
         eyes so that he would be unable to build another cathedral more glorious than St. Basil’s. Designed to resemble 
@@ -257,7 +257,7 @@ const markerHistoricSites = [
 
         info: `
         <h5><span>C</span>&nbsp; Bolshoi Theatre</h5>
-        <img src="assets/images/bolshoi-theatre.jpg" class="image">
+        <img src="assets/images/bolshoi-theatre.jpg" class="image" alt="Bolshoi Theatre photo">
         <p class="info-text">The Bolshoi Theater is home to the largest and one of the oldest ballet and opera companies 
         in the world. The Bolshoi Theater you see today opened in 1824, after several older versions burned down. Inside, 
         red velvet, a three-tiered crystal chandelier, and gilt moldings give the place a Byzantine-Renassaince grandiose 
@@ -278,7 +278,7 @@ const markerHistoricSites = [
 
         info: `
         <h5><span>D</span>&nbsp; Cathedral of Christ the Saviour</h5>
-        <img src="assets/images/cathedral-christ-saviour.jpg" class="image">
+        <img src="assets/images/cathedral-christ-saviour.jpg" class="image" alt="Cathedral of Christ the Saviour photo">
         <p class="info-text">This gorgeous Russian Orthodox cathedral is located on the banks of the Moskva River, just a 
         stone’s throw away from the Kremlin. The church as it stands today was consecrated in 2000, as the original church 
         that stood here was destroyed on the command of Josef Stalin in 1931 due to the anti-religious campaign. With its 
@@ -297,7 +297,7 @@ const markerHistoricSites = [
 
         info: `
         <h5><span>E</span>&nbsp; Moscow Metro</h5>
-        <img src="assets/images/metro.jpg" class="image">
+        <img src="assets/images/metro.jpg" class="image" alt="Moscow Metro photo">
         <p class="info-text">The Moscow Metro has its own unforgettable charm. It was opened in 1935 and became one 
         of the USSR’s most extravagant architectural projects. That is why most of the central underground stations 
         look like a museum. Every station has its own mood, different decorations and fascinating story. With 223 
@@ -319,7 +319,7 @@ const markerHistoricSites = [
 
         info: `
         <h5><span>F</span>&nbsp; Arbat Street</h5>
-        <img src="assets/images/arbat.jpg" class="image">
+        <img src="assets/images/arbat.jpg" class="image" alt="Arbat Street photo">
         <p class="info-text">Moscow's one-kilometer-long pedestrian street has been around since the 15th century. 
         Originally a trade route in the outskirts of the city, Arbat Street is now very centrally located, home to 
         posh buildings and lots of places to eat and shop. Beautiful street lamps and two significant statues-one 
@@ -340,7 +340,7 @@ const markerHistoricSites = [
 
         info: `
         <h5><span>G</span>&nbsp; Novodevichy Convent</h5>
-        <img src="assets/images/novodevichy-convent.jpg" class="image">
+        <img src="assets/images/novodevichy-convent.jpg" class="image" alt="Novodevichy Convent photo">
         <p class="info-text">Drenched in history, the Novodevichy Convent is located in a striking building 
         that was once a fortress. This captivating place is well worth visiting when in Moscow. Founded in 1524, 
         the convent houses four cathedrals; Smolensk Cathedral is the undoubted highlight due to its delightful 
@@ -410,7 +410,7 @@ const markerMuseums = [
         },
         info: `
         <h5><span>A</span>&nbsp; Moscow Kremlin</h5>
-        <img src="assets/images/moscow-kremlin.jpg" class="image">
+        <img src="assets/images/moscow-kremlin.jpg" class="image" alt="Moscow Kremlin photo">
         <p class="info-text">A 15th-century fortified complex that covers an area of 275,000 square meters surrounded 
         by walls built in the 1400s. The Grand Kremlin 
         Palace, which has over 700 rooms, was once home to the Tsar family and is now the official residence of the 
@@ -432,7 +432,7 @@ const markerMuseums = [
         },
         info: `
         <h5><span>B</span>&nbsp; State Historical Museum</h5>
-        <img src="assets/images/state-historical-museum.jpg" class="image">
+        <img src="assets/images/state-historical-museum.jpg" class="image" alt="State Historical Museum photo">
         <p class="info-text">An attraction in its own right, the State Historical Museum, sheltered in a neo-Russian 
         style building, was founded in 1872 by Ivan Zabelin and Aleksey Uvarov. What once was the Principal Medicine 
         Store now houses an impressive collection, which includes relics of prehistoric tribes that once inhabited 
@@ -451,7 +451,7 @@ const markerMuseums = [
         },
         info: `
         <h5><span>C</span>&nbsp; Tretyakov Gallery</h5>
-        <img src="assets/images/tretyakov-gallery.jpg" class="image">
+        <img src="assets/images/tretyakov-gallery.jpg" class="image" alt="Tretyakov Gallery photo">
         <p class="info-text">Built between 1900 and 1905, Tretyakov Gallery started as the private collection of the 
         Tretyakov brothers, who were 19th-century philanthropists. Designed by Viktor Vasnetsov, the gallery is a home 
         to one of the largest collections of Russian art in the world. Here you can see icons including Rublev’s Trinity, 
@@ -470,7 +470,7 @@ const markerMuseums = [
         },
         info: `
         <h5><span>D</span>&nbsp; Pushkin Museum</h5>
-        <img src="assets/images/pushkin-museum.jpg" class="image">
+        <img src="assets/images/pushkin-museum.jpg" class="image" alt="Pushkin Museum photo">
         <p class="info-text">The largest foreign art museum in Moscow comprises three branches housing a collection 
         of incredible works by masters of ancient civilisations, the Italian Renaissance and the Dutch Golden Age. 
         The main building contains masterpieces by Botticelli, Tiepolo, Veronese and Rembrandt, some of which have 
@@ -489,7 +489,7 @@ const markerMuseums = [
         },
         info: `
         <h5><span>E</span>&nbsp; Lenin Mausoleum</h5>
-        <img src="assets/images/lenin-mausoleum.jpg" class="image">
+        <img src="assets/images/lenin-mausoleum.jpg" class="image" alt="Lenin Mausoleum photo">
         <p class="info-text">Opened to the public in 1924, Lenin’s Mausoleum is one of the most popular tourist attractions 
         in Moscow. The red granite structure is located at the heart of the city in Red Square. Lenin’s embalmed body lies 
         in a glass sarcophagus; it is a somewhat eerie experience walking past the former leader of the Soviet Union 
@@ -507,7 +507,7 @@ const markerMuseums = [
         },
         info: `
         <h5><span>F</span>&nbsp; Museum of Cosmonautics</h5>
-        <img src="assets/images/museum-cosmonautics.jpg" class="image">
+        <img src="assets/images/museum-cosmonautics.jpg" class="image" alt="Museum of Cosmonautics photo">
         <p class="info-text">At one point, Russia and the US were toe-to-toe when it came to space exploration. 
         While that might no longer be the case, the museum's amazing collection-which includes over 85,000 items-is 
         still awe-inspiring. Main exhibits include the space capsule used by Yuri Gagarin, the first human to travel 
@@ -579,7 +579,7 @@ const markerParks = [
         },
         info: `
         <h5><span>A</span>&nbsp; Sparrow Hills</h5>
-        <img src="assets/images/sparrow-hills.jpg" class="image">
+        <img src="assets/images/sparrow-hills.jpg" class="image" alt="Sparrow Hills photo">
         <p class="info-text">Sparrow Hills is a hill on the right bank of the Moskva River and one of the highest points 
         in Moscow. On top of the hill, 85m above the river, is the observation platform which gives a beautiful panoramic 
         view of the city. Here you can also take a closer look at the tallest of the seven Stalinist skyscrapers, 
@@ -598,7 +598,7 @@ const markerParks = [
         },
         info: `
         <h5><span>B</span>&nbsp; Tsaritsyno Museum-Reserve</h5>
-        <img src="assets/images/tsaritsino.jpg" class="image">
+        <img src="assets/images/tsaritsino.jpg" class="image" alt="Tsaritsyno Museum-Reserve photo">
         <p class="info-text">The former summer residence of Empress Catherine the Great was commissioned in 1775, 
         and succumbed to deterioration during the Soviet era. The whole of Tsaritsyno Museum-Reserve has been 
         fundamentally renovated since 1980s to look even brighter than the original. With its opulently decorated 
@@ -616,7 +616,7 @@ const markerParks = [
         },
         info: `
         <h5><span>С</span>&nbsp; Kolomenskoye</h5>
-        <img src="assets/images/kolomenskoe.jpg" class="image">
+        <img src="assets/images/kolomenskoe.jpg" class="image" alt="Kolomenskoye photo">
         <p class="info-text">A 10-minute metro ride from the city centre will take you to Kolomenskoe Museum-Reserve, 
         where you can get an idea of what Medieval Moscow looked like. Here you’ll find ancient churches (one dating 
         back to the 16th century), the oldest garden in Moscow and a favourite estate of Tsar Alexey Mikhailovich, 
@@ -634,7 +634,7 @@ const markerParks = [
         },
         info: `
         <h5><span>D</span>&nbsp; VDNKh All-Russian Exhibition Centre</h5>
-        <img src="assets/images/vdnh.jpg" class="image">
+        <img src="assets/images/vdnh.jpg" class="image" alt="VDNKh All-Russian Exhibition Centre photo">
         <p class="info-text">The enormous VDNKh (short for All-Russian Exhibition Centre) recently went through an 
         extensive renovation and now looks better than ever. The centre started as the all-Soviet agricultural 
         exhibition in 1935, and now serves as an open-air museum of Soviet architecture. With the iconic fountain 
@@ -654,7 +654,7 @@ const markerParks = [
         },
         info: `
         <h5><span>E</span>&nbsp; Gorky Park</h5>
-        <img src="assets/images/gorky-park.jpg" class="image">
+        <img src="assets/images/gorky-park.jpg" class="image" alt="Gorky Park photo">
         <p class="info-text">Moscow’s premier green space, Gorky Park, offers entertainment for every taste: outdoor 
         dancing sessions, yoga and fitness classes all summer, as well as beach volleyball and ping-pong, rollerblading, 
         skateboarding and cycling opportunities, along with segway and boat-rentals. In winter, half of the park turns 
@@ -673,7 +673,7 @@ const markerParks = [
         },
         info: `
         <h5><span>F</span>&nbsp; Moscow Zoo</h5>
-        <img src="assets/images/moscow-zoo.jpg" class="image">
+        <img src="assets/images/moscow-zoo.jpg" class="image" alt="Moscow Zoo photo">
         <p class="info-text">The Moscow Zoo is one of the oldest zoos in Europe, dating back to 1864. Located in the 
         city centre, the zoo is a favourite place for families with children and a popular tourist attraction. The zoo is 
         home to about 1,100 species, second only to the Berlin Zoological Garden in the European rankings. Primates, elephants, 
@@ -746,7 +746,7 @@ const markerShopping = [
         },
         info: `
         <h5><span>A</span>&nbsp; GUM</h5>
-        <img src="assets/images/gum.jpg" class="image">
+        <img src="assets/images/gum.jpg" class="image" alt="GUM">
         <p class="info-text">GUM is one of the oldest department stores in the country. It’s famous for the glass roof 
         designed by one of Russia’s most celebrated architects, Vladimir Shukhov. Today it serves as a high-class shopping 
         mall. There are plenty of luxury shops, a supermarket that sells lots of signature Russian goods and several places 
@@ -768,7 +768,7 @@ const markerShopping = [
         },
         info: `
         <h5><span>B</span>&nbsp; Izmailovsky Market</h5>
-        <img src="assets/images/izmailovsky-market.jpg" class="image">
+        <img src="assets/images/izmailovsky-market.jpg" class="image" alt="Izmailovsky Market photo">
         <p class="info-text">For those on a slightly more limited budget, ditch window shopping at the exclusive GUM and 
         take a foray into the madly bustling world of Izmailovsky, Russia’s best flea market. Delve into the bargains, 
         rifle through the artisan crafts, admire the local handiwork and be tempted by the silky smooth traditional fur hats. 
@@ -786,7 +786,7 @@ const markerShopping = [
         },
         info: `
         <h5><span>C</span>&nbsp; TSUM</h5>
-        <img src="assets/images/tsum.jpg" class="image">
+        <img src="assets/images/tsum.jpg" class="image" alt="TSUM photo">
         <p class="info-text">Beautifully located in the historic centre of Moscow, the TSUM Department Store is mere 
         steps from the city’s important tourist attractions, including Red Square. Built in 1908, the Gothic style store 
         sells over 1000 famous brands, including Alexander McQueen, Lanvin and Carolina Herrera. Much like its cousin GUM, 
@@ -804,7 +804,7 @@ const markerShopping = [
         },
         info: `
         <h5><span>D</span>&nbsp; Aviapark Shopping Centre</h5>
-        <img src="assets/images/aviapark.jpg" class="image">
+        <img src="assets/images/aviapark.jpg" class="image" alt="Aviapark Shopping Centre photo">
         <p class="info-text">Of all the malls on the list, Aviapark takes the most time to get to, but Europe’s biggest 
         mall is definitely worth the free shuttle bus ride. With over 500 stores, 80 eateries and a 17-screen cinema, 
         all spread across the equivalent of 36 football pitches, Aviapark is officially the most popular shopping mall 
@@ -823,7 +823,7 @@ const markerShopping = [
         },
         info: `
         <h5><span>E</span>&nbsp; Metropolis Shopping Centre</h5>
-        <img src="assets/images/metropolis.jpg" class="image">
+        <img src="assets/images/metropolis.jpg" class="image" alt="Metropolis Shopping Centre photo">
         <p class="info-text">Metropolis is where you should go for high-street retail if you don’t feel like traveling 
         too far from the city centre. Home to boutiques like Zara, Marks & Spencer, H&M, New Yorker, GAP and River Island, 
         Metropolis also houses a huge supermarket, bowling alley, swimming pool and a cinema. 
@@ -840,7 +840,7 @@ const markerShopping = [
         },
         info: `
         <h5><span>F</span>&nbsp; Danilovsky Market</h5>
-        <img src="assets/images/danilovsky-market.jpg" class="image">
+        <img src="assets/images/danilovsky-market.jpg" class="image" alt="Danilovsky Market photo">
         <p class="info-text">Danilovsky market is a marketplace where fresh and varied products are sold. 
         It is complemented by a sophisticated bistro concept, seasonal fairs and gastronomic festivals. Today, the market 
         has around 30 restaurant concepts from different countries and cultures, based on 
