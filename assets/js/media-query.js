@@ -1,4 +1,4 @@
-// The following code applies media query to add css styling to the div on Things to do page
+// The following code applies media query to add css styling 
 // Code credit: https://codepen.io/Midos/pen/LYVpMBP
 
 (function($) {
@@ -28,6 +28,10 @@
                 "background": "url('assets/images/moscow-view-4-small.jpg') no-repeat center center",
                 "background-size": "cover"
             });
+
+            $('#jumbotron-h1').html(
+                "Don’t listen to what they say.<br>Go see!"
+            );
 
         } else {
 

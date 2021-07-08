@@ -17,14 +17,14 @@ fetch(url)
             weather
         } = data;
 
-        const icon = `https://openweathermap.org/img/wn/${weather[0]["icon"]}.png`;
+        const icon = `https://openweathermap.org/img/wn/${weather[0].icon}.png`;
 
-        document.getElementById("temperature").innerHTML = `<h2>${Math.round(main.temp)}°C</h2>`
+        document.getElementById("temperature").innerHTML = `<h2>${Math.round(main.temp)}°C</h2>`;
 
         document.getElementById("weather-image").innerHTML = `
 
-    <img src=${icon} alt=${weather[0]["main"]}>
-    <span>${weather[0]["description"]}</span>`
+    <img src=${icon} alt=${weather[0].main}>
+    <span>${weather[0].description}</span>`;
     })
 
     .catch(() => {

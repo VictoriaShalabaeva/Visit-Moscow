@@ -171,7 +171,7 @@ const yellow_style = [{
         color: "#92998d"
     }],
 },
-]
+];
 
 // Create a map of Moscow
 
@@ -370,7 +370,7 @@ let markers = markerHistoricSites.map(function(markerHistoricSites, i) {
             document.querySelector('#info-window').scrollIntoView({
                 behavior: 'smooth'
             });
-        };
+        }
     });
     return marker;
 });
@@ -539,7 +539,7 @@ let markers = markerMuseums.map(function(markerMuseums, i) {
             document.querySelector('#info-window').scrollIntoView({
                 behavior: 'smooth'
             });
-        };
+        }
     });
     return marker;
 });
@@ -706,7 +706,7 @@ let markers = markerParks.map(function(markerParks, i) {
             document.querySelector('#info-window').scrollIntoView({
                 behavior: 'smooth'
             });
-        };
+        }
     });
     return marker;
 });
@@ -873,7 +873,7 @@ let markers = markerShopping.map(function(markerShopping, i) {
             document.querySelector('#info-window').scrollIntoView({
                 behavior: 'smooth'
             });
-        };
+        }
     });
     return marker;
 });

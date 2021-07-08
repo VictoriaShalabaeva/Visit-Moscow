@@ -12,4 +12,4 @@
 
 **Figure S3.** Result in Lighthouse. 
 
-<img src="assets/images/testing/lighthous.jpg" alt="Result in Lighthouse." width="900px" height="auto">
+<img src="assets/images/testing/lighthouse.jpg" alt="Result in Lighthouse." width="900px" height="auto">

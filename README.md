@@ -2,7 +2,7 @@
 
 # Visit Moscow Website
 
-[View the live project here.](https://victoriashalabaeva.github.io/Visit-Moscow/)
+View the live project [Here](https://victoriashalabaeva.github.io/Visit-Moscow/)
 
 *Visit Moscow* is an interective website that guides through the most popular sightseeings of Moscow. The website is aimed for tourists who plan to visit the capital of Russia and look for a consize summery on the locations worth to see first.
 
@@ -132,11 +132,11 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 10. [Balsamiq:](https://balsamiq.com/)
 
-   Balsamiq was used to create wireframes during the design process.
+    Balsamiq was used to create wireframes during the design process.
 
 11. [Squoosh:](https://squoosh.app/editor)
 
-   Squoosh image editor was used to reduces file size of the images.
+    Squoosh image editor was used to reduces file size of the images.
 
 12. [Am I responsive?](http://ami.responsivedesign.is/)
 
@@ -144,31 +144,31 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 13. [AutoPrefixer:](https://autoprefixer.github.io/)
 
-   AutoPrefixer was used to add vendor prefixes to a CSS code.
+    AutoPrefixer was used to add vendor prefixes to a CSS code.
 
 14. [Beautifier:](https://beautifier.io/) 
 
-   Beautifier was used to format code in a consistent and readable way.
+    Beautifier was used to format code in a consistent and readable way.
 
 15. [W3C Markup Validator](https://validator.w3.org/)
 
-   W3C Markup Validator was used to check the markup validity of Web documents in HTML.
+    W3C Markup Validator was used to check the markup validity of Web documents in HTML.
 
 16. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
  
-   W3C CSS Validator was used to check the markup validity of Web documents in CSS.
+    W3C CSS Validator was used to check the markup validity of Web documents in CSS.
 
 17. [JSHint](https://jshint.com/)
 
-   JSHint was used to detect errors and potential problems in JavaScript code.
+    JSHint was used to detect errors and potential problems in JavaScript code.
 
 18. [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
 
-   Chrome DevTools was used to inspect and modify the website code.
+    Chrome DevTools was used to inspect and modify the website code.
 
 19. [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-   Lighthouse was used to assess performance, accessibility, SEO and best practices.
+    Lighthouse was used to assess performance, accessibility, SEO and best practices.
 
 ## Testing
 
@@ -176,6 +176,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 
 - [W3C Markup Validator](https://validator.w3.org/). Please see Figure S1 in [Supp Info](supp-info.md) for the results.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Please see Figure S2 in [Supp Info](supp-info.md) for the result.
+- [JSHint](https://jshint.com/) did not detect any potential problem in JavaScript codes.
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -187,7 +188,7 @@ The manual testing is described [Here](manual_testing.md).
 
 ### Further Testing
 
-- The website was checked for performance with [Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome DevTools (see results in Figure S3 in [Supp Info](supp-info.md)).
+- The website was checked for performance in [Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome DevTools (see results in Figure S3 in [Supp Info](supp-info.md)).
 
 - The Website was tested on Google Chrome, Mozilla Firefox and Microsoft Edge browsers.
 
@@ -401,19 +402,19 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 - Weather API integration code is written following the [tutorial by George Martsoukos](https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893).
 
-- The code to apply media for css styling of the div on *Things to do* page was taken from [here](https://codepen.io/Midos/pen/LYVpMBP).
+- The code to apply media query for css styling was taken from [Here](https://codepen.io/Midos/pen/LYVpMBP).
 
 - Google Maps JavaScript API was integrated following the Code institute tutorials, [Google maps documentation](https://developers.google.com/maps/documentation/javascript/overview), [YouTube Google Maps JavaScript API Tutorial](https://www.youtube.com/watch?v=Zxf1mnP5zcw) and [Stackoverflow](https://stackoverflow.com/questions/40047210/integrate-google-maps-markerclusterer-with-infowindow).
 
-- Approach to identify iPhone/iPad device was taken from [here](https://racase.com.np/javascript-how-to-detect-if-device-is-ios/).
+- Approach to identify iPhone/iPad device was taken from [Here](https://racase.com.np/javascript-how-to-detect-if-device-is-ios/).
 
-- Approach to change a placeholder color was taken from [here](https://www.w3schools.com/howto/howto_css_placeholder.asp)
+- Approach to change a placeholder color was taken from [Here](https://www.w3schools.com/howto/howto_css_placeholder.asp)
 
-- Approach to align text inside a div was taken from [here](https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div/13515693#13515693)
+- Approach to align text inside a div was taken from [Here](https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div/13515693#13515693)
 
-- Trick to make 100vh constant in mobile browsers was taken from [here](https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser).
+- Trick to make 100vh constant in mobile browsers was taken from [Here](https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser).
 
-- Solution how to make *background-size:cover* work on iOS was taken from [here](https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios).
+- Solution how to make *background-size:cover* work on iOS was taken from [Here](https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios).
 
 ### Acknowledgements
 
