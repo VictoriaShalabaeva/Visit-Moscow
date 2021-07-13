@@ -199,7 +199,6 @@ The manual testing is described [Here](manual_testing.md).
     - 1440 x 900
     - 1366 x 768
     - 1280 x 800
-    - iPad Pro (1024 x 1366) 
     - Nexus 10 (800 x 1280)
     - iPad (768 x 1024)
     - Surface Duo (540 x 720)

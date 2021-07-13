@@ -1,17 +1,13 @@
-// The following code applies media query to add css styling 
+// The following code applies media query to add css styling in Things to do page and to change html in Home page
 // Code credit: https://codepen.io/Midos/pen/LYVpMBP
 
 (function($) {
 
-    // Applies changes both on document ready and when we resize the browser.
-
     function mediaSize() {
-
-        /* Set the matchMedia */
 
         if (window.matchMedia("(max-width: 600px)").matches) {
 
-            /* Changes when we reach the min-width  */
+            // Applies changes both on document ready and when we resize the browser.
 
             $('#hero-image-outer').css({
                 "height": "35vh",
@@ -27,12 +23,8 @@
                 "width": "100%",
                 "background": "url('assets/images/moscow-view-4-small.jpg') no-repeat center center",
                 "background-size": "cover"
-            });
-
-            $('#jumbotron-h1').html(
-                "Don’t listen to what they say.<br>Go see!"
-            );
-
+            });         
+            
         } else {
 
             /* Reset for CSS changes */
@@ -40,9 +32,18 @@
             $('#hero-image-outer, #hero-image').removeAttr("style");
         }
 
+        if (window.matchMedia("(max-width: 600px) and (min-width: 330px)").matches) {
+
+            // Applies changes on document ready but not when we resize the browser.
+
+            $('#jumbotron-h1').html(
+                "Don’t listen to what they say.<br>Go see!"
+            );
+        }
+
         if (window.matchMedia("(min-width: 1100px)").matches) {
 
-            /* Changes when we reach the max-width  */
+            // Applies changes both on document ready and when we resize the browser.
 
             $('#buttons-center').addClass('mx-auto');
 
