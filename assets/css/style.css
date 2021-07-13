@@ -125,7 +125,8 @@ body {
 
         max-height: -webkit-fill-available; */
 
-        max-height: -webkit-fill-available;
+        height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
 
         /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
 
