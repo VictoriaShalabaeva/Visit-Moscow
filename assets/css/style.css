@@ -125,7 +125,7 @@ body {
 
         max-height: -webkit-fill-available; */
 
-        min-height: -webkit-fill-available;
+        max-height: -webkit-fill-available;
 
         /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
 
