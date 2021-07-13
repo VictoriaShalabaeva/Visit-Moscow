@@ -39,7 +39,20 @@
 
             $('#hero-image-outer, #hero-image').removeAttr("style");
         }
-    }
+
+        if (window.matchMedia("(min-width: 1100px)").matches) {
+
+            /* Changes when we reach the max-width  */
+
+            $('#buttons-center').addClass('mx-auto');
+
+        } else {
+
+            /* Reset for class changes */
+
+            $('#buttons-center').removeClass('mx-auto');
+        }
+    }    
 
     /* Call the function */
 
