@@ -16,7 +16,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
   - **As a tourist:**
 
-    - I want to see a quick overview on the most popular sightseeings and attractions of Moscow.
+    - I want to see a quick overview on Moscow city and form a first impression on it.
     - I want to read more information and have a visual representation of the advertized locations.
     - I want to see different locations on a map to have a better undestanding on how much far the locations are one from each other.
     - I want to have an opportunity to ask for more info, advice or recommendation in organizing my trip.
