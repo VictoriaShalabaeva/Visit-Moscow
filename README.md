@@ -184,7 +184,7 @@ Please see [Here](testing_user_stories.md) to find the user stories testing with
 
 ### Testing Functionality, Usability and Responsiveness
 
-The manual testing is described [Here](manual_testing.md).
+The manual testing is described [Here](manual-testing.md).
 
 ### Further Testing
 

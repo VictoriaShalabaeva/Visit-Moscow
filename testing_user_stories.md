@@ -22,13 +22,13 @@
 
   - When the markers are clicked, the info window containing an image and a short description is opened.
 
-   <img src="assets/images/testing/info-window.jpg" alt="Info window containing an image and a short description." width="500px" height="auto">
+    <img src="assets/images/testing/info-window.jpg" alt="Info window containing an image and a short description." width="500px" height="auto">
 
 ### I want to have an opportunity to ask for more info, advice or recommendation in organizing my trip.
 
   - Users can click on *Contact* page at the navigation bar. The *Contact* page contains a form to send a message with a question.
 
-    <img src="assets/images/testing/contact-form.jpg" alt="Contact form to send a message." width="500px" height="auto">
+    <img src="assets/images/testing/contact-form.jpg" alt="Contact form to send a message." width="200px" height="auto">
 
 
 ### I want to be able to easily navigate throughout the site to find content.
@@ -41,7 +41,7 @@
 
   - From *Home* page, it is possible to move directly to a *Contact form* page by pressing a *Contact Us!* button on the Bootstrap jumbotron style greeting message.
 
-    <img src="assets/images/testing/contact-us-button.jpg" alt="Contact Us button on *Home* page." width="500px" height="auto">
+    <img src="assets/images/testing/contact-us-button.jpg" alt="Contact Us button on *Home* page." width="300px" height="auto">
 
   - From *Home* page, it is possible to move directly to a *Things to do* page by pressing a *Discover More!* button.
 
@@ -49,11 +49,11 @@
 
   - Users can discover more detailed information on different types of attractions by pressing one of four buttons over the map. The buttons titles have intuitive names (*Historic Sites*, *Museums*, *Parks* and *Shopping*).
 
-    <img src="assets/images/testing/attractions-buttons.jpg" alt="Attractions buttons with intuitive names." width="500px" height="auto">
+    <img src="assets/images/testing/attractions-buttons.jpg" alt="Attractions buttons with intuitive names." width="300px" height="auto">
 
 ### I want to open the website from different devices (desktop/laptop/tablet/mobile devices).
 
   - Users can open the website from different devices.
 
-    <img src="assets/images/testing/different-devices.jpg" alt="The website can be opened from different devices." width="500px" height="auto">
+    <img src="assets/images/testing/different-devices.jpg" alt="The website can be opened from different devices." width="700px" height="auto">
 
