@@ -39,15 +39,15 @@
 
     <img src="assets/images/testing/navbar.jpg" alt="Navigation bar and logo title." width="500px" height="auto">
 
-  - From *Home* page, it is possible to move directly to a *Contact form* page by pressing a *Contact Us!* button on the Bootstrap jumbotron style greeting message.
+  - From *Home* page, it is possible to move directly to a *Contact form* page by clicking a *Contact Us!* button on the Bootstrap jumbotron style greeting message.
 
     <img src="assets/images/testing/contact-us-button.jpg" alt="Contact Us button on *Home* page." width="300px" height="auto">
 
-  - From *Home* page, it is possible to move directly to a *Things to do* page by pressing a *Discover More!* button.
+  - From *Home* page, it is possible to move directly to a *Things to do* page by clicking a *Discover More!* button.
 
     <img src="assets/images/testing/discover-more-button.jpg" alt="Discover More button on *Home* page." width="500px" height="auto">
 
-  - Users can discover more detailed information on different types of attractions by pressing one of four buttons over the map. The buttons titles have intuitive names (*Historic Sites*, *Museums*, *Parks* and *Shopping*).
+  - Users can discover more detailed information on different types of attractions by clicking one of four buttons over the map. The buttons titles have intuitive names (*Historic Sites*, *Museums*, *Parks* and *Shopping*).
 
     <img src="assets/images/testing/attractions-buttons.jpg" alt="Attractions buttons with intuitive names." width="300px" height="auto">
 
@@ -55,5 +55,5 @@
 
   - Users can open the website from different devices.
 
-    <img src="assets/images/testing/different-devices.jpg" alt="The website can be opened from different devices." width="700px" height="auto">
+    <img src="assets/images/testing/different-devices-things-to-do-page.jpg" alt="The website can be opened from different devices." width="700px" height="auto">
 
