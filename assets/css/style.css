@@ -271,16 +271,23 @@ body {
 
     #weather {
 
-        top: auto;
-        left: auto;
-        bottom: 10px;
-        right: 10px;
+        top: 75px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #weather {
+
+        top: 55px;
     }
 }
 
 .weather-header {
 
     margin-bottom: 15px;
+    text-align: center;
 }
 
 @media screen and (max-width: 541px) {
@@ -389,7 +396,7 @@ body {
     color: #d0d0d0;
 }
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 570px) {
 
     .jumbotron {
 
@@ -411,10 +418,9 @@ body {
         margin-bottom: 10px;
     }
 
-    #weather {
+    #temperature h2 {
 
-        bottom: 5px;
-        right: 5px;
+        font-size: 16px;
     }
 }
 
@@ -461,6 +467,19 @@ body {
 
     .btn--yellow {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-height: 570px) {
+
+    .jumbotron-header {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -973,6 +992,16 @@ a:not([href]):not([tabindex]):hover {
     -webkit-box-shadow: 0 0 0 0.2rem #e3952a;
 
     box-shadow: 0 0 0 0.2rem #e3952a;
+}
+
+@media screen and (max-height: 570px) {
+
+    #contact-us {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .things-to-do {

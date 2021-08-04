@@ -220,7 +220,7 @@ The manual testing is described [Here](manual-testing.md).
     
 ### Bugs
 
-1. A contact form did not work, no email was recieved on a private email account.
+1. A contact form did not work, no email was received on a private email account.
 
    The JavaScript code was checked thoroughly and no mistake was detected.
    
@@ -235,7 +235,7 @@ The manual testing is described [Here](manual-testing.md).
 
    For iPhone devices, the problem was nicely solved by adding `max-height: -webkit-fill-available;`. There is no jump, the background image and the weather info is not cut.
 
-   For Huawei Mate 20, the background image and weather container are cut. I have tried to apply a trick described [Here](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/) to recalculate the viewport size (every time the address bar dissappers), however it causes a weird jump of the background image. So it was dicided not to implement further this trick.
+   For Huawei Mate 20, the background image and weather container are cut. I have tried to apply a trick described [Here](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/) to recalculate the viewport size (every time the address bar disappears), however it causes a weird jump of the background image. So it was decided not to implement further this trick.
 
 
 
