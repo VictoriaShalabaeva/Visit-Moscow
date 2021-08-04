@@ -220,43 +220,24 @@ The manual testing is described [Here](manual-testing.md).
     
 ### Bugs
 
-  - Two carousels (*News* section on the *Home* page and *Equipment* section on the *Research* page) have a "strange" feature in Microsoft Edge and Mozilla Firefox browsers. When the slides are scrolling it is accompanied by a slight trembling of the slides (hardly noticeable in Mozilla Firefox, more evident in Microsoft Edge).
-  
-  - During the development process, the particular difficulty was met with:
-  
-      - Formatting the *News* section on the *Home* page:
-          - large amount of content, 
-          - cards integration inside a carousel,
-          - size optimization for different devices,
-          - fitting images with different dimensions and aspect rations within a unique size container in cards. 
+1. A contact form did not work, no email was recieved on a private email account.
 
-      - Working with the hero images, in particular the hero images on *Research* page and *Publications*. 
-  
-#### Fixed bugs
+   The JavaScript code was checked thoroughly and no mistake was detected.
+   
+   The problem was solved by avoiding hyphen and underscore symbols in *name* and *id* attributes. 
+   In particular, name="email_address" was changed to name="emailaddress"; name="your-message" was changed to name="yourmessage"; id="your-message" to id="yourmessage".
 
-1. All pages of the website had an additional white space that was causing a horizontal page scrolling (please see Figure S4 in [Supp Info](supp-info.md)).
-       
-   It was discovered that the hero image container had an extra padding and margin space. 
-       
-   The issue was solved by adding additional classes to standard Bootstrap .row and .col classes in order to style specifically the containers of the hero images.
+2. CSS property *Background-size: cover;* did not work in iOS devices. The resulting background image was too big on iPhone. Please see Figure S4 in [Supp Info](supp-info.md).
 
-2. It was noticed that for screen sizes less than 360 px there is an overlap between photos and text on the right (see Figure S5 in [Supp Info](supp-info.md))
-       
-   .col-5 containing photos was changed to .col-6.
-       
-   Image width was changed to 135 px and 130 px for maximum screen sizes 368 px and 300 px, respectively.
+   The problem was solved following the ideas from [StackOverflow](https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios). This happens when the background image is fixed. Fixed attached images use the whole <body> size which, on mobile devices, can get really tall blowing the image out. Changing a background-attachment from fixed to scroll solved the problem.
 
-3. When trying to click a link within a text body of the cards in the *News* section on the *Home* page, it was noticed that instead of clicking the link one is clicking the *Back*/*Forward* buttons of the carousel.
-       
-   This happened because the active (clickable) area of buttons was too large, overlapping with cards content (see an example in Figure S6 in [Supp Info](supp-info.md)).
-       
-   Buttons width was decreased from 30% to a default value 15%. 30% (for screen sizes > 1400 px) and 5% (for screen sizes < 645 px) were introduced exclusively for styling purposes). 5% for smaller devices was left as it does not interfere with the cards content.
+3. 100vh height value did not work properly in mobile device browsers due to an appearing/disappearing address bar.
 
-4. On the devices with a maximum screen size 768 px, it was noticed that on the *Research* page the carousel bottom jumps when scrolling slides of the carousel.
-       
-   That was happening due to the different amount of text.
-       
-   The text container height was fixed to 100 px and 130 px for the maximum screen sizes 550 px and 280 px, respectively.
+   For iOS mobile devices, the problem was solved by 
+
+
+
+#### Existing bugs
         
 ## Deployment
 
