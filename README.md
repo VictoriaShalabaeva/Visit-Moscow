@@ -4,7 +4,7 @@
 
 View the live project [Here](https://victoriashalabaeva.github.io/Visit-Moscow/)
 
-*Visit Moscow* is an interective website that guides through the most popular sightseeings of Moscow. The website is aimed for tourists who plan to visit the capital of Russia and look for a consize summery on the locations worth to see first.
+*Visit Moscow* is an interactive website that guides through the most popular sightseeings of Moscow. The website is aimed for tourists who plan to visit the capital of Russia and look for a concise summery on the locations worth to see first.
 
 The website is designed to be responsive and accessible on a range of devices, making it easy to navigate through.
 
@@ -17,8 +17,8 @@ The website is designed to be responsive and accessible on a range of devices, m
   - **As a tourist:**
 
     - I want to see a quick overview on Moscow city and form a first impression on it.
-    - I want to read more information and have a visual representation of the advertized locations.
-    - I want to see different locations on a map to have a better undestanding on how much far the locations are one from each other.
+    - I want to read more information and have a visual representation of the advertised locations.
+    - I want to see different locations on a map to have a better understanding on how much far the locations are one from each other.
     - I want to have an opportunity to ask for more info, advice or recommendation in organizing my trip.
 
   - **As a general user:**
@@ -66,7 +66,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - The *Things to do* page:
 
-  - contains an interective google map interface to discover the most popular touristic attractions. By clicking on one of the four buttons (*Historic Sites*, *Museums*, *Parks* and *Shopping*), the corresponding marker distribution shows up. Further, by clicking on each marker, the info window with a photo and description appears. 
+  - contains an interactive Google map interface to discover the most popular touristic attractions. By clicking on one of the four buttons (*Historic Sites*, *Museums*, *Parks* and *Shopping*), the corresponding marker distribution shows up. Further, by clicking on each marker, the info window with a photo and description appears. 
 
 - The *Contact* page:
 
@@ -116,7 +116,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 6. [jQuery:](https://jquery.com/)
 
-   jQuery was used in javascript codes for the media query and detection of iOS devices; within Bootstrap to make the navbar responsive.
+   jQuery was used in JavaScript codes for the media query and detection of iOS devices; within Bootstrap to make the navbar responsive.
 
 7. [Git:](https://git-scm.com/)
 
@@ -316,6 +316,34 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+### Creating Google Map API key
+
+1. Create a Gmail account [Here](https://accounts.google.com/signup?hl=en). 
+
+2. Create a billing account at [developers.google.com](https://developers.google.com/).
+
+3. Create your API key following this [documentation](https://developers.google.com/maps/gmp-get-started#quickstart).
+
+4. Restrict your API key following this [documentation](https://developers.google.com/maps/documentation/javascript/get-api-key).
+
+### Connecting to EmailJS
+
+1. Go to [EmailJS](https://www.emailjs.com/) and create an account.
+
+2. Connect your email service by following the steps described [Here](https://www.emailjs.com/docs/user-guide/connecting-email-services/).
+
+3. Create an email template by following the steps described [Here](https://www.emailjs.com/docs/user-guide/creating-email-templates/).
+
+4. Create a contact form on your webpage by following the steps described [Here](https://www.emailjs.com/docs/tutorial/creating-contact-form/).
+
+### Creating OpenWeather API key
+
+1. Go to [OpenWeather API](https://openweathermap.org/api) and create an account.
+
+2. Once you have created an account, you will receive an API key on your email.
+
+3. Access current weather data for any location. Read this [documentation](https://openweathermap.org/current) on how to call OpenWeather API. 
+
 ## Credits
 
 ### Content
@@ -401,13 +429,13 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 - Weather API integration code is written following the [tutorial by George Martsoukos](https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893).
 
-- The code to apply media query for css styling was taken from [Here](https://codepen.io/Midos/pen/LYVpMBP).
+- The code to apply media query for CSS styling was taken from [Here](https://codepen.io/Midos/pen/LYVpMBP).
 
 - Google Maps JavaScript API was integrated following the Code institute tutorials, [Google maps documentation](https://developers.google.com/maps/documentation/javascript/overview), [YouTube Google Maps JavaScript API Tutorial](https://www.youtube.com/watch?v=Zxf1mnP5zcw) and [Stackoverflow](https://stackoverflow.com/questions/40047210/integrate-google-maps-markerclusterer-with-infowindow).
 
 - Approach to identify iPhone/iPad device was taken from [Here](https://racase.com.np/javascript-how-to-detect-if-device-is-ios/).
 
-- Approach to change a placeholder color was taken from [Here](https://www.w3schools.com/howto/howto_css_placeholder.asp)
+- Approach to change a placeholder colour was taken from [Here](https://www.w3schools.com/howto/howto_css_placeholder.asp)
 
 - Approach to align text inside a div was taken from [Here](https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div/13515693#13515693)
 

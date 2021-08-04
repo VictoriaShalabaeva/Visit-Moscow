@@ -70,3 +70,5 @@ Functionality, Usability and Responsiveness of the key website elements were tes
   - After a form submission, a message about successful/unsuccessful submission is displayed. 
 
     <img src="assets/images/testing/contact-form-message.jpg" alt="Contact form submission message." width="600px" height="auto">
+
+  - After a successful form submission, an email is received to a private email account.
