@@ -225,15 +225,17 @@ The manual testing is described [Here](manual-testing.md).
    The JavaScript code was checked thoroughly and no mistake was detected.
    
    The problem was solved by avoiding hyphen and underscore symbols in *name* and *id* attributes. 
-   In particular, name="email_address" was changed to name="emailaddress"; name="your-message" was changed to name="yourmessage"; id="your-message" to id="yourmessage".
+   In particular, `name="email_address"` was changed to `name="emailaddress"`; `name="your-message"` was changed to `name="yourmessage"`; `id="your-message"` to `id="yourmessage"`.
 
 2. CSS property *Background-size: cover;* did not work in iOS devices. The resulting background image was too big on iPhone. Please see Figure S4 in [Supp Info](supp-info.md).
 
-   The problem was solved following the ideas from [StackOverflow](https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios). This happens when the background image is fixed. Fixed attached images use the whole <body> size which, on mobile devices, can get really tall blowing the image out. Changing a background-attachment from fixed to scroll solved the problem.
+   The problem was solved following the ideas from [StackOverflow](https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios). This happens when the background image is fixed. Fixed attached images use the whole `body` size which, on mobile devices, can get really tall blowing the image out. Changing a *background-attachment* from *fixed* to *scroll* solved the problem.
 
-3. 100vh height value did not work properly in mobile device browsers due to an appearing/disappearing address bar.
+3. 100vh height value did not work properly in mobile device browsers due to an appearing/disappearing address bar. The background image was jumping.
 
-   For iOS mobile devices, the problem was solved by 
+   For iPhone devices, the problem was nicely solved by adding `max-height: -webkit-fill-available;`. There is no jump, the background image and the weather info is not cut.
+
+   For Huawei Mate 20, the background image and weather container are cut. I have tried to apply a trick described [Here](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/) to recalculate the viewport size (every time the address bar dissappers), however it causes a weird jump of the background image. So it was dicided not to implement further this trick.
 
 
 
