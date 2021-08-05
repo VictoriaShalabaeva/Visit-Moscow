@@ -23,7 +23,7 @@ fetch(url)
 
         document.getElementById("weather-image").innerHTML = `
 
-    <img src=${icon} alt=${weather[0].main}>
+    <img src=${icon} alt=${weather[0].main} id="weather-icon">
     <span>${weather[0].description}</span>`;
     })
 
