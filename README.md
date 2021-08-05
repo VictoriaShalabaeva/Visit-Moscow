@@ -60,7 +60,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - The *Home* page:
 
-  - contains an appealing background image and a Bootstap jumbotron-style component that catches the user's attention. 
+  - contains an appealing background image and a Bootstap jumbotron-style component that catch the user's attention. 
   - shows an actual Moscow weather.
   - Bootstrap buttons linking to *Things to do* and *Contact* pages.
 
@@ -76,7 +76,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - a *Search Bar* through which a user can search content of their concern within the website.
 
-- a weather info in real time (currently weather info updates only the *Home* page is refreshed)
+- a weather info in real time (currently weather info updates only when the *Home* page is refreshed).
 
 ## Technologies Used
 
@@ -220,6 +220,8 @@ The manual testing is described [Here](manual-testing.md).
     
 ### Bugs
 
+#### Fixed bugs
+
 1. A contact form did not work, no email was received on a private email account.
 
    The JavaScript code was checked thoroughly and no mistake was detected.
@@ -227,11 +229,17 @@ The manual testing is described [Here](manual-testing.md).
    The problem was solved by avoiding hyphen and underscore symbols in *name* and *id* attributes. 
    In particular, `name="email_address"` was changed to `name="emailaddress"`; `name="your-message"` was changed to `name="yourmessage"`; `id="your-message"` to `id="yourmessage"`.
 
-2. CSS property *Background-size: cover;* did not work in iOS devices. The resulting background image was too big on iPhone. Please see Figure S4 in [Supp Info](supp-info.md).
+2. CSS property `background-size: cover;` did not work in iOS devices. The resulting background image was too big on iPhone. Please see Figure S4 in [Supp Info](supp-info.md).
 
-   The problem was solved following the ideas from [StackOverflow](https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios). This happens when the background image is fixed. Fixed attached images use the whole `body` size which, on mobile devices, can get really tall blowing the image out. Changing a *background-attachment* from *fixed* to *scroll* solved the problem.
+   The problem was solved following the ideas from [StackOverflow](https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios). This happens when the background image is fixed. Fixed attached images use the whole `body` size which, on mobile devices, can get really tall blowing the image out. Changing a `background-attachment` from `fixed` to `scroll` solved the problem.
 
-3. 100vh height value did not work properly in mobile device browsers due to an appearing/disappearing address bar. The background image was cut.
+3. The *Things to do* page had an additional white space (please see Figure S6 [Supp Info](supp-info.md)). This bug was present only on iPhone mobile devices while on a Huawei Mate 20 and on simulated iPhones in DevTools the page elements were perfectly aligned.
+
+   The issue was solved by revising and appending additional classes to standard Bootstrap .row and .col classes.
+
+#### Existing bugs
+
+1. 100vh height value did not work properly in mobile device browsers due to an appearing/disappearing address bar. The background image was cut.
 
    For iPhone devices, the problem was nicely solved by adding `max-height: -webkit-fill-available;` property. 
    There is no jump, the background image and the weather info is not cut.
@@ -241,13 +249,7 @@ The manual testing is described [Here](manual-testing.md).
 
    In order to hide the bug, the weather container was moved to its original upper position (to avoid its cutting).
 
-4. The *Things to do* page had an additional white space (please see Figure S6 [Supp Info](supp-info.md)). This bug was present only on iPhone mobile devices while on a Huawei Mate 20 and on simulated iPhones in DevTools the page elements were perfectly aligned.
-
-   The issue was solved by revising and appending additional classes to standard Bootstrap .row and .col classes.
-
-
-
-#### Existing bugs
+2. On *Things to do* page (on desktop and laptop devices), there is a slight jump of the Google map and four buttons. The jump happens due to JavaScript media query applied to center the objects.
         
 ## Deployment
 

@@ -29,10 +29,7 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 ### Weather:
 
   - The weather info loads correctly when the *Home* page is updated. 
-  - At a certain breakpoint (415 px), the weather container jumps from the upper left corner to the bottom right corner.
-
-    <img src="assets/images/testing/weather.jpg" alt="At a certain breakpoint (415 px), the weather container jumps from the upper left corner to the bottom right corner." width="500px" height="auto">
-
+  
   - If the weather data is not loaded correctly, there is an error message.
 
     <img src="assets/images/testing/weather-message.jpg" alt="Weather error message." width="300px" height="auto">

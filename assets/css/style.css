@@ -214,6 +214,11 @@ body {
     margin-bottom: 15px;
     text-align: center;
 }
+@media screen and (max-width: 415px) {
+    .weather-header {
+        margin-bottom: 10px;
+    }
+}
 @media screen and (max-width: 541px) {
     .weather-header {
         font-size: 16px;
@@ -766,7 +771,7 @@ h5 span {
         width: 150px;
    }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 395px) {
     .list-inline-item a {
         width: 130px;
    }
