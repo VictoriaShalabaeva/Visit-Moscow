@@ -231,11 +231,19 @@ The manual testing is described [Here](manual-testing.md).
 
    The problem was solved following the ideas from [StackOverflow](https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios). This happens when the background image is fixed. Fixed attached images use the whole `body` size which, on mobile devices, can get really tall blowing the image out. Changing a *background-attachment* from *fixed* to *scroll* solved the problem.
 
-3. 100vh height value did not work properly in mobile device browsers due to an appearing/disappearing address bar. The background image was jumping.
+3. 100vh height value did not work properly in mobile device browsers due to an appearing/disappearing address bar. The background image was cut.
 
-   For iPhone devices, the problem was nicely solved by adding `max-height: -webkit-fill-available;`. There is no jump, the background image and the weather info is not cut.
+   For iPhone devices, the problem was nicely solved by adding `max-height: -webkit-fill-available;` property. 
+   There is no jump, the background image and the weather info is not cut.
 
-   For Huawei Mate 20, the background image and weather container are cut. I have tried to apply a trick described [Here](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/) to recalculate the viewport size (every time the address bar disappears), however it causes a weird jump of the background image. So it was decided not to implement further this trick.
+   For Huawei Mate 20, `max-height: -webkit-fill-available;` property did not work, the background image and weather container are cut (see Figure S5 in [Supp Info](supp-info.md)). 
+   I have tried to apply a trick described [Here](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/) to recalculate the viewport size (every time the address bar appears/disappears), however it caused a weird jump of the background image while scrolling. For this reason this approach was not implemented. 
+
+   In order to hide the bug, the weather container was moved to its original upper position (to avoid its cutting).
+
+4. The *Things to do* page had an additional white space (please see Figure S6 [Supp Info](supp-info.md)). This bug was present only on iPhone mobile devices while on a Huawei Mate 20 and on simulated iPhones in DevTools the page elements were perfectly aligned.
+
+   The issue was solved by revising and appending additional classes to standard Bootstrap .row and .col classes.
 
 
 

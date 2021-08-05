@@ -17,3 +17,7 @@
 **Figure S4.** Background image bug. 
 
 <img src="assets/images/bugs/background-bug.jpg" alt="Background image bug on iPhone devices." width="700px" height="auto">
+
+**Figure S5.** 100vh height bug. 
+
+<img src="assets/images/bugs/100vh-bug.jpg" alt="100vh height bug on mobile devices." width="330px" height="auto">
