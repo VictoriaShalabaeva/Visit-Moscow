@@ -21,3 +21,7 @@
 **Figure S5.** 100vh height bug. 
 
 <img src="assets/images/bugs/100vh-bug.jpg" alt="100vh height bug on mobile devices." width="330px" height="auto">
+
+**Figure S6.** Margin bug. 
+
+<img src="assets/images/bugs/margin-bug.jpg" alt="Bug on Things to do page." width="330px" height="auto">
