@@ -26,9 +26,11 @@
 			$('#hero-image-outer, #hero-image').removeAttr("style");
 		}
 		if(window.matchMedia("(max-width: 600px) and (min-width: 330px)").matches) {
-			// Applies changes on document ready but not when we resize the browser
+			// Applies changes both on document ready and when we resize the browser
 			$('#jumbotron-h1').html("Don’t listen to what they say.<br>Go see!");
-		}
+		} else {
+            $('#jumbotron-h1').html("Don’t listen to what they say. Go see!");
+        }
 		if(window.matchMedia("(min-width: 1100px)").matches) {
 			// Applies changes both on document ready and when we resize the browser
 			$('#buttons-center').addClass('mx-auto');
