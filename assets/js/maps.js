@@ -275,100 +275,103 @@ const markerHistoricSites = [{
 }]
 const markerMuseums = [{
 	location: {
-		lat: 55.7094,
-		lng: 37.5423
+		lat: 55.7520,
+		lng: 37.6175
 	},
 	label: 'A',
-	name: "Sparrow Hills",
-	// Photo Credit: https://www.hellotravel.com/russia/moscow-state-university
-	imageAddress: 'assets/images/sparrow-hills.jpg',
-	// Text Credit: https://bridgetomoscow.com/sparrow-hills_2
-	description: `Sparrow Hills is a hill on the right bank of the Moskva River and one of the highest points 
-	in Moscow. On top of the hill, 85m above the river, is the observation platform which gives a beautiful panoramic 
-	view of the city. Here you can also take a closer look at the tallest of the seven Stalinist skyscrapers, 
-	the Moscow State University. It looks spectacular at the top of the hill and thanks to its location the University 
-	can be seen from afar.`
+	name: "Moscow Kremlin",
+	// Photo Credit: https://wallpapersden.com/city-moscow-night-wallpaper/2560x1080/
+	imageAddress: 'assets/images/moscow-kremlin.jpg',
+	// Text Credit: https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm
+	description: `A 15th-century fortified complex that covers an area of 275,000 square meters surrounded 
+	by walls built in the 1400s. The Grand Kremlin 
+	Palace, which has over 700 rooms, was once home to the Tsar family and is now the official residence of the 
+	president of the Russian Federation. The massive complex also includes many other buildings, some of which 
+	are open to the public and can be visited regularly. Aside from 
+	three cathedrals (including one where the Tsars were once crowned) and a number of towers, the Kremlin is also 
+	home to the Armory building, a museum holding everything from the royal crown and imperial carriages to the ivory 
+	throne of Ivan the Terrible and Fabergé eggs. <a rel="noopener" target="_blank" 
+	href="https://www.kreml.ru/en-Us/museums-moscow-kremlin/">Official website</a>`
 }, {
 	location: {
-		lat: 55.6117,
-		lng: 37.6861
+		lat: 55.7553,
+		lng: 37.6178
 	},
 	label: 'B',
-	name: "Tsaritsyno Museum-Reserve",
-	// Photo Credit: https://en.wikipedia.org/wiki/Tsaritsyno_Palace
-	imageAddress: 'assets/images/tsaritsino.jpg',
+	name: "State Historical Museum",
+	// Photo Credit: https://trymoscow.ru/gosudarstvennyj-istoricheskij-muzej/
+	imageAddress: 'assets/images/state-historical-museum.jpg',
 	// Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
-	description: `The former summer residence of Empress Catherine the Great was commissioned in 1775, 
-	and succumbed to deterioration during the Soviet era. The whole of Tsaritsyno Museum-Reserve has been 
-	fundamentally renovated since 1980s to look even brighter than the original. With its opulently decorated 
-	buildings, gardens, meadows and forests, Tsaritsyno Park is the perfect place for a green respite in Moscow. 
-	<a rel="noopener" target="_blank" href="https://en.tsaritsyno-museum.ru/">Official website</a>`
+	description: `An attraction in its own right, the State Historical Museum, sheltered in a neo-Russian 
+	style building, was founded in 1872 by Ivan Zabelin and Aleksey Uvarov. What once was the Principal Medicine 
+	Store now houses an impressive collection, which includes relics of prehistoric tribes that once inhabited 
+	the territory of present-day Russia, the country’s largest coin collection, as well as 6th-century manuscripts 
+	and artworks collected by the Romanov dynasty among other treasures. <a rel="noopener" target="_blank" 
+	href="https://en.shm.ru/">Official website</a>`
 }, {
 	location: {
-		lat: 55.6704,
-		lng: 37.6695
+		lat: 55.7414,
+		lng: 37.6209
 	},
 	label: 'C',
-	name: "Kolomenskoye",
-	// Photo Credit: https://putidorogi-nn.ru/evropa/839-usadba-kolomenskoe-v-moskve
-	imageAddress: 'assets/images/kolomenskoe.jpg',
+	name: "Tretyakov Gallery",
+	// Photo Credit: https://wanderings.online/virtualnye-progulki-po-tretyakovskoj-galeree/
+	imageAddress: 'assets/images/tretyakov-gallery.jpg',
 	// Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
-	description: `A 10-minute metro ride from the city centre will take you to Kolomenskoe Museum-Reserve, 
-	where you can get an idea of what Medieval Moscow looked like. Here you’ll find ancient churches (one dating 
-	back to the 16th century), the oldest garden in Moscow and a favourite estate of Tsar Alexey Mikhailovich, 
-	father of Peter the Great. <a rel="noopener" target="_blank" href="http://mgomz.com/">Official 
-	website</a>`
+	description: `Built between 1900 and 1905, Tretyakov Gallery started as the private collection of the 
+	Tretyakov brothers, who were 19th-century philanthropists. Designed by Viktor Vasnetsov, the gallery is a home 
+	to one of the largest collections of Russian art in the world. Here you can see icons including Rublev’s Trinity, 
+	and pre-revolutionary masterpieces such as Girl with Peaches by Valentin Serov, Demon by Mikhail Vrubel and Rooks 
+	have Come Backby Alexei Savrasov. <a rel="noopener" target="_blank" 
+	href="https://www.tretyakovgallery.ru/info/en">Official website</a>`
 }, {
 	location: {
-		lat: 55.8310,
-		lng: 37.6298
+		lat: 55.7473,
+		lng: 37.6051
 	},
 	label: 'D',
-	name: "VDNKh All-Russian Exhibition Centre",
-	// Photo Credit: https://www.sputnik8.com/ru/moscow/sights/vdnh/info
-	imageAddress: 'assets/images/vdnh.jpg',
+	name: "Pushkin Museum",
+	// Photo Credit: https://pushkinmuseum.art/
+	imageAddress: 'assets/images/pushkin-museum.jpg',
 	// Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
-	description: `The enormous VDNKh (short for All-Russian Exhibition Centre) recently went through an 
-	extensive renovation and now looks better than ever. The centre started as the all-Soviet agricultural 
-	exhibition in 1935, and now serves as an open-air museum of Soviet architecture. With the iconic fountain 
-	at its entrance, the park complex is home to a number of museums, shopping pavilions, multiple eateries, 
-	a massive oceanarium, a zip-line, and a horse-riding rink. In winter a skating rink opens – the largest 
-	in Europe. <a rel="noopener" target="_blank" href="https://vdnh.ru/en/">Official 
-	website</a>`
+	description: `The largest foreign art museum in Moscow comprises three branches housing a collection 
+	of incredible works by masters of ancient civilisations, the Italian Renaissance and the Dutch Golden Age. 
+	The main building contains masterpieces by Botticelli, Tiepolo, Veronese and Rembrandt, some of which have 
+	never been displayed before. The Gallery of European & American Art, located next door, stores an incredible 
+	collection of Impressionist and post-Impressionist paintings. <a rel="noopener" target="_blank" 
+	href="https://pushkinmuseum.art/index.php?lang=en">Official website</a>`
 }, {
 	location: {
-		lat: 55.7284,
-		lng: 37.6013
+		lat: 55.7537,
+		lng: 37.6199
 	},
 	label: 'E',
-	name: "Gorky Park",
-	// Photo Credit: https://en.wikipedia.org/wiki/Gorky_Park_(Moscow)
-	imageAddress: 'assets/images/gorky-park.jpg',
-	// Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
-	description: `Moscow’s premier green space, Gorky Park, offers entertainment for every taste: outdoor 
-	dancing sessions, yoga and fitness classes all summer, as well as beach volleyball and ping-pong, rollerblading, 
-	skateboarding and cycling opportunities, along with segway and boat-rentals. In winter, half of the park turns 
-	into one of the city’s biggest skating rinks. The park is also home to an open-air movie theatre and the Garage 
-	Museum of Contemporary Art. <a rel="noopener" target="_blank" href="https://www.park-gorkogo.com/en/">Official 
-	website</a>`
+	name: "Lenin Mausoleum",
+	// Photo Credit: https://theculturetrip.com/europe/russia/articles/a-guide-to-visiting-lenins-mausoleum/
+	imageAddress: 'assets/images/lenin-mausoleum.jpg',
+	// Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
+	description: `Opened to the public in 1924, Lenin’s Mausoleum is one of the most popular tourist attractions 
+	in Moscow. The red granite structure is located at the heart of the city in Red Square. Lenin’s embalmed body lies 
+	in a glass sarcophagus; it is a somewhat eerie experience walking past the former leader of the Soviet Union 
+	but is well worth doing as you understandably can’t do it anywhere else in the world. After visiting the mausoleum, 
+	head to the Kremlin wall right next to it for more graves of important communist figures such as Stalin and Brezhnev.`
 }, {
 	location: {
-		lat: 55.7632,
-		lng: 37.5766
+		lat: 55.8230,
+		lng: 37.6398
 	},
 	label: 'F',
-	name: "Moscow Zoo",
-	// Photo Credit: https://rusunion.com/moskovskiy-zoopark-otsrochil-nastuplenie-oseni/
-	imageAddress: 'assets/images/moscow-zoo.jpg',
-	// Text Credit: https://www.moscovery.com/moscow-zoo/
-	description: `The Moscow Zoo is one of the oldest zoos in Europe, dating back to 1864. Located in the 
-	city centre, the zoo is a favourite place for families with children and a popular tourist attraction. The zoo is 
-	home to about 1,100 species, second only to the Berlin Zoological Garden in the European rankings. Primates, elephants, 
-	giraffes, tigers, lions, brown bears and polar bears, penguins, rare birds, and seals are kept on a 22-ha plot 
-	of land. The zoo contains a number of rare species of wild fauna, such as the Amur tiger, Pallas’s cat, snow 
-	leopard, vicuña, white-tailed gnu, guanaco, takin, and so on. 
-	<a rel="noopener" target="_blank" href="https://moscowzoo.su/">Official 
-	website</a>`
+	name: "Museum of Cosmonautics",
+	// Photo Credit: https://www.lottehotelmagazine.com/en/travel_detail?no=295
+	imageAddress: 'assets/images/museum-cosmonautics.jpg',
+	// Text Credit: https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm
+	description: `At one point, Russia and the US were toe-to-toe when it came to space exploration. 
+	While that might no longer be the case, the museum's amazing collection-which includes over 85,000 items-is 
+	still awe-inspiring. Main exhibits include the space capsule used by Yuri Gagarin, the first human to travel 
+	into outer space; a USSR flag with moon fragments; a Soviet spacesuit; and a rocket propulsion unit from the 
+	1960s. A special two-story hall showcases sections of the Mir space station interior, and there are also models 
+	of the first sputniks and a replica miniature spaceship. <a rel="noopener" target="_blank" 
+	href="https://kosmo-museum.ru/?locale=en">Official website</a>`
 }]
 const markerParks = [{
 	location: {
