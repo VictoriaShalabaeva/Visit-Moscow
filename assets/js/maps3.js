@@ -3,6 +3,7 @@
  * Code credit: the code was written with the aid of Code institute tutorials, Google maps documentation, YouTube Google Maps JavaScript API Tutorial (https://www.youtube.com/watch?v=Zxf1mnP5zcw).
  * Code credit: Integration of Google Maps MarkerClusterer with infowindow from Stackoverflow (https://stackoverflow.com/questions/40047210/integrate-google-maps-markerclusterer-with-infowindow).
  */
+
 // Define a map style
 // Code credit: Google maps documentation (https://developers.google.com/maps/documentation/javascript/examples/maptype-styled-simple)
 const yellow_style = [{
@@ -147,6 +148,7 @@ const yellow_style = [{
 		color: "#92998d"
 	}],
 }, ];
+
 // Create a map of Moscow
 function initMap() {
 	var map = new google.maps.Map(document.getElementById("map"), {
@@ -158,32 +160,33 @@ function initMap() {
 		styles: yellow_style,
 	});
 }
+
 const markerHistoricSites = [{
-	location: {
-		lat: 55.7539,
-		lng: 37.6208
-	},
-	label: 'A',
-	name: 'Red square',
-	// Photo Credit: https://www.goodfon.com/wallpaper/moskva-rossiia-krasnaia-ploshchad-ploshchad-tsvety-nebo.html
-	imageAddress: 'assets/images/red-square.jpg',
-	// Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
-	description: `The heart of Russia’s capital, Red Square is arguably Moscow’s most visited attraction. 
+    location: {
+        lat: 55.7539,
+        lng: 37.6208
+    },
+    label: 'A',
+    name: 'Red square',
+    // Photo Credit: https://www.goodfon.com/wallpaper/moskva-rossiia-krasnaia-ploshchad-ploshchad-tsvety-nebo.html
+    imageAddress: 'assets/images/red-square.jpg',
+    // Text Credit: https://theculturetrip.com/europe/russia/articles/19-must-see-attractions-in-moscow/
+    description: `The heart of Russia’s capital, Red Square is arguably Moscow’s most visited attraction. 
     The cobblestone square is surrounded by beautiful architecture, and is the place where most of the city’s 
     (and country’s) history unfolded. What was once a market square where traders would sell their goods is now a 
     key location in the city, surrounded by unforgettable sites such as the Kremlin, St.Basil’s Cathedral, Lenin’s 
     Mausoleum and other celebrated attractions.`
 }, {
-	location: {
-		lat: 55.7525,
-		lng: 37.6231
-	},
-	label: 'B',
-	name: "Saint Basil's Cathedral",
-	// Photo Credit: https://www.goodfon.com/wallpaper/st-basil-s-cathedral-red.html
-	imageAddress: 'assets/images/st-basil-s-cathedral.jpg',
-	// Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
-	description: `The most recognizable building in the country, the cathedral is very much a symbol of Russia. 
+    location: {
+        lat: 55.7525,
+        lng: 37.6231
+    },
+    label: 'B',
+    name: "Saint Basil's Cathedral",
+    // Photo Credit: https://www.goodfon.com/wallpaper/st-basil-s-cathedral-red.html
+    imageAddress: 'assets/images/st-basil-s-cathedral.jpg',
+    // Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
+    description: `The most recognizable building in the country, the cathedral is very much a symbol of Russia. 
     Ivan the Terrible ordered the cathedral’s construction in the mid-16th century, and legend holds that Ivan put 
     out the architect’s eyes so that he would be unable to build another cathedral more glorious than St. Basil’s. 
     Designed to resemble the shape of a bonfire in full flame, the architecture is not only unique to the period in 
@@ -191,16 +194,16 @@ const markerHistoricSites = [{
     the cathedral but fortunately did not succeed. <a rel="noopener" target="_blank" href="https://en.shm.ru/museum/hvb/">
     Official website</a>`
 }, {
-	location: {
-		lat: 55.7601,
-		lng: 37.6186
-	},
-	label: 'C',
-	name: "Bolshoi Theatre",
-	// Photo Credit: https://www.wallpaperflare.com/bolshoi-theatre-moscow-russia-fountain-illumination-wallpaper-tcgfl
-	imageAddress: 'assets/images/bolshoi-theatre.jpg',
-	// Text Credit: https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm
-	description: `The Bolshoi Theater is home to the largest and one of the oldest ballet and opera companies 
+    location: {
+        lat: 55.7601,
+        lng: 37.6186
+    },
+    label: 'C',
+    name: "Bolshoi Theatre",
+    // Photo Credit: https://www.wallpaperflare.com/bolshoi-theatre-moscow-russia-fountain-illumination-wallpaper-tcgfl
+    imageAddress: 'assets/images/bolshoi-theatre.jpg',
+    // Text Credit: https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm
+    description: `The Bolshoi Theater is home to the largest and one of the oldest ballet and opera companies 
     in the world. The Bolshoi Theater you see today opened in 1824, after several older versions burned down. Inside, 
     red velvet, a three-tiered crystal chandelier, and gilt moldings give the place a Byzantine-Renassaince grandiose 
     feel like no other. Catching a show from the resident ballet and opera troupes is a treat, as the theater often 
@@ -208,31 +211,31 @@ const markerHistoricSites = [{
     both of which originally premiered here. <a rel="noopener" target="_blank" href="https://www.bolshoi.ru/en/">Official 
     website</a>`
 }, {
-	location: {
-		lat: 55.7446,
-		lng: 37.6055
-	},
-	label: 'D',
-	name: "Cathedral of Christ the Saviour",
-	// Photo Credit: https://wall.alphacoders.com/big.php?i=672508
-	imageAddress: 'assets/images/cathedral-christ-saviour.jpg',
-	// Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
-	description: `This gorgeous Russian Orthodox cathedral is located on the banks of the Moskva River, just a 
+    location: {
+        lat: 55.7446,
+        lng: 37.6055
+    },
+    label: 'D',
+    name: "Cathedral of Christ the Saviour",
+    // Photo Credit: https://wall.alphacoders.com/big.php?i=672508
+    imageAddress: 'assets/images/cathedral-christ-saviour.jpg',
+    // Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
+    description: `This gorgeous Russian Orthodox cathedral is located on the banks of the Moskva River, just a 
     stone’s throw away from the Kremlin. The church as it stands today was consecrated in 2000, as the original church 
     that stood here was destroyed on the command of Josef Stalin in 1931 due to the anti-religious campaign. With its 
     delightful golden dome, spires and dazzling white facades, the Christ the Savior Cathedral is stunning. 
     The interior is just as captivating to wander around, with its beautifully tiled floors and impressive altar.`
 }, {
-	location: {
-		lat: 55.7518,
-		lng: 37.6009
-	},
-	label: 'E',
-	name: "Moscow Metro",
-	// Photo Credit: https://russianmetro.ru/metro/arbatsin.html
-	imageAddress: 'assets/images/metro.jpg',
-	// Text Credit: https://weheart.moscow/toptenattractions/ and https://www.rbth.com/arts/2017/08/17/5-treasures-of-moscows-metro-check-out-these-stunning-blue-line-stations_824162
-	description: `The Moscow Metro has its own unforgettable charm. It was opened in 1935 and became one 
+    location: {
+        lat: 55.7518,
+        lng: 37.6009
+    },
+    label: 'E',
+    name: "Moscow Metro",
+    // Photo Credit: https://russianmetro.ru/metro/arbatsin.html
+    imageAddress: 'assets/images/metro.jpg',
+    // Text Credit: https://weheart.moscow/toptenattractions/ and https://www.rbth.com/arts/2017/08/17/5-treasures-of-moscows-metro-check-out-these-stunning-blue-line-stations_824162
+    description: `The Moscow Metro has its own unforgettable charm. It was opened in 1935 and became one 
     of the USSR’s most extravagant architectural projects. That is why most of the central underground stations 
     look like a museum. Every station has its own mood, different decorations and fascinating story. With 223 
     stations and 12 metro lines crosscutting through Moscow, however, this can be tricky, so visiting at least 
@@ -241,16 +244,16 @@ const markerHistoricSites = [{
     carpet pattern while its pillars are decorated with white ceramic bouquets. The station’s chandeliers are made 
     of gilded bronze.`
 }, {
-	location: {
-		lat: 55.751339,
-		lng: 37.596398
-	},
-	label: 'F',
-	name: "Arbat Street",
-	// Photo Credit: https://planeta.turtella.ru/russia/moscow/p1192783
-	imageAddress: 'assets/images/arbat.jpg',
-	// Text Credit: https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm
-	description: `Moscow's one-kilometer-long pedestrian street has been around since the 15th century. 
+    location: {
+        lat: 55.751339,
+        lng: 37.596398
+    },
+    label: 'F',
+    name: "Arbat Street",
+    // Photo Credit: https://planeta.turtella.ru/russia/moscow/p1192783
+    imageAddress: 'assets/images/arbat.jpg',
+    // Text Credit: https://www.planetware.com/russia/top-rated-tourist-attractions-in-moscow-r-1-3.htm
+    description: `Moscow's one-kilometer-long pedestrian street has been around since the 15th century. 
     Originally a trade route in the outskirts of the city, Arbat Street is now very centrally located, home to 
     posh buildings and lots of places to eat and shop. Beautiful street lamps and two significant statues-one 
     of Princess Turandot (from Puccini's last opera) and one of Soviet-era poet Bulat Okudzhava-adorn the street, 
@@ -258,21 +261,22 @@ const markerHistoricSites = [{
     sit down at an outdoor café, Arbat Street also offers a chance to visit the former home of poet Alexander 
     Pushkin and the café both Anton Chekhov and Leo Tolstoy used to visit.`
 }, {
-	location: {
-		lat: 55.7262,
-		lng: 37.5564
-	},
-	label: 'G',
-	name: "Novodevichy Convent",
-	// Photo Credit: http://novodev.ru/
-	imageAddress: 'assets/images/novodevichy-convent.jpg',
-	// Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
-	description: `Drenched in history, the Novodevichy Convent is located in a striking building 
+    location: {
+        lat: 55.7262,
+        lng: 37.5564
+    },
+    label: 'G',
+    name: "Novodevichy Convent",
+    // Photo Credit: http://novodev.ru/
+    imageAddress: 'assets/images/novodevichy-convent.jpg',
+    // Text Credit: https://www.touropia.com/tourist-attractions-in-moscow/
+    description: `Drenched in history, the Novodevichy Convent is located in a striking building 
     that was once a fortress. This captivating place is well worth visiting when in Moscow. Founded in 1524, 
     the convent houses four cathedrals; Smolensk Cathedral is the undoubted highlight due to its delightful 
     16th-century frescoes. Wandering around the grounds is like stepping back in time. The Novodevichy Cemetery 
     is where many famous leaders of the Soviet Union are buried, such as Yeltsin and Khrushchev.`
 }]
+
 const markerMuseums = [{
 	location: {
 		lat: 55.7094,
@@ -370,6 +374,7 @@ const markerMuseums = [{
 	<a rel="noopener" target="_blank" href="https://moscowzoo.su/">Official 
 	website</a>`
 }]
+
 const markerParks = [{
 	location: {
 		lat: 55.7094,
@@ -467,6 +472,7 @@ const markerParks = [{
 	<a rel="noopener" target="_blank" href="https://moscowzoo.su/">Official 
 	website</a>`
 }]
+
 const markerShopping = [{
 	location: {
 		lat: 55.7547,
@@ -566,69 +572,113 @@ const markerShopping = [{
 	<a rel="noopener" target="_blank" href="https://danilovskymarket.ru/en">Official website</a>`
 }]
 
-function template(place) {
-	$("#info-window").html(`
+function template (place) {
+    $("#info-window").html(`
             <h5><span>${place.label}</span>&nbsp; ${place.name}</h5>
             <img src="${place.imageAddress}" class="image" alt="${place.name} photo">
             <p class="info-text">${place.description}</p>`);
-	if(window.matchMedia("(max-width: 600px)").matches) {
-		document.querySelector('#info-window').scrollIntoView({
-			behavior: 'smooth'
-		});
-	}
-}
-
-function mapAttractionType(zoomValue, coordinates, markerAttractionType) {
-	let mapPlace = new google.maps.Map(document.getElementById("map"), {
-		zoom: zoomValue,
-		center: coordinates,
-		styles: yellow_style,
-	});
-	let infoWindow = new google.maps.InfoWindow();
-	let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	let markers = markerAttractionType.map(function(markerAttractionType, i) {
-		let marker = new google.maps.Marker({
-			position: markerAttractionType.location,
-			label: labels[i % labels.length]
-		});
-		google.maps.event.addListener(marker, 'click', function() {
-			template(markerAttractionType);
-		});
-		return marker;
-	});
-	let markerCluster = new MarkerClusterer(mapPlace, markers, {
-		imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-	});
-}
-const coordinatesHistoricSites = {
-	lat: 55.7539,
-	lng: 37.6208
-}
-const coordinatesMuseums = {
-	lat: 55.728461149589826,
-	lng: 37.613845249001855
-}
-const coordinatesParks = {
-	lat: 55.73402612486688,
-	lng: 37.63365561837892
-}
-const coordinatesShopping = {
-	lat: 55.77427567683743,
-	lng: 37.632019544817204
-}
-document.addEventListener("DOMContentLoaded", function() {
-	let buttons = document.getElementsByClassName("btn-lg");
-	for(let button of buttons) {
-		button.addEventListener("click", function() {
-			if($(this).is('#historic-sites')) {
-				mapAttractionType(12, coordinatesHistoricSites, markerHistoricSites);
-			} else if($(this).is('#museums')) {
-				mapAttractionType(10, coordinatesMuseums, markerMuseums);
-			} else if($(this).is('#parks')) {
-				mapAttractionType(10, coordinatesParks, markerParks);
-			} else {
-				mapAttractionType(10.5, coordinatesShopping, markerShopping);
+			if(window.matchMedia("(max-width: 600px)").matches) {
+				document.querySelector('#info-window').scrollIntoView({
+					behavior: 'smooth'
+				});
 			}
-		});
-	}
+} 
+
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByClassName("btn-lg");
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+			let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			let infoWindow = new google.maps.InfoWindow();			
+            if ($(this).is('#historic-sites')) {
+                let mapHistoricSites = new google.maps.Map(document.getElementById("map"), {
+					zoom: 12,
+					center: {
+						lat: 55.7539,
+						lng: 37.6208
+					},
+					styles: yellow_style,
+				});
+				let markers = markerHistoricSites.map(function(markerHistoricSites, i) {
+					let marker = new google.maps.Marker({
+						position: markerHistoricSites.location,
+						label: labels[i % labels.length]
+					});
+					google.maps.event.addListener(marker, 'click', function() {
+						template(markerHistoricSites);
+					});
+					return marker;
+				});
+				let markerCluster = new MarkerClusterer(mapHistoricSites, markers, {
+					imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+				});
+            } else if ($(this).is('#museums')) {
+				let mapMuseums = new google.maps.Map(document.getElementById("map"), {
+					zoom: 10,
+					center: {
+						lat: 55.728461149589826, 
+						lng: 37.613845249001855
+					},
+					styles: yellow_style,
+				});
+				let markers = markerMuseums.map(function(markerMuseums, i) {
+					let marker = new google.maps.Marker({
+						position: markerMuseums.location,
+						label: labels[i % labels.length]
+					});
+					google.maps.event.addListener(marker, 'click', function() {
+						template(markerMuseums);
+					});
+					return marker;
+				});
+				let markerCluster = new MarkerClusterer(mapMuseums, markers, {
+					imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+				});
+			} else if ($(this).is('#parks')) {
+				let mapParks = new google.maps.Map(document.getElementById("map"), {
+					zoom: 10,
+					center: {
+						lat: 55.73402612486688,
+						lng: 37.63365561837892
+					},
+					styles: yellow_style,
+				});
+				let markers = markerParks.map(function(markerParks, i) {
+					let marker = new google.maps.Marker({
+						position: markerParks.location,
+						label: labels[i % labels.length]
+					});
+					google.maps.event.addListener(marker, 'click', function() {
+						template(markerParks);
+					});
+					return marker;
+				});
+				let markerCluster = new MarkerClusterer(mapParks, markers, {
+					imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+				});
+			} else {
+				let mapShopping = new google.maps.Map(document.getElementById("map"), {
+					zoom: 10.5,
+					center: {
+						lat: 55.77427567683743,
+						lng: 37.632019544817204
+					},
+					styles: yellow_style,
+				});
+				let markers = markerShopping.map(function(markerShopping, i) {
+					let marker = new google.maps.Marker({
+						position: markerShopping.location,
+						label: labels[i % labels.length]
+					});
+					google.maps.event.addListener(marker, 'click', function() {
+						template(markerShopping);
+					});
+					return marker;
+				});
+				let markerCluster = new MarkerClusterer(mapShopping, markers, {
+					imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+				});
+			}		
+        });
+    }
 });
