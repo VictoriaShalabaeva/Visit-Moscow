@@ -1,5 +1,6 @@
 /**
- * The following code identifies iPad and iPhone devices.
+ * The following code identifies iPad/iPhone devices and changes css styling of background images on Home page and Contact page.
+ * This code was implemented to fix the bug in iOS devices. In particular, CSS property "background-size: cover;" did not work in iOS devices.
  * Code credit: https://racase.com.np/javascript-how-to-detect-if-device-is-ios/ 
  */
 

@@ -1,5 +1,3 @@
-`python3 -m http.server`
-
 # Visit Moscow Website
 
 View the live project [Here](https://victoriashalabaeva.github.io/Visit-Moscow/)
@@ -52,7 +50,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ### Existing Features
 
-- The website is responsive on all device sizes (down to 280 px).
+- The website is responsive on many device sizes (down to 280 px).
 
 - The website contains a Bootstrap responsive navigation header; a collapse plugin groups and hides navbar content.
 
@@ -175,7 +173,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to validate HTML, CSS and JS code, respectively, to ensure no syntax error.
 
 - [W3C Markup Validator](https://validator.w3.org/). Please see Figure S1 in [Supp Info](supp-info.md) for the results.
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Please see Figure S2 in [Supp Info](supp-info.md) for the result.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Please see Figure S2 in [Supp Info](supp-info.md) for the results.
 - [JSHint](https://jshint.com/) did not detect any potential problem in JavaScript codes.
 
 ### Testing User Stories from User Experience (UX) Section
@@ -223,11 +221,9 @@ The manual testing is described [Here](manual-testing.md).
 #### Fixed bugs
 
 1. A contact form did not work, no email was received on a private email account.
-
-   The JavaScript code was checked thoroughly and no mistake was detected.
    
-   The problem was solved by avoiding hyphen and underscore symbols in *name* and *id* attributes. 
-   In particular, `name="email_address"` was changed to `name="emailaddress"`; `name="your-message"` was changed to `name="yourmessage"`; `id="your-message"` to `id="yourmessage"`.
+   The problem was solved by avoiding the hyphen symbol in the *name* attribute of the contact form. 
+   In particular, `name="your-message"` was changed to `name="your_message"`.
 
 2. CSS property `background-size: cover;` did not work in iOS devices. The resulting background image was too big on iPhone. Please see Figure S4 in [Supp Info](supp-info.md).
 
@@ -245,11 +241,12 @@ The manual testing is described [Here](manual-testing.md).
    There is no jump, the background image and the weather info is not cut.
 
    For Huawei Mate 20, `max-height: -webkit-fill-available;` property did not work, the background image and weather container are cut (see Figure S5 in [Supp Info](supp-info.md)). 
-   I have tried to apply a trick described [Here](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/) to recalculate the viewport size (every time the address bar appears/disappears), however it caused a weird jump of the background image while scrolling. For this reason this approach was not implemented. 
+
+   A trick described [Here](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/) (to recalculate the viewport size every time the address bar appears/disappears) was applied, however it caused a weird jump of the background image while scrolling. For this reason this approach was not implemented. 
 
    In order to hide the bug, the weather container was moved to its original upper position (to avoid its cutting).
 
-2. On *Things to do* page (on desktop and laptop devices), there is a slight jump of the Google map and four buttons. The jump happens due to JavaScript media query applied to center the objects.
+2. On *Things to do* page (on desktop and laptop devices), there is a slight jump of four attraction buttons. The jump happens due to JavaScript media query applied to center the objects.
         
 ## Deployment
 

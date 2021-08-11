@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #ffffff;
 }
 .no-padding {
@@ -15,7 +15,7 @@ body {
 }
 .navbar-brand {
     font-size: 40px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: "Yanone Kaffeesatz", sans-serif;
     font-weight: 500;
     letter-spacing: 3.1px;
     padding-bottom: 0;
@@ -23,7 +23,7 @@ body {
 @media screen and (max-width: 400px) {
     .navbar-brand {
         font-size: 28px;
-   }
+    }
 }
 .navbar-nav {
     font-size: 20px;
@@ -31,10 +31,10 @@ body {
 @media screen and (max-width: 400px) {
     .navbar-nav {
         font-size: 18px;
-   }
+    }
 }
 .navbar-dark .navbar-toggler {
-    border-color: rgba(255, 255, 255, .5);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 .navbar-toggler {
     padding-right: 5px;
@@ -59,7 +59,7 @@ body {
     .bg-dark {
         padding-left: 15px;
         padding-right: 8px;
-   }
+    }
 }
 
 /* ----------------------------------------------Background Images */
@@ -67,10 +67,10 @@ body {
 /* The styling of the background images was inspired by the Code Institute tutorial lesson on "Whiskey Drop" project */
 
 .image-outer-1 {
-   /* Code credit: the trick to make 100vh constant in mobile browsers was taken from here (https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser) */
+    /* Code credit: the trick to make 100vh constant in mobile browsers was taken from here (https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser) */
     height: 100vh;
     max-height: -webkit-fill-available;
-   /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
+    /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
     background: url(../images/moscow-view-1.jpg) no-repeat center center fixed;
     background-size: cover;
     display: -webkit-box;
@@ -85,12 +85,13 @@ body {
     position: relative;
 }
 @media screen and (max-width: 600px) {
-   /* Code credit: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */
+    /* Code credit: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */
     .image-outer-1 {
         min-height: 100vh;
         min-height: -webkit-fill-available;
-       /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
-        background: url(../images/moscow-view-1-small.jpg) no-repeat center center;
+        /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
+        background: url(../images/moscow-view-1-small.jpg) no-repeat center
+            center;
         background-attachment: scroll;
         background-size: cover;
         display: -webkit-box;
@@ -103,13 +104,13 @@ body {
         -ms-flex-pack: center;
         justify-content: center;
         position: relative;
-   }
+    }
 }
 .image-outer-1-ios {
-   /* Code credit: the solution how to make "background-size: cover" work on iOS was taken from https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
+    /* Code credit: the solution how to make "background-size: cover" work on iOS was taken from https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
     height: 100vh;
     max-height: -webkit-fill-available;
-   /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
+    /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
     background: url(../images/moscow-view-1.jpg) no-repeat center center;
     background-attachment: scroll;
     background-size: cover;
@@ -124,30 +125,31 @@ body {
     justify-content: center;
     position: relative;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .image-outer-1-ios {
         /* Code credit: the solution how to make "background-size: cover" work on iOS was taken from https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
-         height: 100vh;
-         max-height: -webkit-fill-available;
+        height: 100vh;
+        max-height: -webkit-fill-available;
         /*Photo credit: https://wall.alphacoders.com/big.php?i=1117417 */
-         background: url(../images/moscow-view-1-small.jpg) no-repeat center center;
-         background-attachment: scroll;
-         background-size: cover;
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-align: center;
-         -ms-flex-align: center;
-         align-items: center;
-         -webkit-box-pack: center;
-         -ms-flex-pack: center;
-         justify-content: center;
-         position: relative;
-     }
+        background: url(../images/moscow-view-1-small.jpg) no-repeat center
+            center;
+        background-attachment: scroll;
+        background-size: cover;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: relative;
+    }
 }
 #image-outer-2 {
     height: 115vh;
-   /*Photo credit: https://wallpaperaccess.com/moscow */
+    /*Photo credit: https://wallpaperaccess.com/moscow */
     background: url(../images/moscow-view-4.jpg) no-repeat center center fixed;
     background-size: cover;
     display: -webkit-box;
@@ -164,17 +166,17 @@ body {
 @media (min-width: 760px) and (max-width: 775px) {
     #image-outer-2 {
         height: 135vh;
-   }
+    }
 }
 @media screen and (max-width: 600px) {
     #image-outer-2 {
         height: auto;
         background: none;
-   }
+    }
 }
 .image-outer-3 {
     height: 100vh;
-   /*Photo credit: https://www.wallpaperflare.com/saint-basil-s-cathedral-russia-moscow-rain-water-drops-church-wallpaper-phrrk */
+    /*Photo credit: https://www.wallpaperflare.com/saint-basil-s-cathedral-russia-moscow-rain-water-drops-church-wallpaper-phrrk */
     background: url(../images/moscow-view-5.jpg) no-repeat center center fixed;
     background-size: cover;
     display: -webkit-box;
@@ -191,8 +193,9 @@ body {
 @media screen and (max-width: 600px) {
     .image-outer-3 {
         height: 100vh;
-       /*Photo credit: https://www.wallpaperflare.com/saint-basil-s-cathedral-russia-moscow-rain-water-drops-church-wallpaper-phrrk */
-        background: url(../images/moscow-view-5-small.jpg) no-repeat center center fixed;
+        /*Photo credit: https://www.wallpaperflare.com/saint-basil-s-cathedral-russia-moscow-rain-water-drops-church-wallpaper-phrrk */
+        background: url(../images/moscow-view-5-small.jpg) no-repeat center
+            center fixed;
         background-size: cover;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -207,10 +210,10 @@ body {
     }
 }
 .image-outer-3-ios {
-   /* Code credit: the solution how to make "background-size: cover" work on iOS was taken from https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
+    /* Code credit: the solution how to make "background-size: cover" work on iOS was taken from https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
     height: 100vh;
     max-height: -webkit-fill-available;
-   /*Photo credit: https://www.wallpaperflare.com/saint-basil-s-cathedral-russia-moscow-rain-water-drops-church-wallpaper-phrrk */
+    /*Photo credit: https://www.wallpaperflare.com/saint-basil-s-cathedral-russia-moscow-rain-water-drops-church-wallpaper-phrrk */
     background: url(../images/moscow-view-5.jpg) no-repeat center center;
     background-attachment: scroll;
     background-size: cover;
@@ -225,14 +228,14 @@ body {
     justify-content: center;
     position: relative;
 }
-
 @media screen and (max-width: 600px) {
     .image-outer-3-ios {
-       /* Code credit: the solution how to make "background-size: cover" work on iOS was taken from https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
+        /* Code credit: the solution how to make "background-size: cover" work on iOS was taken from https://stackoverflow.com/questions/24154666/background-size-cover-not-working-on-ios */
         height: 100vh;
         max-height: -webkit-fill-available;
-       /*Photo credit: https://www.wallpaperflare.com/saint-basil-s-cathedral-russia-moscow-rain-water-drops-church-wallpaper-phrrk */
-        background: url(../images/moscow-view-5-small.jpg) no-repeat center center;
+        /*Photo credit: https://www.wallpaperflare.com/saint-basil-s-cathedral-russia-moscow-rain-water-drops-church-wallpaper-phrrk */
+        background: url(../images/moscow-view-5-small.jpg) no-repeat center
+            center;
         background-attachment: scroll;
         background-size: cover;
         display: -webkit-box;
@@ -264,12 +267,12 @@ body {
     #weather {
         top: 75px;
         left: 10px;
-   }
+    }
 }
 @media screen and (max-width: 400px) {
     #weather {
         top: 55px;
-   }
+    }
 }
 .weather-header {
     margin-bottom: 15px;
@@ -284,7 +287,7 @@ body {
     .weather-header {
         font-size: 16px;
         font-weight: 400;
-   }
+    }
 }
 #temperature {
     text-align: center;
@@ -295,12 +298,12 @@ body {
     #temperature h2 {
         font-size: 24px;
         margin-bottom: 0;
-   }
+    }
 }
 @media screen and (max-width: 325px) {
     #temperature h2 {
         font-size: 20px;
-   }
+    }
 }
 .jumbotron {
     background-color: rgba(12, 12, 12, 0.7);
@@ -312,13 +315,13 @@ body {
 @media screen and (max-width: 500px) {
     .jumbotron {
         border-radius: 0;
-   }
+    }
 }
 @media screen and (max-width: 541px) {
     .jumbotron {
         padding-bottom: 5px;
         padding-top: 25px;
-   }
+    }
 }
 .jumbotron-header {
     color: #ffffff;
@@ -329,7 +332,7 @@ body {
     .jumbotron-header {
         font-size: 24px;
         margin-bottom: 15px;
-   }
+    }
 }
 .jumbotron .lead {
     margin: 25px 0;
@@ -339,13 +342,13 @@ body {
     .jumbotron .lead {
         font-size: 18px;
         margin: 12px 0;
-   }
+    }
 }
 @media screen and (max-width: 325px) {
     .jumbotron .lead {
         font-size: 16px;
         margin: 8px 0;
-   }
+    }
 }
 .jumbotron small {
     font-size: 60%;
@@ -355,25 +358,25 @@ body {
 @media screen and (max-height: 570px) {
     .jumbotron {
         padding-top: 15px;
-   }
+    }
     .jumbotron p {
         margin-bottom: 0.5rem;
-   }
+    }
     .jumbotron-header {
         margin-bottom: 5px;
-   }
+    }
     .weather-header {
         margin-bottom: 5px;
-   }
+    }
     #temperature h2 {
         font-size: 16px;
-   }
+    }
 }
 @media screen and (max-width: 500px) {
     #weather-icon {
         height: 35px;
         width: 35px;
-   }
+    }
 }
 .block-divider {
     width: 75px;
@@ -388,7 +391,7 @@ body {
     .block-divider--orange {
         margin-bottom: 10px;
         margin-top: 10px;
-   }
+    }
 }
 .btn--yellow {
     color: rgb(0, 0, 0);
@@ -401,22 +404,22 @@ body {
 @media screen and (max-height: 500px) {
     .btn--yellow {
         font-size: 1rem;
-   }
+    }
 }
 @media screen and (max-width: 400px) {
     .btn--yellow {
         font-size: 1rem;
-   }
+    }
 }
 @media screen and (max-height: 570px) {
     .jumbotron-header {
         font-size: 20px;
         margin-bottom: 10px;
-   }
+    }
     hr {
         margin-top: 0;
         margin-bottom: 0;
-   }
+    }
 }
 #main-text {
     background-color: #c0c2cd;
@@ -426,7 +429,7 @@ body {
 @media screen and (max-width: 800px) {
     #main-text {
         padding-top: 60px;
-   }
+    }
 }
 #main-text p {
     color: #070707;
@@ -440,23 +443,23 @@ body {
         margin: 0 0;
         margin-bottom: 50px;
         border-radius: 0;
-   }
+    }
 }
 @media screen and (max-width: 390px) {
     #main-text p {
         font-size: 18px;
-   }
+    }
 }
 @media screen and (max-width: 325px) {
     #main-text p {
         font-size: 16px;
-   }
+    }
 }
 @media screen and (min-width: 1800px) {
     #main-text p {
         margin-left: 150px;
         margin-right: 150px;
-   }
+    }
 }
 p#btn-main-text {
     text-align: center;
@@ -466,7 +469,7 @@ p#btn-main-text {
 
 /* The styling of the contact form was inspired by the Code Institute tutorial lesson on "Love Running" project */
 
-form h5{
+form h5 {
     margin-bottom: 15px;
     font-weight: 400;
     font-size: 1.1rem;
@@ -477,12 +480,12 @@ form h5{
 @media screen and (max-width: 500px) {
     form h5 {
         font-size: 1rem;
-   }
+    }
 }
 @media screen and (max-width: 330px) {
     form h5 {
         font-size: 0.8rem;
-   }
+    }
 }
 #contact-form {
     margin-top: 50px;
@@ -500,22 +503,22 @@ form h5{
         position: absolute;
         padding-top: 20px;
         padding-bottom: 20px;
-   }
+    }
 }
 @media screen and (max-width: 400px) {
     #contact-form {
         width: 320px;
-   }
+    }
 }
 @media screen and (max-width: 340px) {
     #contact-form {
         width: 280px;
-   }
+    }
 }
 @media screen and (max-width: 300px) {
     #contact-form {
         width: 250px;
-   }
+    }
 }
 .text-input {
     background: transparent;
@@ -538,30 +541,34 @@ form h5{
 @media screen and (max-width: 340px) {
     #send-your-message {
         font-size: 14px;
-   }
+    }
 }
 @media screen and (max-height: 570px) {
     .text-input {
         margin: 0 0 10px 0;
         font-size: 12px;
-   }
+    }
     #send-your-message {
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 10px;
         padding-right: 10px;
-   }
+    }
 }
 
 /* Code credit to change placeholder color: https://www.w3schools.com/howto/howto_css_placeholder.asp */
 
-#moscow-view-3 input::placeholder, #moscow-view-3 textarea::placeholder {
-   /* Chrome, Firefox, Opera, Safari 10.1+ */
+#moscow-view-3 input::placeholder,
+#moscow-view-3 textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #f8ecd5;
     opacity: 1;
 }
-#moscow-view-3 input:-ms-input-placeholder, #moscow-view-3 textarea:-ms-input-placeholder, #moscow-view-3 input::-ms-input-placeholder, #moscow-view-3 textarea::-ms-input-placeholder {
-   /* Internet Explorer 10-11, Microsoft Edge */
+#moscow-view-3 input:-ms-input-placeholder,
+#moscow-view-3 textarea:-ms-input-placeholder,
+#moscow-view-3 input::-ms-input-placeholder,
+#moscow-view-3 textarea::-ms-input-placeholder {
+    /* Internet Explorer 10-11, Microsoft Edge */
     color: #f8ecd5;
 }
 
@@ -588,13 +595,13 @@ form h5{
     .footer {
         padding-top: 10px;
         padding-bottom: 10px;
-   }
+    }
 }
 @media screen and (max-width: 330px) {
     .footer {
         padding-top: 5px;
         padding-bottom: 9px;
-   }
+    }
 }
 
 /* ----------------------------------------------Things-to-do Page */
@@ -611,15 +618,15 @@ form h5{
 @media (min-width: 602px) and (max-width: 993px) {
     .map-margin {
         padding-right: 50px;
-   }
+    }
     #map {
         height: 40vh;
-   }
+    }
 }
 @media screen and (max-width: 300px) {
     #map {
         height: 45vh;
-   }
+    }
 }
 .image {
     width: 100%;
@@ -632,7 +639,7 @@ form h5{
 @media screen and (max-width: 600px) {
     .image {
         padding-left: 0;
-   }
+    }
 }
 #info-window {
     color: rgb(0, 0, 0);
@@ -646,7 +653,7 @@ form h5{
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 50px;
-   }
+    }
 }
 #info-window h5 {
     margin-top: 19px;
@@ -656,7 +663,7 @@ form h5{
 @media screen and (max-width: 600px) {
     #info-window h5 {
         margin-bottom: 30px;
-   }
+    }
 }
 
 /* Code credit: the approach to align text inside a div was taken from here: https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div/13515693#13515693 */
@@ -684,10 +691,10 @@ form h5{
 @media screen and (max-width: 600px) {
     #info-window p {
         padding-left: 0;
-   }
+    }
     #info-window h4 {
         font-size: 1.1rem;
-   }
+    }
 }
 #info-window p a {
     color: #0056b3;
@@ -705,54 +712,54 @@ form h5{
 @media screen and (max-width: 801px) {
     .row-buttons {
         margin-left: 10px;
-   }
+    }
 }
 @media screen and (max-width: 600px) {
     .row-buttons {
         margin-left: 37px;
         margin-top: 20px;
         margin-bottom: 5px;
-   }
+    }
 }
 @media (min-width: 580px) and (max-width: 590px) {
     .row-buttons {
         margin-left: 43px;
-   }
+    }
 }
 @media (min-width: 530px) and (max-width: 550px) {
     .row-buttons {
         margin-left: 10px;
-   }
+    }
 }
 @media screen and (max-width: 485px) {
     .row-buttons {
         margin-left: 60px;
-   }
+    }
 }
 @media screen and (max-width: 415px) {
     .row-buttons {
         margin-left: 40px;
-   }
+    }
 }
 @media screen and (max-width: 390px) {
     .row-buttons {
         margin-left: 43px;
-   }
+    }
 }
 @media screen and (max-width: 370px) {
     .row-buttons {
         margin-left: 30px;
-   }
+    }
 }
 @media screen and (max-width: 355px) {
     .row-buttons {
         margin-left: 24px;
-   }
+    }
 }
 @media screen and (max-width: 300px) {
     .row-buttons {
         margin-left: 15px;
-   }
+    }
 }
 a:not([href]):not([tabindex]):hover {
     color: #0056b3;
@@ -770,7 +777,7 @@ a:not([href]):not([tabindex]):hover {
         padding-bottom: 5px;
         padding-left: 10px;
         padding-right: 10px;
-   }
+    }
 }
 .things-to-do {
     margin-top: 20px;
@@ -784,7 +791,7 @@ a:not([href]):not([tabindex]):hover {
     .things-to-do {
         margin-top: 0;
         top: 0;
-   }
+    }
 }
 h5 span {
     color: red;
@@ -807,7 +814,7 @@ h5 span {
 @media screen and (max-width: 600px) {
     .things-to-do-window {
         border-radius: 0;
-   }
+    }
 }
 .padding-left-map {
     padding-left: 50px;
@@ -815,58 +822,58 @@ h5 span {
 @media screen and (max-width: 600px) {
     .padding-left-map {
         padding-left: 0;
-   }
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1370px) {
     .list-inline-item a {
         font-size: 16px;
-   }
+    }
 }
 @media screen and (max-width: 486px) {
     .list-inline-item a {
         width: 160px;
-   }
+    }
 }
 @media screen and (max-width: 445px) {
     .list-inline-item a {
         width: 150px;
-   }
+    }
 }
 @media screen and (max-width: 395px) {
     .list-inline-item a {
         width: 130px;
-   }
+    }
 }
 @media screen and (max-width: 310px) {
     .list-inline-item a {
         width: 120px;
-   }
+    }
 }
 @media screen and (max-width: 600px) {
     .list-inline-item:not(:last-child) {
         margin-right: 10px;
-   }
+    }
     .list-inline-item {
         margin-bottom: 10px;
-   }
+    }
 }
 @media screen and (max-width: 500px) {
     .list-inline-item:not(:last-child) {
         margin-right: 30px;
-   }
+    }
 }
 @media screen and (max-width: 348px) {
     .list-inline-item:not(:last-child) {
         margin-right: 10px;
-   }
+    }
 }
 @media screen and (max-width: 600px) {
     .list-inline {
         margin-bottom: 5px;
-   }
+    }
 }
 @media screen and (max-width: 290px) {
     #historic-sites {
         padding-left: 11px;
-   }
+    }
 }

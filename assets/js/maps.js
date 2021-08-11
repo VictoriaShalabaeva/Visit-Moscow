@@ -3,8 +3,10 @@
  * Code credit: the code was written with the aid of Code institute tutorials, Google maps documentation, YouTube Google Maps JavaScript API Tutorial (https://www.youtube.com/watch?v=Zxf1mnP5zcw).
  * Code credit: Integration of Google Maps MarkerClusterer with infowindow from Stackoverflow (https://stackoverflow.com/questions/40047210/integrate-google-maps-markerclusterer-with-infowindow).
  */
-// Define a map style
-// Code credit: Google maps documentation (https://developers.google.com/maps/documentation/javascript/examples/maptype-styled-simple)
+
+
+
+// Define a map style. Code credit: Google maps documentation (https://developers.google.com/maps/documentation/javascript/examples/maptype-styled-simple)
 const yellow_style = [{
 	elementType: "geometry",
 	stylers: [{
@@ -147,6 +149,7 @@ const yellow_style = [{
 		color: "#92998d"
 	}],
 }, ];
+
 // Create a map of Moscow
 function initMap() {
 	var map = new google.maps.Map(document.getElementById("map"), {
@@ -158,6 +161,8 @@ function initMap() {
 		styles: yellow_style,
 	});
 }
+
+// Database with Historic Sites locations
 const markerHistoricSites = [{
 	location: {
 		lat: 55.7539,
@@ -272,7 +277,9 @@ const markerHistoricSites = [{
     the convent houses four cathedrals; Smolensk Cathedral is the undoubted highlight due to its delightful 
     16th-century frescoes. Wandering around the grounds is like stepping back in time. The Novodevichy Cemetery 
     is where many famous leaders of the Soviet Union are buried, such as Yeltsin and Khrushchev.`
-}]
+}];
+
+// Database with Museums locations
 const markerMuseums = [{
 	location: {
 		lat: 55.7520,
@@ -372,7 +379,9 @@ const markerMuseums = [{
 	1960s. A special two-story hall showcases sections of the Mir space station interior, and there are also models 
 	of the first sputniks and a replica miniature spaceship. <a rel="noopener" target="_blank" 
 	href="https://kosmo-museum.ru/?locale=en">Official website</a>`
-}]
+}];
+
+// Database with Parks locations
 const markerParks = [{
 	location: {
 		lat: 55.7094,
@@ -469,7 +478,9 @@ const markerParks = [{
 	leopard, vicuña, white-tailed gnu, guanaco, takin, and so on. 
 	<a rel="noopener" target="_blank" href="https://moscowzoo.su/">Official 
 	website</a>`
-}]
+}];
+
+// Database with Shopping locations
 const markerShopping = [{
 	location: {
 		lat: 55.7547,
@@ -567,8 +578,9 @@ const markerShopping = [{
 	dolma or Moroccan tazhin? The Danilovsky Moscow market makes it possible – from luxury burgers to Dagistan 
 	cuisine everything can be found there. 
 	<a rel="noopener" target="_blank" href="https://danilovskymarket.ru/en">Official website</a>`
-}]
+}];
 
+// Create a template for Info Window
 function template(place) {
 	$("#info-window").html(`
             <h5><span>${place.label}</span>&nbsp; ${place.name}</h5>
@@ -581,6 +593,7 @@ function template(place) {
 	}
 }
 
+// Create a map with different markers (depending on four types of attractions)
 function mapAttractionType(zoomValue, coordinates, markerAttractionType) {
 	let mapPlace = new google.maps.Map(document.getElementById("map"), {
 		zoom: zoomValue,
@@ -599,26 +612,31 @@ function mapAttractionType(zoomValue, coordinates, markerAttractionType) {
 		});
 		return marker;
 	});
+	// Create markers clustering
 	let markerCluster = new MarkerClusterer(mapPlace, markers, {
 		imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
 	});
 }
+
+// Coordinates to centre map for four types of attractions
 const coordinatesHistoricSites = {
 	lat: 55.7539,
 	lng: 37.6208
-}
+};
 const coordinatesMuseums = {
-	lat: 55.728461149589826,
-	lng: 37.613845249001855
-}
+	lat: 55.78674858012336, 
+	lng: 37.62715011905909
+};
 const coordinatesParks = {
 	lat: 55.73402612486688,
 	lng: 37.63365561837892
-}
+};
 const coordinatesShopping = {
 	lat: 55.77427567683743,
 	lng: 37.632019544817204
-}
+};
+
+// Event listeners for four buttons to initialize a map with corresponding marker distributions
 document.addEventListener("DOMContentLoaded", function() {
 	let buttons = document.getElementsByClassName("btn-lg");
 	for(let button of buttons) {
@@ -626,7 +644,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			if($(this).is('#historic-sites')) {
 				mapAttractionType(12, coordinatesHistoricSites, markerHistoricSites);
 			} else if($(this).is('#museums')) {
-				mapAttractionType(10, coordinatesMuseums, markerMuseums);
+				mapAttractionType(11, coordinatesMuseums, markerMuseums);
 			} else if($(this).is('#parks')) {
 				mapAttractionType(10, coordinatesParks, markerParks);
 			} else {

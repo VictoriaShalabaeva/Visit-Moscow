@@ -1,5 +1,6 @@
 /** 
  * Weather API: https://openweathermap.org/api
+ * The following code gets weather data and fills in the weather container on Home page.
  * Code credit: the code is written following the tutorial by George Martsoukos https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893
  */
 
