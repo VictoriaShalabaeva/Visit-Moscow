@@ -30,11 +30,11 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 
   - The weather info loads correctly when the *Home* page is updated. 
 
-    <img src="assets/images/testing/weather-info.jpg" alt="Weather info loads correctly." width="300px" height="auto">
+    <img src="assets/images/testing/weather-info.jpg" alt="Weather info loads correctly." width="150px" height="auto">
   
   - If the weather data is not loaded correctly, there is an error message.
 
-    <img src="assets/images/testing/weather-message.jpg" alt="Weather error message." width="300px" height="auto">
+    <img src="assets/images/testing/weather-message.jpg" alt="Weather error message." width="150px" height="auto">
 
 ### *Things to do* page background image:
 

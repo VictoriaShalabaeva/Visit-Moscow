@@ -155,7 +155,7 @@ function initMap() {
 	var map = new google.maps.Map(document.getElementById("map"), {
 		zoom: 10,
 		center: {
-			lat: 55.7558,
+			lat: 55.7558, // Coordinates of Moscow centre
 			lng: 37.6173
 		},
 		styles: yellow_style,
